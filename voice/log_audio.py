@@ -2,7 +2,7 @@ import os
 import json
 from datetime import datetime
 
-def log_command(transcribed_text, filepath, date_str, duration):
+def log_command(transcribed_text, label, filepath, date_str, duration):
     """Logs command details (transcription, timestamp, audio duration) into a JSON file."""
     json_filepath = os.path.join("logs", date_str, "commands.json")
 
@@ -18,7 +18,8 @@ def log_command(transcribed_text, filepath, date_str, duration):
         "transcribed_text": transcribed_text,
         "time_recorded": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "audio_file": filepath,
-        "duration_seconds": duration
+        "duration_seconds": duration,
+        "label": label
     }
     log_data.append(log_entry)
 

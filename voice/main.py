@@ -1,9 +1,12 @@
 import audio
 import transcribe
 
-def main():
+def transcript_text():
     audio_file, date_str, duration = audio.record_audio()
-    transcribe.transcribe_audio(audio_file, date_str, duration)
+    text = transcribe.transcribe_audio(audio_file)
+
+    return text
 
 if __name__ == "__main__":
-    main()
+    text = transcript_text()
+    print(f'You said: {text}')
