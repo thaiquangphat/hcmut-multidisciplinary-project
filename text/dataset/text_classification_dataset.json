@@ -1,802 +1,1923 @@
 [
     {
-        "text": "power on fan",
-        "label": "fan_on"
+      "text": "power on fan",
+      "label": "fan_on"
     },
     {
-        "text": "power on lights please",
-        "label": "lights_on"
+      "text": "power on fan please",
+      "label": "fan_on"
     },
     {
-        "text": "fan should be on",
-        "label": "fan_on"
+      "text": "power on fans",
+      "label": "fan_on"
     },
     {
-        "text": "kill the fan",
-        "label": "fan_off"
+      "text": "power on fans please",
+      "label": "fan_on"
     },
     {
-        "text": "stop the fan",
-        "label": "fan_off"
+      "text": "turn on fan",
+      "label": "fan_on"
     },
     {
-        "text": "shut off the lights",
-        "label": "lights_off"
+      "text": "turn on fan please",
+      "label": "fan_on"
     },
     {
-        "text": "start the fan please",
-        "label": "fan_on"
+      "text": "turn on fans",
+      "label": "fan_on"
     },
     {
-        "text": "kill the lights",
-        "label": "lights_off"
+      "text": "turn on fans please",
+      "label": "fan_on"
     },
     {
-        "text": "fan should be off",
-        "label": "fan_off"
+      "text": "switch on fan",
+      "label": "fan_on"
     },
     {
-        "text": "enable lights please",
-        "label": "lights_on"
+      "text": "switch on fan please",
+      "label": "fan_on"
     },
     {
-        "text": "fan on please now",
-        "label": "fan_on"
+      "text": "switch on fans",
+      "label": "fan_on"
     },
     {
-        "text": "turn on the lights quickly",
-        "label": "lights_on"
+      "text": "switch on fans please",
+      "label": "fan_on"
     },
     {
-        "text": "fan off now now",
-        "label": "fan_off"
+      "text": "start fan",
+      "label": "fan_on"
     },
     {
-        "text": "turn off the fan now",
-        "label": "fan_off"
+      "text": "start fan please",
+      "label": "fan_on"
     },
     {
-        "text": "make the lights shine quickly",
-        "label": "lights_on"
+      "text": "start fans",
+      "label": "fan_on"
     },
     {
-        "text": "shut down fan now",
-        "label": "fan_off"
+      "text": "start fans please",
+      "label": "fan_on"
     },
     {
-        "text": "turn on the fan quickly",
-        "label": "fan_on"
+      "text": "enable fan",
+      "label": "fan_on"
     },
     {
-        "text": "disable lights please",
-        "label": "lights_off"
+      "text": "enable fan please",
+      "label": "fan_on"
     },
     {
-        "text": "kill the lights please",
-        "label": "lights_off"
+      "text": "enable fans",
+      "label": "fan_on"
     },
     {
-        "text": "disable fan now",
-        "label": "fan_off"
+      "text": "enable fans please",
+      "label": "fan_on"
     },
     {
-        "text": "fan off now now",
-        "label": "fan_off"
+      "text": "activate fan",
+      "label": "fan_on"
     },
     {
-        "text": "enable fan please",
-        "label": "fan_on"
+      "text": "activate fan please",
+      "label": "fan_on"
     },
     {
-        "text": "start the fan",
-        "label": "fan_on"
+      "text": "activate fans",
+      "label": "fan_on"
     },
     {
-        "text": "activate the lights",
-        "label": "lights_on"
+      "text": "activate fans please",
+      "label": "fan_on"
     },
     {
-        "text": "turn on the lights now",
-        "label": "lights_on"
+      "text": "get fan running",
+      "label": "fan_on"
     },
     {
-        "text": "get the fan running please",
-        "label": "fan_on"
+      "text": "get fan running please",
+      "label": "fan_on"
     },
     {
-        "text": "fan on please",
-        "label": "fan_on"
+      "text": "get fans running",
+      "label": "fan_on"
     },
     {
-        "text": "switch the lights on now",
-        "label": "lights_on"
+      "text": "get fans running please",
+      "label": "fan_on"
     },
     {
-        "text": "turn on the fan now",
-        "label": "fan_on"
+      "text": "spin up fan",
+      "label": "fan_on"
     },
     {
-        "text": "spin up the fan now",
-        "label": "fan_on"
+      "text": "spin up fan please",
+      "label": "fan_on"
     },
     {
-        "text": "switch the fan on please",
-        "label": "fan_on"
+      "text": "spin up fans",
+      "label": "fan_on"
     },
     {
-        "text": "enable fan quickly",
-        "label": "fan_on"
+      "text": "spin up fans please",
+      "label": "fan_on"
     },
     {
-        "text": "kill the fan",
-        "label": "fan_off"
+      "text": "fan should be on",
+      "label": "fan_on"
     },
     {
-        "text": "shut off the lights please",
-        "label": "lights_off"
+      "text": "fans should be on",
+      "label": "fan_on"
     },
     {
-        "text": "start the fan",
-        "label": "fan_on"
+      "text": "fan on please now",
+      "label": "fan_on"
     },
     {
-        "text": "lights on please now",
-        "label": "lights_on"
+      "text": "fans on please now",
+      "label": "fan_on"
     },
     {
-        "text": "start the fan",
-        "label": "fan_on"
+      "text": "turn on the fan quickly",
+      "label": "fan_on"
     },
     {
-        "text": "switch the fan on",
-        "label": "fan_on"
+      "text": "turn on the fans quickly",
+      "label": "fan_on"
     },
     {
-        "text": "make the lights shine",
-        "label": "lights_on"
+      "text": "enable fan quickly",
+      "label": "fan_on"
     },
     {
-        "text": "illuminate the room now",
-        "label": "lights_on"
+      "text": "enable fans quickly",
+      "label": "fan_on"
     },
     {
-        "text": "deactivate fan now",
-        "label": "fan_off"
+      "text": "switch the fan on please",
+      "label": "fan_on"
     },
     {
-        "text": "disable lights",
-        "label": "lights_off"
+      "text": "switch the fans on please",
+      "label": "fan_on"
     },
     {
-        "text": "turn on the lights quickly",
-        "label": "lights_on"
+      "text": "turn on the fan now",
+      "label": "fan_on"
     },
     {
-        "text": "lights should be on quickly",
-        "label": "lights_on"
+      "text": "turn on the fans now",
+      "label": "fan_on"
     },
     {
-        "text": "turn off the lights quickly",
-        "label": "lights_off"
+      "text": "spin up the fan now",
+      "label": "fan_on"
     },
     {
-        "text": "get the fan running",
-        "label": "fan_on"
+      "text": "spin up the fans now",
+      "label": "fan_on"
     },
     {
-        "text": "activate the fan",
-        "label": "fan_on"
+      "text": "get the fan running please",
+      "label": "fan_on"
     },
     {
-        "text": "start the fan please",
-        "label": "fan_on"
+      "text": "get the fans running please",
+      "label": "fan_on"
     },
     {
-        "text": "lights on please",
-        "label": "lights_on"
+      "text": "fan on please",
+      "label": "fan_on"
     },
     {
-        "text": "shut off the lights please",
-        "label": "lights_off"
+      "text": "fans on please",
+      "label": "fan_on"
     },
     {
-        "text": "deactivate fan",
-        "label": "fan_off"
+      "text": "start the fan please",
+      "label": "fan_on"
     },
     {
-        "text": "lights on please quickly",
-        "label": "lights_on"
+      "text": "start the fans please",
+      "label": "fan_on"
     },
     {
-        "text": "enable lights please",
-        "label": "lights_on"
+      "text": "activate the fan",
+      "label": "fan_on"
     },
     {
-        "text": "fan should be on now",
-        "label": "fan_on"
+      "text": "activate the fans",
+      "label": "fan_on"
     },
     {
-        "text": "switch off the lights please",
-        "label": "lights_off"
+      "text": "get the fan running",
+      "label": "fan_on"
     },
     {
-        "text": "power off fan",
-        "label": "fan_off"
+      "text": "get the fans running",
+      "label": "fan_on"
     },
     {
-        "text": "fan on please",
-        "label": "fan_on"
+      "text": "switch the fan on",
+      "label": "fan_on"
     },
     {
-        "text": "make the lights shine please",
-        "label": "lights_on"
+      "text": "switch the fans on",
+      "label": "fan_on"
     },
     {
-        "text": "lights should be off",
-        "label": "lights_off"
+      "text": "fan should be on now",
+      "label": "fan_on"
     },
     {
-        "text": "get the fan running quickly",
-        "label": "fan_on"
+      "text": "fans should be on now",
+      "label": "fan_on"
     },
     {
-        "text": "fan should be off",
-        "label": "fan_off"
+      "text": "get the fan running quickly",
+      "label": "fan_on"
     },
     {
-        "text": "spin up the fan",
-        "label": "fan_on"
+      "text": "get the fans running quickly",
+      "label": "fan_on"
     },
     {
-        "text": "fan off now now",
-        "label": "fan_off"
+      "text": "switch the fan on quickly",
+      "label": "fan_on"
     },
     {
-        "text": "turn off the fan now",
-        "label": "fan_off"
+      "text": "switch the fans on quickly",
+      "label": "fan_on"
     },
     {
-        "text": "turn off the lights",
-        "label": "lights_off"
+      "text": "turn on the fan",
+      "label": "fan_on"
     },
     {
-        "text": "turn off the fan please",
-        "label": "fan_off"
+      "text": "turn on the fans",
+      "label": "fan_on"
     },
     {
-        "text": "lights should be off now",
-        "label": "lights_off"
+      "text": "start the fan",
+      "label": "fan_on"
     },
     {
-        "text": "shut off the lights quickly",
-        "label": "lights_off"
+      "text": "start the fans",
+      "label": "fan_on"
     },
     {
-        "text": "deactivate lights please",
-        "label": "lights_off"
+      "text": "spin up the fan",
+      "label": "fan_on"
     },
     {
-        "text": "lights should be on please",
-        "label": "lights_on"
+      "text": "spin up the fans",
+      "label": "fan_on"
     },
     {
-        "text": "power off fan quickly",
-        "label": "fan_off"
+      "text": "activate the fan now",
+      "label": "fan_on"
     },
     {
-        "text": "illuminate the room",
-        "label": "lights_on"
+      "text": "activate the fans now",
+      "label": "fan_on"
     },
     {
-        "text": "stop the fan please",
-        "label": "fan_off"
+      "text": "power off fan",
+      "label": "fan_off"
     },
     {
-        "text": "switch the fan on quickly",
-        "label": "fan_on"
+      "text": "power off fan please",
+      "label": "fan_off"
     },
     {
-        "text": "get the fan running",
-        "label": "fan_on"
+      "text": "power off fans",
+      "label": "fan_off"
     },
     {
-        "text": "disable lights",
-        "label": "lights_off"
+      "text": "power off fans please",
+      "label": "fan_off"
     },
     {
-        "text": "switch the lights on",
-        "label": "lights_on"
+      "text": "turn off fan",
+      "label": "fan_off"
     },
     {
-        "text": "switch off the lights please",
-        "label": "lights_off"
+      "text": "turn off fan please",
+      "label": "fan_off"
     },
     {
-        "text": "enable lights please",
-        "label": "lights_on"
+      "text": "turn off fans",
+      "label": "fan_off"
     },
     {
-        "text": "switch the fan on",
-        "label": "fan_on"
+      "text": "turn off fans please",
+      "label": "fan_off"
     },
     {
-        "text": "disable lights please",
-        "label": "lights_off"
+      "text": "switch off fan",
+      "label": "fan_off"
     },
     {
-        "text": "switch off the lights please",
-        "label": "lights_off"
+      "text": "switch off fan please",
+      "label": "fan_off"
     },
     {
-        "text": "darken the room please",
-        "label": "lights_off"
+      "text": "switch off fans",
+      "label": "fan_off"
     },
     {
-        "text": "fan on please quickly",
-        "label": "fan_on"
+      "text": "switch off fans please",
+      "label": "fan_off"
     },
     {
-        "text": "fan off now quickly",
-        "label": "fan_off"
+      "text": "stop fan",
+      "label": "fan_off"
     },
     {
-        "text": "fan should be on quickly",
-        "label": "fan_on"
+      "text": "stop fan please",
+      "label": "fan_off"
     },
     {
-        "text": "power on fan now",
-        "label": "fan_on"
+      "text": "stop fans",
+      "label": "fan_off"
     },
     {
-        "text": "lights on please",
-        "label": "lights_on"
+      "text": "stop fans please",
+      "label": "fan_off"
     },
     {
-        "text": "switch off the lights please",
-        "label": "lights_off"
+      "text": "disable fan",
+      "label": "fan_off"
     },
     {
-        "text": "make the lights shine please",
-        "label": "lights_on"
+      "text": "disable fan please",
+      "label": "fan_off"
     },
     {
-        "text": "shut down fan",
-        "label": "fan_off"
+      "text": "disable fans",
+      "label": "fan_off"
     },
     {
-        "text": "lights should be off",
-        "label": "lights_off"
+      "text": "disable fans please",
+      "label": "fan_off"
     },
     {
-        "text": "stop the fan",
-        "label": "fan_off"
+      "text": "deactivate fan",
+      "label": "fan_off"
     },
     {
-        "text": "kill the lights quickly",
-        "label": "lights_off"
+      "text": "deactivate fan please",
+      "label": "fan_off"
     },
     {
-        "text": "power on lights quickly",
-        "label": "lights_on"
+      "text": "deactivate fans",
+      "label": "fan_off"
     },
     {
-        "text": "lights off now now",
-        "label": "lights_off"
+      "text": "deactivate fans please",
+      "label": "fan_off"
     },
     {
-        "text": "lights should be off please",
-        "label": "lights_off"
+      "text": "shut down fan",
+      "label": "fan_off"
     },
     {
-        "text": "kill the lights now",
-        "label": "lights_off"
+      "text": "shut down fan please",
+      "label": "fan_off"
     },
     {
-        "text": "put the lights on please",
-        "label": "lights_on"
+      "text": "shut down fans",
+      "label": "fan_off"
     },
     {
-        "text": "stop the fan",
-        "label": "fan_off"
+      "text": "shut down fans please",
+      "label": "fan_off"
     },
     {
-        "text": "power off fan now",
-        "label": "fan_off"
+      "text": "kill fan",
+      "label": "fan_off"
     },
     {
-        "text": "activate the fan now",
-        "label": "fan_on"
+      "text": "kill fan please",
+      "label": "fan_off"
     },
     {
-        "text": "lights should be on now",
-        "label": "lights_on"
+      "text": "kill fans",
+      "label": "fan_off"
     },
     {
-        "text": "switch off the fan now",
-        "label": "fan_off"
+      "text": "kill fans please",
+      "label": "fan_off"
     },
     {
-        "text": "stop the fan",
-        "label": "fan_off"
+      "text": "fan should be off",
+      "label": "fan_off"
     },
     {
-        "text": "enable lights",
-        "label": "lights_on"
+      "text": "fans should be off",
+      "label": "fan_off"
     },
     {
-        "text": "lights on please quickly",
-        "label": "lights_on"
+      "text": "fan off now now",
+      "label": "fan_off"
     },
     {
-        "text": "power on fan quickly",
-        "label": "fan_on"
+      "text": "fans off now now",
+      "label": "fan_off"
     },
     {
-        "text": "deactivate lights quickly",
-        "label": "lights_off"
+      "text": "turn off the fan now",
+      "label": "fan_off"
     },
     {
-        "text": "switch off the lights please",
-        "label": "lights_off"
+      "text": "turn off the fans now",
+      "label": "fan_off"
     },
     {
-        "text": "switch off the fan now",
-        "label": "fan_off"
+      "text": "shut down fan now",
+      "label": "fan_off"
     },
     {
-        "text": "turn on the lights",
-        "label": "lights_on"
+      "text": "shut down fans now",
+      "label": "fan_off"
     },
     {
-        "text": "lights on please quickly",
-        "label": "lights_on"
+      "text": "disable fan now",
+      "label": "fan_off"
     },
     {
-        "text": "kill the fan now",
-        "label": "fan_off"
+      "text": "disable fans now",
+      "label": "fan_off"
     },
     {
-        "text": "stop the fan now",
-        "label": "fan_off"
+      "text": "deactivate fan now",
+      "label": "fan_off"
     },
     {
-        "text": "lights off now quickly",
-        "label": "lights_off"
+      "text": "deactivate fans now",
+      "label": "fan_off"
     },
     {
-        "text": "fan off now quickly",
-        "label": "fan_off"
+      "text": "kill the fan",
+      "label": "fan_off"
     },
     {
-        "text": "disable fan quickly",
-        "label": "fan_off"
+      "text": "kill the fans",
+      "label": "fan_off"
     },
     {
-        "text": "enable fan please",
-        "label": "fan_on"
+      "text": "stop the fan",
+      "label": "fan_off"
     },
     {
-        "text": "start the fan",
-        "label": "fan_on"
+      "text": "stop the fans",
+      "label": "fan_off"
     },
     {
-        "text": "turn on the fan quickly",
-        "label": "fan_on"
+      "text": "fan off now quickly",
+      "label": "fan_off"
     },
     {
-        "text": "get the fan running quickly",
-        "label": "fan_on"
+      "text": "fans off now quickly",
+      "label": "fan_off"
     },
     {
-        "text": "deactivate fan quickly",
-        "label": "fan_off"
+      "text": "disable fan quickly",
+      "label": "fan_off"
     },
     {
-        "text": "fan off now quickly",
-        "label": "fan_off"
+      "text": "disable fans quickly",
+      "label": "fan_off"
     },
     {
-        "text": "turn on the fan",
-        "label": "fan_on"
+      "text": "deactivate fan quickly",
+      "label": "fan_off"
     },
     {
-        "text": "stop the fan now",
-        "label": "fan_off"
+      "text": "deactivate fans quickly",
+      "label": "fan_off"
     },
     {
-        "text": "fan off now quickly",
-        "label": "fan_off"
+      "text": "turn off the fan quickly",
+      "label": "fan_off"
     },
     {
-        "text": "lights on please now",
-        "label": "lights_on"
+      "text": "turn off the fans quickly",
+      "label": "fan_off"
     },
     {
-        "text": "deactivate lights quickly",
-        "label": "lights_off"
+      "text": "stop the fan please",
+      "label": "fan_off"
     },
     {
-        "text": "illuminate the room please",
-        "label": "lights_on"
+      "text": "stop the fans please",
+      "label": "fan_off"
     },
     {
-        "text": "put the lights on please",
-        "label": "lights_on"
+      "text": "kill the fan please",
+      "label": "fan_off"
     },
     {
-        "text": "put the lights on please",
-        "label": "lights_on"
+      "text": "kill the fans please",
+      "label": "fan_off"
     },
     {
-        "text": "disable lights please",
-        "label": "lights_off"
+      "text": "switch off the fan now",
+      "label": "fan_off"
     },
     {
-        "text": "fan should be off now",
-        "label": "fan_off"
+      "text": "switch off the fans now",
+      "label": "fan_off"
     },
     {
-        "text": "switch the lights on please",
-        "label": "lights_on"
+      "text": "stop the fan now",
+      "label": "fan_off"
     },
     {
-        "text": "illuminate the room now",
-        "label": "lights_on"
+      "text": "stop the fans now",
+      "label": "fan_off"
     },
     {
-        "text": "power off fan quickly",
-        "label": "fan_off"
+      "text": "kill the fan now",
+      "label": "fan_off"
     },
     {
-        "text": "darken the room please",
-        "label": "lights_off"
+      "text": "kill the fans now",
+      "label": "fan_off"
     },
     {
-        "text": "disable fan now",
-        "label": "fan_off"
+      "text": "power on light please",
+      "label": "lights_on"
     },
     {
-        "text": "switch off the fan quickly",
-        "label": "fan_off"
+      "text": "power on lights please",
+      "label": "lights_on"
     },
     {
-        "text": "turn on the lights",
-        "label": "lights_on"
+      "text": "turn on light please",
+      "label": "lights_on"
     },
     {
-        "text": "lights off now quickly",
-        "label": "lights_off"
+      "text": "turn on lights please",
+      "label": "lights_on"
     },
     {
-        "text": "fan on please now",
-        "label": "fan_on"
+      "text": "switch on light please",
+      "label": "lights_on"
     },
     {
-        "text": "lights on please now",
-        "label": "lights_on"
+      "text": "switch on lights please",
+      "label": "lights_on"
     },
     {
-        "text": "kill the lights",
-        "label": "lights_off"
+      "text": "enable light please",
+      "label": "lights_on"
     },
     {
-        "text": "activate the fan now",
-        "label": "fan_on"
+      "text": "enable lights please",
+      "label": "lights_on"
     },
     {
-        "text": "fan off now",
-        "label": "fan_off"
+      "text": "activate light please",
+      "label": "lights_on"
     },
     {
-        "text": "disable lights now",
-        "label": "lights_off"
+      "text": "activate lights please",
+      "label": "lights_on"
     },
     {
-        "text": "darken the room quickly",
-        "label": "lights_off"
+      "text": "make light shine",
+      "label": "lights_on"
     },
     {
-        "text": "activate the lights",
-        "label": "lights_on"
+      "text": "make lights shine",
+      "label": "lights_on"
     },
     {
-        "text": "start the fan now",
-        "label": "fan_on"
+      "text": "illuminate the room",
+      "label": "lights_on"
     },
+    
     {
-        "text": "power on fan",
-        "label": "fan_on"
+      "text": "illuminate the lights",
+      "label": "lights_on"
     },
     {
-        "text": "power off lights now",
-        "label": "lights_off"
+      "text": "light should be on",
+      "label": "lights_on"
     },
     {
-        "text": "darken the room please",
-        "label": "lights_off"
+      "text": "lights should be on",
+      "label": "lights_on"
     },
     {
-        "text": "power on fan",
-        "label": "fan_on"
+      "text": "turn on the light quickly",
+      "label": "lights_on"
     },
     {
-        "text": "fan should be on now",
-        "label": "fan_on"
+      "text": "turn on the lights quickly",
+      "label": "lights_on"
     },
     {
-        "text": "kill the fan",
-        "label": "fan_off"
+      "text": "switch the light on please",
+      "label": "lights_on"
     },
     {
-        "text": "power on fan quickly",
-        "label": "fan_on"
+      "text": "switch the lights on please",
+      "label": "lights_on"
     },
     {
-        "text": "kill the fan please",
-        "label": "fan_off"
+      "text": "turn on the light now",
+      "label": "lights_on"
     },
     {
-        "text": "kill the lights quickly",
-        "label": "lights_off"
+      "text": "turn on the lights now",
+      "label": "lights_on"
     },
     {
-        "text": "lights on please quickly",
-        "label": "lights_on"
+      "text": "light on please",
+      "label": "lights_on"
     },
     {
-        "text": "turn off the fan quickly",
-        "label": "fan_off"
+      "text": "lights on please",
+      "label": "lights_on"
     },
     {
-        "text": "power on lights please",
-        "label": "lights_on"
+      "text": "start the light please",
+      "label": "lights_on"
     },
     {
-        "text": "turn off the lights now",
-        "label": "lights_off"
+      "text": "start the lights please",
+      "label": "lights_on"
     },
     {
-        "text": "fan off now now",
-        "label": "fan_off"
+      "text": "get the light running please",
+      "label": "lights_on"
     },
     {
-        "text": "make the lights shine",
-        "label": "lights_on"
+      "text": "get the lights running please",
+      "label": "lights_on"
     },
     {
-        "text": "lights should be on",
-        "label": "lights_on"
+      "text": "light on now",
+      "label": "lights_on"
     },
     {
-        "text": "get the fan running",
-        "label": "fan_on"
+      "text": "lights on now",
+      "label": "lights_on"
     },
     {
-        "text": "fan off now",
-        "label": "fan_off"
+      "text": "turn on the light now quickly",
+      "label": "lights_on"
     },
     {
-        "text": "switch off the fan please",
-        "label": "fan_off"
+      "text": "turn on the lights now quickly",
+      "label": "lights_on"
     },
     {
-        "text": "fan on please now",
-        "label": "fan_on"
+      "text": "switch the light on quickly",
+      "label": "lights_on"
     },
     {
-        "text": "lights off now now",
-        "label": "lights_off"
+      "text": "switch the lights on quickly",
+      "label": "lights_on"
     },
     {
-        "text": "activate the lights please",
-        "label": "lights_on"
+      "text": "power off light please",
+      "label": "lights_off"
     },
     {
-        "text": "fan on please",
-        "label": "fan_on"
+      "text": "power off lights please",
+      "label": "lights_off"
     },
     {
-        "text": "turn off the fan",
-        "label": "fan_off"
+      "text": "turn off light please",
+      "label": "lights_off"
     },
     {
-        "text": "darken the room",
-        "label": "lights_off"
+      "text": "turn off lights please",
+      "label": "lights_off"
     },
     {
-        "text": "lights on please",
-        "label": "lights_on"
+      "text": "switch off light please",
+      "label": "lights_off"
     },
     {
-        "text": "darken the room",
-        "label": "lights_off"
+      "text": "switch off lights please",
+      "label": "lights_off"
     },
     {
-        "text": "turn on the lights quickly",
-        "label": "lights_on"
+      "text": "stop light please",
+      "label": "lights_off"
     },
     {
-        "text": "power off fan please",
-        "label": "fan_off"
+      "text": "stop lights please",
+      "label": "lights_off"
     },
     {
-        "text": "spin up the fan please",
-        "label": "fan_on"
+      "text": "disable light please",
+      "label": "lights_off"
     },
     {
-        "text": "disable fan quickly",
-        "label": "fan_off"
+      "text": "disable lights please",
+      "label": "lights_off"
     },
     {
-        "text": "power on fan please",
-        "label": "fan_on"
+      "text": "deactivate light please",
+      "label": "lights_off"
     },
     {
-        "text": "turn off the lights please",
-        "label": "lights_off"
+      "text": "deactivate lights please",
+      "label": "lights_off"
     },
     {
-        "text": "activate the fan now",
-        "label": "fan_on"
+      "text": "shut down light please",
+      "label": "lights_off"
     },
     {
-        "text": "turn off the lights",
-        "label": "lights_off"
+      "text": "shut down lights please",
+      "label": "lights_off"
     },
     {
-        "text": "switch off the fan now",
-        "label": "fan_off"
+      "text": "kill light please",
+      "label": "lights_off"
     },
     {
-        "text": "illuminate the room now",
-        "label": "lights_on"
+      "text": "kill lights please",
+      "label": "lights_off"
     },
     {
-        "text": "activate the lights quickly",
-        "label": "lights_on"
+      "text": "light should be off",
+      "label": "lights_off"
     },
     {
-        "text": "put the lights on",
-        "label": "lights_on"
+      "text": "lights should be off",
+      "label": "lights_off"
     },
     {
-        "text": "lights on please now",
-        "label": "lights_on"
+      "text": "turn off the light now",
+      "label": "lights_off"
     },
     {
-        "text": "power off lights please",
-        "label": "lights_off"
+      "text": "turn off the lights now",
+      "label": "lights_off"
     },
     {
-        "text": "start the fan please",
-        "label": "fan_on"
+      "text": "shut down light now",
+      "label": "lights_off"
     },
     {
-        "text": "power off lights quickly",
-        "label": "lights_off"
+      "text": "shut down lights now",
+      "label": "lights_off"
     },
     {
-        "text": "disable lights please",
-        "label": "lights_off"
+      "text": "disable light now",
+      "label": "lights_off"
     },
     {
-        "text": "illuminate the room",
-        "label": "lights_on"
+      "text": "disable lights now",
+      "label": "lights_off"
     },
     {
-        "text": "kill the lights",
-        "label": "lights_off"
+      "text": "deactivate light now",
+      "label": "lights_off"
     },
     {
-        "text": "shut off the lights please",
-        "label": "lights_off"
+      "text": "deactivate lights now",
+      "label": "lights_off"
     },
     {
-        "text": "stop the fan quickly",
-        "label": "fan_off"
+      "text": "kill the light please",
+      "label": "lights_off"
     },
     {
-        "text": "switch off the lights now",
-        "label": "lights_off"
+      "text": "kill the lights please",
+      "label": "lights_off"
     }
-]
+    ,
+    {
+      "text": "stop the light please",
+      "label": "lights_off"
+    },
+    {
+      "text": "stop the lights please",
+      "label": "lights_off"
+    },
+    {
+      "text": "light off now",
+      "label": "lights_off"
+    },
+    {
+      "text": "lights off now",
+      "label": "lights_off"
+    },
+    {
+      "text": "turn off the light quickly",
+      "label": "lights_off"
+    },
+    {
+      "text": "turn off the lights quickly",
+      "label": "lights_off"
+    },
+    {
+      "text": "stop the light now",
+      "label": "lights_off"
+    },
+    {
+      "text": "stop the lights now",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "kill the light now",
+      "label": "lights_off"
+    },
+    {
+      "text": "kill the lights now",
+      "label": "lights_off"
+    },
+    {
+      "text": "switch off the light now",
+      "label": "lights_off"
+    },
+    {
+      "text": "switch off the lights now",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "switch off the light quickly",
+      "label": "lights_off"
+    },
+    {
+      "text": "switch off the lights quickly",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "turn off the light now quickly",
+      "label": "lights_off"
+    },
+    {
+      "text": "turn off the lights now quickly",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "power off the light now",
+      "label": "lights_off"
+    },
+    {
+      "text": "power off the lights now",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "power off the light quickly",
+      "label": "lights_off"
+    },
+    {
+      "text": "power off the lights quickly",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "power off the light",
+      "label": "lights_off"
+    },
+    {
+      "text": "power off the lights",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "turn off the light",
+      "label": "lights_off"
+    },
+    {
+      "text": "turn off the lights",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "stop the light",
+      "label": "lights_off"
+    },
+    {
+      "text": "stop the lights",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "switch off the light",
+      "label": "lights_off"
+    },
+    {
+      "text": "switch off the lights",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "disable the light",
+      "label": "lights_off"
+    },
+    {
+      "text": "disable the lights",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "deactivate the light",
+      "label": "lights_off"
+    },
+    {
+      "text": "deactivate the lights",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "shut down the light",
+      "label": "lights_off"
+    },
+    {
+      "text": "shut down the lights",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "kill the light",
+      "label": "lights_off"
+    },
+    {
+      "text": "kill the lights",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "light off please",
+      "label": "lights_off"
+    },
+    {
+      "text": "lights off please",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "light off now quickly",
+      "label": "lights_off"
+    },
+    {
+      "text": "lights off now quickly",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "light off now",
+      "label": "lights_off"
+    },
+    {
+      "text": "lights off now",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "light off now now",
+      "label": "lights_off"
+    },
+    {
+      "text": "lights off now now",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "light off now please",
+      "label": "lights_off"
+    },
+    {
+      "text": "lights off now please",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "light off now now quickly",
+      "label": "lights_off"
+    },
+    {
+      "text": "lights off now now quickly",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "light off now now please",
+      "label": "lights_off"
+    },
+    {
+      "text": "lights off now now please",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "light off now quickly please",
+      "label": "lights_off"
+    },
+    {
+      "text": "lights off now quickly please",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "light off now quickly now",
+      "label": "lights_off"
+    },
+    {
+      "text": "lights off now quickly now",
+      "label": "lights_off"
+    }
+    ,
+    {
+      "text": "light off now quickly now please",
+      "label": "lights_off"
+    },
+    {
+      "text": "lights off now quickly now please",
+      "label": "lights_off"
+    },
+        {
+          "text": "power on the fan",
+          "label": "fan_on"
+        },
+        {
+          "text": "power on the fans",
+          "label": "fan_on"
+        },
+        {
+          "text": "turn the fan on",
+          "label": "fan_on"
+        },
+        {
+          "text": "turn the fans on",
+          "label": "fan_on"
+        },
+        {
+          "text": "switch the fan on",
+          "label": "fan_on"
+        },
+        {
+          "text": "switch the fans on",
+          "label": "fan_on"
+        },
+        {
+          "text": "start the fan",
+          "label": "fan_on"
+        },
+        {
+          "text": "start the fans",
+          "label": "fan_on"
+        },
+        {
+          "text": "enable the fan",
+          "label": "fan_on"
+        },
+        {
+          "text": "enable the fans",
+          "label": "fan_on"
+        },
+        {
+          "text": "activate the fan",
+          "label": "fan_on"
+        },
+        {
+          "text": "activate the fans",
+          "label": "fan_on"
+        },
+        {
+          "text": "get the fan running",
+          "label": "fan_on"
+        },
+        {
+          "text": "get the fans running",
+          "label": "fan_on"
+        },
+        {
+          "text": "spin up the fan",
+          "label": "fan_on"
+        },
+        {
+          "text": "spin up the fans",
+          "label": "fan_on"
+        },
+        {
+          "text": "the fan should be on",
+          "label": "fan_on"
+        },
+        {
+          "text": "the fans should be on",
+          "label": "fan_on"
+        },
+        {
+          "text": "fan on right now",
+          "label": "fan_on"
+        },
+        {
+          "text": "fans on right now",
+          "label": "fan_on"
+        },
+        {
+          "text": "turn on fan now please",
+          "label": "fan_on"
+        },
+        {
+          "text": "turn on fans now please",
+          "label": "fan_on"
+        },
+        {
+          "text": "make the fan spin",
+          "label": "fan_on"
+        },
+        {
+          "text": "make the fans spin",
+          "label": "fan_on"
+        },
+        {
+          "text": "power off the fan",
+          "label": "fan_off"
+        },
+        {
+          "text": "power off the fans",
+          "label": "fan_off"
+        },
+        {
+          "text": "turn the fan off",
+          "label": "fan_off"
+        },
+        {
+          "text": "turn the fans off",
+          "label": "fan_off"
+        },
+        {
+          "text": "switch the fan off",
+          "label": "fan_off"
+        },
+        {
+          "text": "switch the fans off",
+          "label": "fan_off"
+        },
+        {
+          "text": "stop the fan",
+          "label": "fan_off"
+        },
+        {
+          "text": "stop the fans",
+          "label": "fan_off"
+        },
+        {
+          "text": "disable the fan",
+          "label": "fan_off"
+        },
+        {
+          "text": "disable the fans",
+          "label": "fan_off"
+        },
+        {
+          "text": "deactivate the fan",
+          "label": "fan_off"
+        },
+        {
+          "text": "deactivate the fans",
+          "label": "fan_off"
+        },
+        {
+          "text": "shut down the fan",
+          "label": "fan_off"
+        },
+        {
+          "text": "shut down the fans",
+          "label": "fan_off"
+        },
+        {
+          "text": "kill the fan",
+          "label": "fan_off"
+        },
+        {
+          "text": "kill the fans",
+          "label": "fan_off"
+        },
+        {
+          "text": "the fan should be off",
+          "label": "fan_off"
+        },
+        {
+          "text": "the fans should be off",
+          "label": "fan_off"
+        },
+        {
+          "text": "fan off right now",
+          "label": "fan_off"
+        },
+        {
+          "text": "fans off right now",
+          "label": "fan_off"
+        },
+        {
+          "text": "turn off fan now please",
+          "label": "fan_off"
+        },
+        {
+          "text": "turn off fans now please",
+          "label": "fan_off"
+        },
+        {
+          "text": "make the fan stop",
+          "label": "fan_off"
+        },
+        {
+          "text": "make the fans stop",
+          "label": "fan_off"
+        },
+        {
+          "text": "power on the light",
+          "label": "lights_on"
+        },
+        {
+          "text": "power on the lights",
+          "label": "lights_on"
+        },
+        {
+          "text": "turn the light on",
+          "label": "lights_on"
+        },
+        {
+          "text": "turn the lights on",
+          "label": "lights_on"
+        },
+        {
+          "text": "switch the light on",
+          "label": "lights_on"
+        },
+        {
+          "text": "switch the lights on",
+          "label": "lights_on"
+        },
+        {
+          "text": "enable the light",
+          "label": "lights_on"
+        },
+        {
+          "text": "enable the lights",
+          "label": "lights_on"
+        },
+        {
+          "text": "activate the light",
+          "label": "lights_on"
+        },
+        {
+          "text": "activate the lights",
+          "label": "lights_on"
+        },
+        {
+          "text": "make the light shine",
+          "label": "lights_on"
+        },
+        {
+          "text": "make the lights shine",
+          "label": "lights_on"
+        },
+        {
+          "text": "illuminate the light",
+          "label": "lights_on"
+        },
+        {
+          "text": "illuminate the lights",
+          "label": "lights_on"
+        },
+        {
+          "text": "the light should be on",
+          "label": "lights_on"
+        },
+        {
+          "text": "the lights should be on",
+          "label": "lights_on"
+        },
+        {
+          "text": "light on right now",
+          "label": "lights_on"
+        },
+        {
+          "text": "lights on right now",
+          "label": "lights_on"
+        },
+        {
+          "text": "turn on light now please",
+          "label": "lights_on"
+        },
+        {
+          "text": "turn on lights now please",
+          "label": "lights_on"
+        },
+        {
+          "text": "make light bright",
+          "label": "lights_on"
+        },
+        {
+          "text": "make lights bright",
+          "label": "lights_on"
+        },
+        {
+          "text": "power off the light",
+          "label": "lights_off"
+        },
+        {
+          "text": "power off the lights",
+          "label": "lights_off"
+        },
+        {
+          "text": "turn the light off",
+          "label": "lights_off"
+        },
+        {
+          "text": "turn the lights off",
+          "label": "lights_off"
+        },
+        {
+          "text": "switch the light off",
+          "label": "lights_off"
+        },
+        {
+          "text": "switch the lights off",
+          "label": "lights_off"
+        },
+        {
+          "text": "stop the light",
+          "label": "lights_off"
+        },
+        {
+          "text": "stop the lights",
+          "label": "lights_off"
+        },
+        {
+          "text": "disable the light",
+          "label": "lights_off"
+        },
+        {
+          "text": "disable the lights",
+          "label": "lights_off"
+        },
+        {
+          "text": "deactivate the light",
+          "label": "lights_off"
+        },
+        {
+          "text": "deactivate the lights",
+          "label": "lights_off"
+        },
+        {
+          "text": "shut down the light",
+          "label": "lights_off"
+        },
+        {
+          "text": "shut down the lights",
+          "label": "lights_off"
+        },
+        {
+          "text": "kill the light",
+          "label": "lights_off"
+        },
+        {
+          "text": "kill the lights",
+          "label": "lights_off"
+        },
+        {
+          "text": "the light should be off",
+          "label": "lights_off"
+        },
+        {
+          "text": "the lights should be off",
+          "label": "lights_off"
+        },
+        {
+          "text": "light off right now",
+          "label": "lights_off"
+        },
+        {
+          "text": "lights off right now",
+          "label": "lights_off"
+        },
+        {
+          "text": "turn off light now please",
+          "label": "lights_off"
+        },
+        {
+          "text": "turn off lights now please",
+          "label": "lights_off"
+        },
+        {
+          "text": "make the light dark",
+          "label": "lights_off"
+        },
+        {
+          "text": "make the lights dark",
+          "label": "lights_off"
+        },
+        {
+          "text": "dim the light",
+          "label": "lights_off"
+        },
+        {
+          "text": "dim the lights",
+          "label": "lights_off"
+        },
+        {
+            "text": "turn the fan on now",
+            "label": "fan_on"
+          },
+          {
+            "text": "make the fan start",
+            "label": "fan_on"
+          },
+          {
+            "text": "please activate the fan",
+            "label": "fan_on"
+          },
+          {
+            "text": "power up the fan now",
+            "label": "fan_on"
+          },
+          {
+            "text": "please turn on the fan now",
+            "label": "fan_on"
+          },
+          {
+            "text": "fan needs to be on now",
+            "label": "fan_on"
+          },
+          {
+            "text": "activate the light now",
+            "label": "lights_on"
+          },
+          {
+            "text": "make the lights work",
+            "label": "lights_on"
+          },
+          {
+            "text": "please switch on the lights",
+            "label": "lights_on"
+          },
+          {
+            "text": "turn off the fan now",
+            "label": "fan_off"
+          },
+          {
+            "text": "deactivate the fan",
+            "label": "fan_off"
+          },
+          {
+            "text": "switch off the fan",
+            "label": "fan_off"
+          },
+          {
+            "text": "disable the fan now",
+            "label": "fan_off"
+          },
+          {
+            "text": "stop the fans please",
+            "label": "fan_off"
+          },
+          {
+            "text": "make the lights stop",
+            "label": "lights_off"
+          },
+          {
+            "text": "shut the lights down",
+            "label": "lights_off"
+          },
+          {
+            "text": "turn the lights off now",
+            "label": "lights_off"
+          },
+          {
+            "text": "fan, start now",
+            "label": "fan_on"
+          },
+          {
+            "text": "fan off immediately",
+            "label": "fan_off"
+          },
+          {
+            "text": "lights on quickly",
+            "label": "lights_on"
+          },
+          {
+            "text": "lights off urgently",
+            "label": "lights_off"
+          },
+          {
+            "text": "turn on the fan fast",
+            "label": "fan_on"
+          },
+          {
+            "text": "shut off the lights right now",
+            "label": "lights_off"
+          },
+          {
+            "text": "start spinning the fan",
+            "label": "fan_on"
+          },
+          {
+            "text": "make the lights shine brightly",
+            "label": "lights_on"
+          },
+          {
+            "text": "light up the room",
+            "label": "lights_on"
+          },
+          {
+            "text": "activate all lights",
+            "label": "lights_on"
+          },
+          {
+            "text": "turn the fan to full speed",
+            "label": "fan_on"
+          },
+          {
+            "text": "fan should be running now",
+            "label": "fan_on"
+          },
+          {
+            "text": "make the fan spin",
+            "label": "fan_on"
+          },
+          {
+            "text": "turn on lights quickly",
+            "label": "lights_on"
+          },
+          {
+            "text": "turn off the fan quickly",
+            "label": "fan_off"
+          },
+          {
+            "text": "stop the fan quickly",
+            "label": "fan_off"
+          },
+          {
+            "text": "turn off lights quickly",
+            "label": "lights_off"
+          },
+          {
+            "text": "dim the light",
+            "label": "lights_off"
+          },
+          {
+            "text": "make the lights dark",
+            "label": "lights_off"
+          },
+          {
+            "text": "deactivate the lights now",
+            "label": "lights_off"
+          },
+          {
+            "text": "kill the fan now",
+            "label": "fan_off"
+          },
+          {
+            "text": "kill the fans now",
+            "label": "fan_off"
+          },
+          {
+            "text": "turn the fan on now quickly",
+            "label": "fan_on"
+          },
+          {
+            "text": "turn the fan on immediately",
+            "label": "fan_on"
+          },
+          {
+            "text": "fan, activate right now",
+            "label": "fan_on"
+          },
+          {
+            "text": "turn on the fan urgently",
+            "label": "fan_on"
+          },
+          {
+            "text": "start the fan now quickly",
+            "label": "fan_on"
+          },
+          {
+            "text": "make the fan start immediately",
+            "label": "fan_on"
+          },
+          {
+            "text": "turn on the fans right now",
+            "label": "fan_on"
+          },
+          {
+            "text": "get the fans running right now",
+            "label": "fan_on"
+          },
+          {
+            "text": "activate the fans immediately",
+            "label": "fan_on"
+          },
+          {
+            "text": "switch on the fan instantly",
+            "label": "fan_on"
+          },
+          {
+            "text": "switch the fan on quickly",
+            "label": "fan_on"
+          },
+          {
+            "text": "make the fans run fast",
+            "label": "fan_on"
+          },
+          {
+            "text": "start the fans now quickly",
+            "label": "fan_on"
+          },
+          {
+            "text": "turn the lights on now quickly",
+            "label": "lights_on"
+          },
+          {
+            "text": "illuminate the room right now",
+            "label": "lights_on"
+          },
+          {
+            "text": "turn on all the lights now",
+            "label": "lights_on"
+          },
+          {
+            "text": "turn the lights on immediately",
+            "label": "lights_on"
+          },
+          {
+            "text": "switch on the light now",
+            "label": "lights_on"
+          },
+          {
+            "text": "make the lights bright now",
+            "label": "lights_on"
+          },
+          {
+            "text": "please power on the light",
+            "label": "lights_on"
+          },
+          {
+            "text": "activate the light now",
+            "label": "lights_on"
+          },
+          {
+            "text": "turn on the lights now immediately",
+            "label": "lights_on"
+          },
+          {
+            "text": "make the lights shine right now",
+            "label": "lights_on"
+          },
+          {
+            "text": "lights should be on now",
+            "label": "lights_on"
+          },
+          {
+            "text": "turn off the fan now quickly",
+            "label": "fan_off"
+          },
+          {
+            "text": "deactivate the fan immediately",
+            "label": "fan_off"
+          },
+          {
+            "text": "switch off the fan quickly",
+            "label": "fan_off"
+          },
+          {
+            "text": "make the fan stop now",
+            "label": "fan_off"
+          },
+          {
+            "text": "turn off the fans immediately",
+            "label": "fan_off"
+          },
+          {
+            "text": "shut off the fan",
+            "label": "fan_off"
+          },
+          {
+            "text": "switch off the fans immediately",
+            "label": "fan_off"
+          },
+          {
+            "text": "fan, stop now",
+            "label": "fan_off"
+          },
+          {
+            "text": "stop the fan instantly",
+            "label": "fan_off"
+          },
+          {
+            "text": "power off the fan right now",
+            "label": "fan_off"
+          },
+          {
+            "text": "turn off the light right now",
+            "label": "lights_off"
+          },
+          {
+            "text": "shut down the light now",
+            "label": "lights_off"
+          },
+          {
+            "text": "deactivate the light instantly",
+            "label": "lights_off"
+          },
+          {
+            "text": "lights off right now",
+            "label": "lights_off"
+          },
+          {
+            "text": "turn off all the lights immediately",
+            "label": "lights_off"
+          },
+          {
+            "text": "kill the lights now",
+            "label": "lights_off"
+          },
+          {
+            "text": "stop the lights right now",
+            "label": "lights_off"
+          },
+          {
+            "text": "turn off the lights right away",
+            "label": "lights_off"
+          },
+          {
+            "text": "light should be off now",
+            "label": "lights_off"
+          },
+          {
+            "text": "lights should be turned off immediately",
+            "label": "lights_off"
+          },
+          {
+            "text": "turn off the fan immediately",
+            "label": "fan_off"
+          },
+          {
+            "text": "shut down the fan right now",
+            "label": "fan_off"
+          },
+          {
+            "text": "deactivate the fans now",
+            "label": "fan_off"
+          },
+          {
+            "text": "switch off the fan instantly",
+            "label": "fan_off"
+          },
+          {
+            "text": "kill the fans now",
+            "label": "fan_off"
+          },
+          {
+            "text": "turn off fans now quickly",
+            "label": "fan_off"
+          },
+          {
+            "text": "lights off immediately",
+            "label": "lights_off"
+          },
+          {
+            "text": "turn off the fan now",
+            "label": "fan_off"
+          },
+          {
+            "text": "make the fan stop immediately",
+            "label": "fan_off"
+          },
+          {
+            "text": "please turn off the light now",
+            "label": "lights_off"
+          },
+          {
+            "text": "turn off all lights right now",
+            "label": "lights_off"
+          },
+          {
+            "text": "lights off now immediately",
+            "label": "lights_off"
+          },
+          {
+            "text": "turn the lights off immediately",
+            "label": "lights_off"
+          },
+          {
+            "text": "stop the fan immediately",
+            "label": "fan_off"
+          },
+          {
+            "text": "power off the light quickly",
+            "label": "lights_off"
+          },
+          {
+            "text": "switch off all the lights now",
+            "label": "lights_off"
+          },
+          {
+            "text": "turn off the fan quickly",
+            "label": "fan_off"
+          },
+          {
+            "text": "make the lights dark now",
+            "label": "lights_off"
+          },
+          {
+            "text": "deactivate the lights now immediately",
+            "label": "lights_off"
+          },
+          {
+            "text": "turn the lights off right now",
+            "label": "lights_off"
+          },
+          {
+            "text": "kill the fan immediately",
+            "label": "fan_off"
+          },
+          {
+            "text": "disable the lights right now",
+            "label": "lights_off"
+          },
+          {
+            "text": "stop the lights now",
+            "label": "lights_off"
+          },
+          {
+            "text": "turn off all lights right away",
+            "label": "lights_off"
+          },
+          {
+            "text": "lights off right away",
+            "label": "lights_off"
+          },
+          {
+            "text": "switch off the lights right now",
+            "label": "lights_off"
+          },
+          {
+            "text": "power down the lights immediately",
+            "label": "lights_off"
+          },
+          {
+            "text": "switch off the fan now quickly",
+            "label": "fan_off"
+          },
+          {
+            "text": "make the fan stop quickly",
+            "label": "fan_off"
+          },
+          {
+            "text": "turn off the fan now right now",
+            "label": "fan_off"
+          },
+          {
+            "text": "get the fan running quickly",
+            "label": "fan_on"
+          },
+          {
+            "text": "turn the lights on quickly now",
+            "label": "lights_on"
+          },
+          {
+            "text": "lights on right now",
+            "label": "lights_on"
+          },
+          {
+            "text": "turn off the fan instantly",
+            "label": "fan_off"
+          },
+          {
+            "text": "fan on right now please",
+            "label": "fan_on"
+          },
+          {
+            "text": "lights on quickly please",
+            "label": "lights_on"
+          },
+          {
+            "text": "make the lights shine immediately",
+            "label": "lights_on"
+          },
+          {
+            "text": "please activate the fan now",
+            "label": "fan_on"
+          },
+          {
+            "text": "make the lights shine now",
+            "label": "lights_on"
+          }
+        ]
