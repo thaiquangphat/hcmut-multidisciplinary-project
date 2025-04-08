@@ -56,9 +56,13 @@ def predict_with_loaded_model(text, model, vectorizer):
     return reverse_map[predicted.item()]
 
 if __name__ == "__main__":
+    # Set up device, if GPU out of memory, manually set device='cpu'
+    # device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = 'cpu'
+
     # Get the speech
     audio_file, date_str, duration = audio.record_audio()
-    text = transcribe.transcribe_audio(audio_file)
+    text = transcribe.transcribe_audio(audio_file, device)
 
     print(f'You said: {text}')
 

@@ -3,7 +3,7 @@ import transcribe
 
 def transcript_text():
     audio_file, date_str, duration = audio.record_audio()
-    text = transcribe.transcribe_audio(audio_file)
+    text = transcribe.transcribe_audio(audio_file, device='cpu')
 
     return text
 
