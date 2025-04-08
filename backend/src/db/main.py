@@ -15,9 +15,3 @@ async def init_db():
 
 async def get_db() -> AsyncGenerator:
     yield db
-class MongoDB:
-    def __init__(self):
-        self.client = MongoClient("mongodb://localhost:27017")
-        self.db = self.client["QQ"]
-        self.device_collection = self.db["record_device"]
-        self.user_collection = self.db["user"]

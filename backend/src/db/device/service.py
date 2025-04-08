@@ -1,73 +1,73 @@
-from pymongo import MongoClient
-from bson.objectid import ObjectId
-from datetime import datetime
-import uuid
-from typing import List, Optional, Dict, Any
-import bcrypt
+import requests
+from fastapi import HTTPException, status
+from ...config import Config 
+ADAFRUIT_IO_USERNAME = "Phat_Adafruit"
+ADAFRUIT_IO_KEY = "aio_FpCw83QuD1wktNbwmwyGBBajuNEU" 
 
-from .schemas import DeviceCreate, DeviceUpdate
-class MongoDB:
-    def __init__(self):
-        self.client = MongoClient("mongodb://localhost:27017")
-        self.db = self.client["QQ"]
-        self.device_collection = self.db["record_device"]
-        self.user_collection = self.db["user"]
+class DeviceService:
 
-class DeviceService(MongoDB):
-    async def create_device(self, device: DeviceCreate) -> Dict[str, Any]:
-        # Check if device already exists
-        existing_device = await self.get_device_by_id(device.ID)
-        if existing_device:
-            raise ValueError(f"Device with ID {device.ID} already exists")
-        
-        device_data = device.dict()
-        result = self.device_collection.insert_one(device_data)
-        
-        if not result.acknowledged:
-            raise ValueError("Failed to create device")
-            
-        return device_data
-    
-    async def get_all_devices(self, place_id: Optional[str] = None) -> List[Dict[str, Any]]:
-        filter_query = {}
-        if place_id:
-            filter_query["placeID"] = place_id
-            
-        devices = list(self.device_collection.find(filter_query))
-        # Convert ObjectId to string
-        for device in devices:
-            if "_id" in device:
-                device["_id"] = str(device["_id"])
-        
-        return devices
-    
-    async def get_device_by_id(self, device_id: str) -> Optional[Dict[str, Any]]:
-        device = self.device_collection.find_one({"ID": device_id})
-        if device:
-            # Convert ObjectId to string
-            if "_id" in device:
-                device["_id"] = str(device["_id"])
-        
-        return device
-    
-    async def update_device(self, device_id: str, device_update: DeviceUpdate) -> Optional[Dict[str, Any]]:
-        # Get only non-None fields
-        update_data = {k: v for k, v in device_update.dict().items() if v is not None}
-        
-        if not update_data:
-            # No valid fields to update
-            return await self.get_device_by_id(device_id)
-        
-        result = self.device_collection.update_one(
-            {"ID": device_id},
-            {"$set": update_data}
-        )
-        
-        if result.matched_count == 0:
-            return None
-            
-        return await self.get_device_by_id(device_id)
-    
-    async def delete_device(self, device_id: str) -> bool:
-        result = self.device_collection.delete_one({"ID": device_id})
-        return result.deleted_count > 0
+    def _fetch_feed_data(self, feed_key: str):
+        """
+        Returns the entire list of data records for a given Adafruit IO feed.
+        Typically the newest record is index 0.
+        """
+        url = f"https://io.adafruit.com/api/v2/{ADAFRUIT_IO_USERNAME}/feeds/{feed_key}/data"
+        headers = {
+            "X-AIO-Key": ADAFRUIT_IO_KEY,
+            "Content-Type": "application/json"
+        }
+        resp = requests.get(url, headers=headers)
+        if resp.status_code != 200:
+            raise HTTPException(
+                status_code=resp.status_code,
+                detail=f"Error fetching feed '{feed_key}': {resp.text}"
+            )
+        return resp.json()
+
+    async def get_single_feed(self, feed_key: str, db):
+        """
+        Fetch data from one feed, record the newest data in 'record_device' collection, 
+        and return the full feed data.
+        """
+        feed_data = self._fetch_feed_data(feed_key)
+        if not feed_data:
+            raise HTTPException(
+                status_code=404,
+                detail=f"No data returned for feed '{feed_key}'."
+            )
+
+        newest_entry = feed_data[0]
+        await db["record_device"].insert_one({
+            "feed_name": feed_key,
+            "value": newest_entry.get("value"),
+            "created_at": newest_entry.get("created_at")
+        })
+
+        return {f"{feed_key}_data": feed_data}
+
+    async def get_all_feeds(self, db):
+        """
+        Fetch info on ALL Adafruit IO feeds, store the 'last_value' for each feed in 'record_device', 
+        and return the feed list.
+        """
+        url = f"https://io.adafruit.com/api/v2/{ADAFRUIT_IO_USERNAME}/feeds"
+        headers = {
+            "X-AIO-Key": ADAFRUIT_IO_KEY,
+            "Content-Type": "application/json"
+        }
+        resp = requests.get(url, headers=headers)
+        if resp.status_code != 200:
+            raise HTTPException(
+                status_code=resp.status_code,
+                detail=f"Error fetching all feeds: {resp.text}"
+            )
+        feeds_list = resp.json()
+
+        for feed in feeds_list:
+            await db["record_device"].insert_one({
+                "feed_name": feed.get("key"),
+                "value": feed.get("last_value"),
+                "created_at": feed.get("last_value_at")
+            })
+
+        return {"all_feeds": feeds_list}

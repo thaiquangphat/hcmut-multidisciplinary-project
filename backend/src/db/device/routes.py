@@ -1,64 +1,78 @@
-from fastapi import APIRouter, Depends, HTTPException, status
-from typing import List, Optional
-from bson.objectid import ObjectId
-from datetime import datetime
-
-from .schemas import (
-    DeviceCreate, DeviceResponse, DeviceUpdate, 
-)
+from fastapi import APIRouter, Depends, status, HTTPException
+from sqlmodel.ext.asyncio.session import AsyncSession
+from src.db.main import get_db as get_session
+from src.db.auth.dependencies import AccessTokenBearer
 from .service import DeviceService
-
-router = APIRouter()
+ 
+device_router = APIRouter()
+access_token_bearer = AccessTokenBearer()
 device_service = DeviceService()
 
-@router.post("/devices/", response_model=DeviceResponse, status_code=status.HTTP_201_CREATED)
-async def create_device(device: DeviceCreate):
+
+@device_router.get("/feeds/temperature")
+async def get_temperature_feed(
+    session: AsyncSession = Depends(get_session),
+    user_details=Depends(access_token_bearer)
+):
+
     try:
-        result = await device_service.create_device(device)
-        return result
+        return await device_service.get_single_feed("temperature", session)
+    except HTTPException as e:
+        raise e
     except Exception as e:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail=str(e)
-        )
+        raise HTTPException(status_code=500, detail=str(e))
 
-@router.get("/devices/", response_model=List[DeviceResponse])
-async def get_all_devices(place_id: Optional[str] = None):
+
+@device_router.get("/feeds/humidity")
+async def get_humidity_feed(
+    session: AsyncSession = Depends(get_session),
+    user_details=Depends(access_token_bearer)
+):
     try:
-        devices = await device_service.get_all_devices(place_id)
-        return devices
+        return await device_service.get_single_feed("humidity", session)
+    except HTTPException as e:
+        raise e
     except Exception as e:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail=str(e)
-        )
+        raise HTTPException(status_code=500, detail=str(e))
 
-@router.get("/devices/{device_id}", response_model=DeviceResponse)
-async def get_device(device_id: str):
-    device = await device_service.get_device_by_id(device_id)
-    if not device:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Device with ID {device_id} not found"
-        )
-    return device
 
-@router.put("/devices/{device_id}", response_model=DeviceResponse)
-async def update_device(device_id: str, device_update: DeviceUpdate):
-    updated_device = await device_service.update_device(device_id, device_update)
-    if not updated_device:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Device with ID {device_id} not found"
-        )
-    return updated_device
+@device_router.get("/feeds/light")
+async def get_light_feed(
+    session: AsyncSession = Depends(get_session),
+    user_details=Depends(access_token_bearer)
+):
+    try:
+        return await device_service.get_single_feed("light", session)
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
-@router.delete("/devices/{device_id}", status_code=status.HTTP_204_NO_CONTENT)
-async def delete_device(device_id: str):
-    deleted = await device_service.delete_device(device_id)
-    if not deleted:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Device with ID {device_id} not found"
-        )
-    return None
+
+@device_router.get("/feeds/motion")
+async def get_motion_feed(
+    session: AsyncSession = Depends(get_session),
+    user_details=Depends(access_token_bearer)
+):
+    try:
+        return await device_service.get_single_feed("motion", session)
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@device_router.get("/feeds/all")
+async def get_all_feeds(
+    session: AsyncSession = Depends(get_session),
+    user_details=Depends(access_token_bearer)
+):
+    """
+    Fetch metadata for ALL feeds, record the last_value for each in Mongo, and return them all.
+    """
+    try:
+        return await device_service.get_all_feeds(session)
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
