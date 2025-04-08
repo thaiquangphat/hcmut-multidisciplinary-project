@@ -22,7 +22,7 @@ class TextClassifier(nn.Module):
 # Function to load model
 def load_model(model_class, model_path="model/text_classifier_model.pth", vectorizer_path="model/text_classifier_model_vectorizer.pkl"):
     # Load the saved dictionary
-    saved_data = torch.load(model_path)
+    saved_data = torch.load(model_path, weights_only=True)
     
     # Extract architecture parameters
     input_size = saved_data['input_size']
@@ -65,8 +65,8 @@ if __name__ == "__main__":
     # Load the model
     model, vectorizer = load_model(
         TextClassifier,
-        'text/model/text_classifier_model.pth',
-        'text/model/text_classifier_model_vectorizer.pkl'
+        'text/model/TextClassifier.pth',
+        'text/model/TextClassifier_vectorizer.pkl'
     )
     
     prediction = predict_with_loaded_model(text, model, vectorizer)

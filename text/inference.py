@@ -14,23 +14,23 @@ class TextClassifier(nn.Module):
         x = self.layer2(x)
         return x
 
-def load_model(model_class, model_path="model/text_classifier_model.pth", vectorizer_path="model/text_classifier_model_vectorizer.pkl"):
+def load_model(model_class, model_path="model/TextClassifier.pth", vectorizer_path="model/TextClassifier_vectorizer.pkl"):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    
-    saved_data = torch.load(model_path, map_location=device)
-    
+
+    saved_data = torch.load(model_path, map_location=device, weights_only=True)
+
     input_size = saved_data['input_size']
     hidden_size = saved_data['hidden_size']
     num_classes = saved_data['num_classes']
-    
+
     loaded_model = model_class(input_size, hidden_size, num_classes).to(device)
-    
     loaded_model.load_state_dict(saved_data['state_dict'])
-    loaded_model.eval()  # Set to evaluation mode
-    
+    loaded_model.eval()
+
     with open(vectorizer_path, 'rb') as f:
         loaded_vectorizer = pickle.load(f)
-    
+
+    # print("✅ Model and vectorizer loaded successfully.")
     return loaded_model, loaded_vectorizer, device
 
 def predict_with_loaded_model(text, model, vectorizer, device):
