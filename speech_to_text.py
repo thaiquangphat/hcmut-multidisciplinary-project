@@ -47,13 +47,13 @@ if __name__ == "__main__":
     log_audio.log_command(text, prediction, audio_file, date_str, duration)
 
     # Pushing to adafruit
-    adadevice = 'new_light'
+    adadevice = 'fan'
     value     = ''
 
-    if adadevice == 'new_light':
+    if adadevice == 'fan':
         dct = {
-            'lights_on': 'ON',
-            'lights_off': 'OFF'
+            'fan_on': 'ON',
+            'fan_off': 'OFF'
         }
         value = dct[prediction] if prediction in dct.keys() else ''
     
