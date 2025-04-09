@@ -1,6 +1,7 @@
 import torch
 import pickle
 import torch.nn as nn
+
 class TextClassifier(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
         super(TextClassifier, self).__init__()
@@ -14,8 +15,9 @@ class TextClassifier(nn.Module):
         x = self.layer2(x)
         return x
 
-def load_model(model_class, model_path="model/TextClassifier.pth", vectorizer_path="model/TextClassifier_vectorizer.pkl"):
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+def load_model(model_class, model_path="text/model/TextClassifier.pth", vectorizer_path="text/model/TextClassifier_vectorizer.pkl", run_device='cpu'):
+    # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda" if run_device=='cuda' and torch.cuda.is_available() else "cpu")
 
     saved_data = torch.load(model_path, map_location=device, weights_only=True)
 
@@ -31,7 +33,7 @@ def load_model(model_class, model_path="model/TextClassifier.pth", vectorizer_pa
         loaded_vectorizer = pickle.load(f)
 
     # print("✅ Model and vectorizer loaded successfully.")
-    return loaded_model, loaded_vectorizer, device
+    return loaded_model, loaded_vectorizer
 
 def predict_with_loaded_model(text, model, vectorizer, device):
     model.eval()
@@ -44,20 +46,4 @@ def predict_with_loaded_model(text, model, vectorizer, device):
     
     reverse_map = {0: "lights_on", 1: "lights_off", 2: "fan_on", 3: "fan_off"}
     return reverse_map[predicted.item()]
-
-loaded_model, loaded_vectorizer, device = load_model(TextClassifier)
-
-mode = input("Enter mode once or real-time (o/r): ").strip().lower()
-if mode == 'o':
-    text = input("Enter the text to classify: ")
-    prediction = predict_with_loaded_model(text, loaded_model, loaded_vectorizer, device)
-    print(f'Prediction for \"{text}\": {prediction}')
-elif mode == 'r':
-    print("Real-time mode is not implemented in this script.")
-    while True:
-        text = input("Enter the text to classify (or 'exit' to quit): ")
-        if text.lower() == 'exit':
-            break
-        prediction = predict_with_loaded_model(text, loaded_model, loaded_vectorizer, device)
-        print(f'Prediction for \"{text}\": {prediction}')
 
