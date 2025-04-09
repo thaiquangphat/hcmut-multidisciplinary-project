@@ -1,0 +1,5002 @@
+[
+  {
+    "text": "ok hey assistant, brighten the room right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, power up the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, yo, blackout the room",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo book a cab",
+    "label": "none"
+  },
+  {
+    "text": "hey, i need more visibility right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok read my notifications now",
+    "label": "none"
+  },
+  {
+    "text": "yo stop the air circulation asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo the fan is too loud, shut it off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo, blackout the room",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, i’m freezing, stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "please cut the illumination thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo tell me a joke right away",
+    "label": "none"
+  },
+  {
+    "text": "yo let there be light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok light up the room now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok let's get some breeze going if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo, light it up thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok it's bedtime, lights off now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok bring some light in here now",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, i need more visibility thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "make the fan spin",
+    "label": "fan_on"
+  },
+  {
+    "text": "please get those lights going asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please disable the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo what's the time now? right away",
+    "label": "none"
+  },
+  {
+    "text": "let there be light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok it's too dark, get the lights on",
+    "label": "lights_on"
+  },
+  {
+    "text": "please set a timer for 10 minutes now",
+    "label": "none"
+  },
+  {
+    "text": "ok halt the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo set a reminder for 5pm right away",
+    "label": "none"
+  },
+  {
+    "text": "assistant, read my notifications",
+    "label": "none"
+  },
+  {
+    "text": "yo activate lighting system if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, can we have the fan on? thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "i could use some wind asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo lights off please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, power up the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok switch the fan to on mode right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "tell me a joke",
+    "label": "none"
+  },
+  {
+    "text": "ok activate cooling with the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo turn off that thing spinning right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo cooling is not needed anymore asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "set a timer for 10 minutes asap",
+    "label": "none"
+  },
+  {
+    "text": "please navigate to the nearest gas station if you can",
+    "label": "none"
+  },
+  {
+    "text": "hey, why is the fan off? turn it on now",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo it's bedtime, lights off thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo can we go dark in here? asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "this room is stuffy, start the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, it’s dim here asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, tell me a joke asap",
+    "label": "none"
+  },
+  {
+    "text": "yo i want some quiet, stop the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i want some quiet, stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "please tell me a joke right away",
+    "label": "none"
+  },
+  {
+    "text": "yo the lights are hurting my eyes thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok schedule a meeting thanks",
+    "label": "none"
+  },
+  {
+    "text": "hey, tell me a joke asap",
+    "label": "none"
+  },
+  {
+    "text": "assistant, can we stop the fan?",
+    "label": "fan_off"
+  },
+  {
+    "text": "please navigate to the nearest gas station now",
+    "label": "none"
+  },
+  {
+    "text": "please yo, blackout the room now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo we don’t need the fan anymore if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo fan needs to be running if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, bring some light in here if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok play the next song thanks",
+    "label": "none"
+  },
+  {
+    "text": "assistant, it's too bright, can you dim it down? asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo the fan is too loud, shut it off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please cut the airflow",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo how many steps did i walk today?",
+    "label": "none"
+  },
+  {
+    "text": "hey, activate cooling with the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, the room is too bright right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, activate cooling with the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please shut the lights please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "can you make the fan work? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, tell me a joke right away",
+    "label": "none"
+  },
+  {
+    "text": "this room is stuffy, start the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "we need illumination thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "i need the fan to start up asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, i want some quiet, stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo kill the fan power asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please set a reminder for 5pm thanks",
+    "label": "none"
+  },
+  {
+    "text": "hey, turn the lights off, i'm heading to bed now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn off the overhead lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "the lights are hurting my eyes asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "please the lights are hurting my eyes now",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, make the fan spin if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok the fan should stop now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, it’s cold, turn off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok read my notifications now",
+    "label": "none"
+  },
+  {
+    "text": "hey, lights off please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, this room is stuffy, start the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok stop the air circulation asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo what’s the weather tomorrow? asap",
+    "label": "none"
+  },
+  {
+    "text": "yo please deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "can we stop the fan? asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "i want some quiet, stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please what's the time now? thanks",
+    "label": "none"
+  },
+  {
+    "text": "assistant, no more breeze, turn it off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, shut the lights please",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, can you help cool the room? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "please it’s cold, turn off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo i want some quiet, stop the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo shut the lights please",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok text my friend thanks",
+    "label": "none"
+  },
+  {
+    "text": "assistant, disable the fan now if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "can we have the fan on? right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok power up the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "set the fan to run now right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, yo, light it up asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, it's too bright, can you dim it down?",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, power on the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "it’s dim here asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, it’s cold, turn off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok we need some airflow in here if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo give me some light now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, we need illumination right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please what’s the weather tomorrow?",
+    "label": "none"
+  },
+  {
+    "text": "we need illumination thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, switch the fan to on mode",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok open youtube if you can",
+    "label": "none"
+  },
+  {
+    "text": "ok power on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok the fan is too loud, shut it off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok make the fan spin thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "tell me a joke asap",
+    "label": "none"
+  },
+  {
+    "text": "yo turn that ceiling fan on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, tell me a joke if you can",
+    "label": "none"
+  },
+  {
+    "text": "please i need the fan to start up if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, kill the fan power asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo can we brighten this place? right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please can we brighten this place?",
+    "label": "lights_on"
+  },
+  {
+    "text": "please can we go dark in here? now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok book a cab now",
+    "label": "none"
+  },
+  {
+    "text": "ok order me a pizza if you can",
+    "label": "none"
+  },
+  {
+    "text": "please tell me a joke thanks",
+    "label": "none"
+  },
+  {
+    "text": "hey, the lights are hurting my eyes thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn that ceiling fan on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "it’s cold, turn off the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please i could use some wind now",
+    "label": "fan_on"
+  },
+  {
+    "text": "disable the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "please kill the light system",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok play the next song",
+    "label": "none"
+  },
+  {
+    "text": "help me cool down, run the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, turn off the overhead lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, turn on the lights for me thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, what’s the weather tomorrow?",
+    "label": "none"
+  },
+  {
+    "text": "assistant, fan is making noise, shut it down asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please bring some light in here",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, kill the brightness right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo turn off the overhead lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, cooling is not needed anymore",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, start the fan, it’s too warm now",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, make it less gloomy, turn on lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo put out the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo order me a pizza if you can",
+    "label": "none"
+  },
+  {
+    "text": "please fan needs to be running",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, hey assistant, brighten the room asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, brighten the room now",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, cut the illumination asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo why is the fan off? turn it on if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, it's too bright, can you dim it down? now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo text my friend",
+    "label": "none"
+  },
+  {
+    "text": "ok show me the news if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, get the fan going please asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, cut the airflow",
+    "label": "fan_off"
+  },
+  {
+    "text": "cooling is not needed anymore thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please power up the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i need the fan to start up right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please let there be light if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo kill the brightness thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok order me a pizza if you can",
+    "label": "none"
+  },
+  {
+    "text": "ok order me a pizza now",
+    "label": "none"
+  },
+  {
+    "text": "assistant, cut the airflow now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please switch the fan to on mode if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, turn on the lights for me right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, we need illumination right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok enable room lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo i could use some wind",
+    "label": "fan_on"
+  },
+  {
+    "text": "please the room is too bright",
+    "label": "lights_off"
+  },
+  {
+    "text": "please yo, light it up",
+    "label": "lights_on"
+  },
+  {
+    "text": "the fan should stop now thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "it’s cold, turn off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, put out the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo it's too dark, get the lights on asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo cut the airflow asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "disable the fan now asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo help me cool down, run the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok i need the fan to start up thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok enough light already right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo the fan has been on too long right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok tell me a joke asap",
+    "label": "none"
+  },
+  {
+    "text": "can you help cool the room?",
+    "label": "fan_on"
+  },
+  {
+    "text": "navigate to the nearest gas station thanks",
+    "label": "none"
+  },
+  {
+    "text": "power up the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo enable room lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, we don’t need the fan anymore right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "please what's on my calendar today? asap",
+    "label": "none"
+  },
+  {
+    "text": "yo, fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok fan needs to be running asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "please set the fan to run now right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, yo, blackout the room right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok lights off please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "it's too bright, can you dim it down? if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, i could use some wind right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok turn the lights off, i'm heading to bed if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please light up the room thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok i need the fan to start up thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please it’s cold, turn off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, turn off the overhead lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please power on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo please deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, i’m hungry",
+    "label": "none"
+  },
+  {
+    "text": "assistant, it’s cold, turn off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok yo, blackout the room now",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, lights off please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok turn on the lights for me if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok the fan’s still on?",
+    "label": "fan_off"
+  },
+  {
+    "text": "turn off the overhead lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok turn off the overhead lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, yo, blackout the room if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "this room is stuffy, start the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "i need more visibility asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please it’s dim here",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo, blackout the room right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "what's the time now? right away",
+    "label": "none"
+  },
+  {
+    "text": "yo i could use some wind thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i need light to work now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok can we brighten this place? right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, play the next song if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, i can't see, lights please right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok what's the time now?",
+    "label": "none"
+  },
+  {
+    "text": "please disable the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, i need light to work asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, turn that ceiling fan on if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "please enable room lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, kill the light system if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "no more breeze, turn it off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "help me cool down, run the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok enable room lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "make the fan spin asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "please the room is too bright right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, enough light already if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please yo, blackout the room right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, play the next song",
+    "label": "none"
+  },
+  {
+    "text": "assistant, we don’t need the fan anymore",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo, blackout the room now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn off that thing spinning if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, shut the lights please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok stop the air circulation",
+    "label": "fan_off"
+  },
+  {
+    "text": "how’s the stock market? if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo it’s cold, turn off the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please let's get some breeze going now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok i need light to work thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, what's on my calendar today? asap",
+    "label": "none"
+  },
+  {
+    "text": "ok disable the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo yo, blackout the room asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, can we have the fan on? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, kill the light system right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "we don’t need the fan anymore now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please can you make the fan work? right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please the room is too bright now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok schedule a meeting if you can",
+    "label": "none"
+  },
+  {
+    "text": "ok hey assistant, brighten the room thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "let there be light thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, lights off please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok book a cab right away",
+    "label": "none"
+  },
+  {
+    "text": "yo put out the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please cooling is not needed anymore now",
+    "label": "fan_off"
+  },
+  {
+    "text": "turn that ceiling fan on thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, call mom right away",
+    "label": "none"
+  },
+  {
+    "text": "please play the next song now",
+    "label": "none"
+  },
+  {
+    "text": "yo start the fan, it’s too warm asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo can we go dark in here?",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo light up the room",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok i want some quiet, stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok the fan is too loud, shut it off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, what's the time now? if you can",
+    "label": "none"
+  },
+  {
+    "text": "hey, what's the time now?",
+    "label": "none"
+  },
+  {
+    "text": "hey, i need light to work now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please turn that ceiling fan on right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, yo, fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo it’s cold, turn off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok get the fan going please if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "it’s dim here right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please activate cooling with the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "switch the fan to on mode if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok make the fan spin",
+    "label": "fan_on"
+  },
+  {
+    "text": "please book a cab asap",
+    "label": "none"
+  },
+  {
+    "text": "hey, can we have the fan on? if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo book a cab if you can",
+    "label": "none"
+  },
+  {
+    "text": "hey, make the fan spin right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo yo, fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "please no more breeze, turn it off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, turn on the lights for me asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "bring some light in here",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, give me some light",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok i need light to work thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please book a cab if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo book a cab right away",
+    "label": "none"
+  },
+  {
+    "text": "can you help cool the room? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "read my notifications right away",
+    "label": "none"
+  },
+  {
+    "text": "hey, we don’t need the fan anymore if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "order me a pizza right away",
+    "label": "none"
+  },
+  {
+    "text": "call mom right away",
+    "label": "none"
+  },
+  {
+    "text": "make the fan spin if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok play the next song now",
+    "label": "none"
+  },
+  {
+    "text": "yo reduce the light to zero asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo activate lighting system right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please kill the fan power right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "please make it less gloomy, turn on lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, turn off the overhead lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, we need illumination if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please kill the brightness thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo how’s the stock market?",
+    "label": "none"
+  },
+  {
+    "text": "ok activate cooling with the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, power up the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok the fan should stop now if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please switch on the overhead lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, order me a pizza",
+    "label": "none"
+  },
+  {
+    "text": "call mom if you can",
+    "label": "none"
+  },
+  {
+    "text": "hey, book a cab now",
+    "label": "none"
+  },
+  {
+    "text": "yo hey assistant, brighten the room",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo enough light already if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo, light it up right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, kill the light system",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo what's the time now? asap",
+    "label": "none"
+  },
+  {
+    "text": "i don’t need the lights now if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo how’s the stock market? if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo the fan’s still on? asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "kill the fan power if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please can we brighten this place? thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, shut the lights please thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please book a cab thanks",
+    "label": "none"
+  },
+  {
+    "text": "assistant, can you help cool the room? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok it’s dim here thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo light up the room right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok lights off please now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please i need light to work right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, activate lighting system right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "it's too bright, can you dim it down? now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo text my friend",
+    "label": "none"
+  },
+  {
+    "text": "ok kill the light system now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, kill the light system asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "please i don’t need the lights now if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, i need it darker in here right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, text my friend now",
+    "label": "none"
+  },
+  {
+    "text": "yo turn that ceiling fan on now",
+    "label": "fan_on"
+  },
+  {
+    "text": "call mom if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, i want darkness now asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo can you make the fan work? right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, the room is too bright",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, yo, light it up thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, navigate to the nearest gas station right away",
+    "label": "none"
+  },
+  {
+    "text": "hey, it’s dim here now",
+    "label": "lights_on"
+  },
+  {
+    "text": "disable the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok disable the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, make it less gloomy, turn on lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, the fan is too loud, shut it off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok switch on the overhead lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok who's at the door? thanks",
+    "label": "none"
+  },
+  {
+    "text": "hey, can we stop the fan?",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i’m freezing, stop the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, activate lighting system now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, help me cool down, run the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, read my notifications thanks",
+    "label": "none"
+  },
+  {
+    "text": "please tell me a joke if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo please deactivate the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, start the fan, it’s too warm if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo show me the news",
+    "label": "none"
+  },
+  {
+    "text": "please play the next song thanks",
+    "label": "none"
+  },
+  {
+    "text": "please turn on the lights for me",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo halt the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo, light it up if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, bring some light in here asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo set a reminder for 5pm asap",
+    "label": "none"
+  },
+  {
+    "text": "no more breeze, turn it off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "reduce the light to zero asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "the fan’s still on? thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "get those lights going asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i need more visibility right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, text my friend right away",
+    "label": "none"
+  },
+  {
+    "text": "assistant, i want darkness now asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "it’s dim here now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok turn off that thing spinning thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok can we go dark in here? now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, hey assistant, brighten the room asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "what's the time now? asap",
+    "label": "none"
+  },
+  {
+    "text": "yo set the fan to run now now",
+    "label": "fan_on"
+  },
+  {
+    "text": "please we don’t need the fan anymore right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, turn off that thing spinning",
+    "label": "fan_off"
+  },
+  {
+    "text": "power up the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, book a cab right away",
+    "label": "none"
+  },
+  {
+    "text": "yo the fan’s still on? now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo, blackout the room",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, enough light already right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "i need the fan to start up thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, can you help cool the room? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok can we go dark in here? thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo it's too dark, get the lights on thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo switch on the overhead lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, kill the brightness right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "light up the room now",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, let's get some breeze going now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, turn off that thing spinning right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "kill the brightness if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "read my notifications thanks",
+    "label": "none"
+  },
+  {
+    "text": "how’s the stock market? if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo cut the illumination now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please give me some light",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, i could use some wind if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "please what’s the weather tomorrow? thanks",
+    "label": "none"
+  },
+  {
+    "text": "yo why is the fan off? turn it on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo navigate to the nearest gas station right away",
+    "label": "none"
+  },
+  {
+    "text": "how’s the stock market? asap",
+    "label": "none"
+  },
+  {
+    "text": "hey, fan is making noise, shut it down",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok what's on my calendar today? now",
+    "label": "none"
+  },
+  {
+    "text": "get the fan going please thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok cooling is not needed anymore thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo stop the air circulation now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please how’s the stock market? asap",
+    "label": "none"
+  },
+  {
+    "text": "assistant, bring some light in here if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "text my friend thanks",
+    "label": "none"
+  },
+  {
+    "text": "how many steps did i walk today? thanks",
+    "label": "none"
+  },
+  {
+    "text": "switch the fan to on mode",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, it’s cold, turn off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please show me the news now",
+    "label": "none"
+  },
+  {
+    "text": "yo can you help cool the room? right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, the fan is too loud, shut it off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, fan needs to be running thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo the room is too bright right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok the fan is too loud, shut it off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo turn the lights off, i'm heading to bed if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, turn off that thing spinning",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo turn off the overhead lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "lights off please",
+    "label": "lights_off"
+  },
+  {
+    "text": "cut the illumination now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo kill the brightness thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok i need it darker in here now",
+    "label": "lights_off"
+  },
+  {
+    "text": "start the fan, it’s too warm right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok can we have the fan on? right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, the fan’s still on? right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo we need illumination now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok light up the room right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "it's getting hot, turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo kill the fan power right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "i’m hungry",
+    "label": "none"
+  },
+  {
+    "text": "yo light up the room thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please lights off please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo it's getting hot, turn on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "make the fan spin if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "enable room lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, text my friend",
+    "label": "none"
+  },
+  {
+    "text": "ok we need some airflow in here asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "reduce the light to zero asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "please cut the illumination asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok tell me a joke now",
+    "label": "none"
+  },
+  {
+    "text": "ok please deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please make the fan spin right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok kill the light system now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok disable the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok order me a pizza right away",
+    "label": "none"
+  },
+  {
+    "text": "please deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please the fan is too loud, shut it off",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok show me the news if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, enable room lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo, fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo disable the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok turn off that thing spinning now",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, fan is making noise, shut it down right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, set the fan to run now right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, the fan has been on too long if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i’m freezing, stop the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok put out the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "please i need the fan to start up if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, play the next song if you can",
+    "label": "none"
+  },
+  {
+    "text": "ok read my notifications",
+    "label": "none"
+  },
+  {
+    "text": "hey, book a cab asap",
+    "label": "none"
+  },
+  {
+    "text": "yo the fan should stop now now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please i need it darker in here now",
+    "label": "lights_off"
+  },
+  {
+    "text": "activate cooling with the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, call mom right away",
+    "label": "none"
+  },
+  {
+    "text": "ok i want darkness now asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, shut the lights please now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please read my notifications now",
+    "label": "none"
+  },
+  {
+    "text": "please i want some quiet, stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "how’s the stock market? thanks",
+    "label": "none"
+  },
+  {
+    "text": "assistant, let's get some breeze going thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "turn the lights off, i'm heading to bed thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo power up the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "activate lighting system if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, navigate to the nearest gas station asap",
+    "label": "none"
+  },
+  {
+    "text": "yo lights off please",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo i need the fan to start up thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, fan needs to be running right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, the fan has been on too long now",
+    "label": "fan_off"
+  },
+  {
+    "text": "order me a pizza now",
+    "label": "none"
+  },
+  {
+    "text": "ok let there be light if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, navigate to the nearest gas station if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, can we go dark in here? now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok activate cooling with the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, set the fan to run now now",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo can we stop the fan? right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "it's bedtime, lights off asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo the fan is too loud, shut it off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "i can't see, lights please thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "help me cool down, run the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "please set a reminder for 5pm",
+    "label": "none"
+  },
+  {
+    "text": "please shut the lights please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "can we stop the fan? if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok put out the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, open youtube right away",
+    "label": "none"
+  },
+  {
+    "text": "ok why is the fan off? turn it on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, kill the brightness right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please can you make the fan work? now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok i’m freezing, stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please we need illumination if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, activate lighting system thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "play the next song now",
+    "label": "none"
+  },
+  {
+    "text": "ok can we go dark in here? if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok text my friend right away",
+    "label": "none"
+  },
+  {
+    "text": "ok disable the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok text my friend now",
+    "label": "none"
+  },
+  {
+    "text": "please the fan is too loud, shut it off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok we need illumination now",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo i need light to work right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "the fan’s still on?",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, how many steps did i walk today?",
+    "label": "none"
+  },
+  {
+    "text": "yo the room is too bright if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please we need illumination",
+    "label": "lights_on"
+  },
+  {
+    "text": "please make the fan spin thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo activate cooling with the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, it’s dim here right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, yo, light it up thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok can you help cool the room? thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, enable room lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "what’s the weather tomorrow? if you can",
+    "label": "none"
+  },
+  {
+    "text": "hey, we need some airflow in here right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo please deactivate the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, turn off the overhead lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok yo, blackout the room thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, it’s dim here",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, it's too dark, get the lights on",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, fan needs to be running right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok text my friend right away",
+    "label": "none"
+  },
+  {
+    "text": "can we stop the fan?",
+    "label": "fan_off"
+  },
+  {
+    "text": "please shut the lights please now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, light up the room asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "it’s dim here asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want some quiet, stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, let there be light",
+    "label": "lights_on"
+  },
+  {
+    "text": "activate lighting system now",
+    "label": "lights_on"
+  },
+  {
+    "text": "can you help cool the room? if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, i don’t need the lights now right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, halt the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, stop the air circulation thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok kill the brightness thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok i don’t need the lights now right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please can we brighten this place? right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "cooling is not needed anymore thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo turn off that thing spinning thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo please deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "get the fan going please if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, can we stop the fan? now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, activate cooling with the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo the fan is too loud, shut it off",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, text my friend right away",
+    "label": "none"
+  },
+  {
+    "text": "yo it's getting hot, turn on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "bring some light in here if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "can we brighten this place?",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, open youtube if you can",
+    "label": "none"
+  },
+  {
+    "text": "please show me the news asap",
+    "label": "none"
+  },
+  {
+    "text": "ok make it less gloomy, turn on lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok it's bedtime, lights off",
+    "label": "lights_off"
+  },
+  {
+    "text": "i need the fan to start up thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, put out the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo make it less gloomy, turn on lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, call mom now",
+    "label": "none"
+  },
+  {
+    "text": "assistant, what’s the weather tomorrow? now",
+    "label": "none"
+  },
+  {
+    "text": "assistant, activate cooling with the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please cooling is not needed anymore thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo lights off please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, it’s dim here now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please can you make the fan work?",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok no more breeze, turn it off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, shut the lights please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, start the fan, it’s too warm",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo make it less gloomy, turn on lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo stop the air circulation thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, turn off the overhead lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok no more breeze, turn it off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, hey assistant, brighten the room",
+    "label": "lights_on"
+  },
+  {
+    "text": "please the fan has been on too long now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok activate lighting system thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, the lights are hurting my eyes if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok disable the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "please make the fan spin thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo let there be light thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, make it less gloomy, turn on lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo read my notifications if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo make the fan spin if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "show me the news if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo what's the time now? thanks",
+    "label": "none"
+  },
+  {
+    "text": "yo fan is making noise, shut it down now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, i need the fan to start up thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok lights off please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, cooling is not needed anymore if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please it's too bright, can you dim it down?",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, the fan’s still on? now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo let there be light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, the fan’s still on? asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "it's getting hot, turn on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo the lights are hurting my eyes right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo activate cooling with the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, start the fan, it’s too warm right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, power up the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "cut the airflow",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, i could use some wind if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "set a timer for 10 minutes thanks",
+    "label": "none"
+  },
+  {
+    "text": "please the lights are hurting my eyes asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "cooling is not needed anymore now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo switch on the overhead lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo show me the news if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo power up the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "it's getting hot, turn on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok shut the lights please thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please lights off please now",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, can you help cool the room? right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "i need light to work now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok i want some quiet, stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "it's too dark, get the lights on thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "it’s cold, turn off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok can we have the fan on? right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, i’m freezing, stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok can we stop the fan? now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, the lights are hurting my eyes now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo enable room lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "lights off please now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo i need light to work asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i need it darker in here",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, get those lights going now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok power on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo power on the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok i want some quiet, stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please set a reminder for 5pm asap",
+    "label": "none"
+  },
+  {
+    "text": "hey, the fan is too loud, shut it off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo can we stop the fan? now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok what’s the weather tomorrow? right away",
+    "label": "none"
+  },
+  {
+    "text": "assistant, set a timer for 10 minutes right away",
+    "label": "none"
+  },
+  {
+    "text": "yo play the next song if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo let's get some breeze going if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, bring some light in here right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "what's on my calendar today? if you can",
+    "label": "none"
+  },
+  {
+    "text": "help me cool down, run the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok set a reminder for 5pm thanks",
+    "label": "none"
+  },
+  {
+    "text": "assistant, i want some quiet, stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo get those lights going if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want some quiet, stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, i’m hungry thanks",
+    "label": "none"
+  },
+  {
+    "text": "i need more visibility now",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, get those lights going right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, text my friend asap",
+    "label": "none"
+  },
+  {
+    "text": "disable the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "i want some quiet, stop the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, what's on my calendar today?",
+    "label": "none"
+  },
+  {
+    "text": "ok hey assistant, brighten the room if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, lights off please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo text my friend",
+    "label": "none"
+  },
+  {
+    "text": "please let's get some breeze going",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok yo, fan off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, this room is stuffy, start the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "how’s the stock market? asap",
+    "label": "none"
+  },
+  {
+    "text": "make it less gloomy, turn on lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, it's too bright, can you dim it down? thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "it's bedtime, lights off",
+    "label": "lights_off"
+  },
+  {
+    "text": "please yo, blackout the room if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo kill the light system",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo can you make the fan work? now",
+    "label": "fan_on"
+  },
+  {
+    "text": "stop the air circulation if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, the fan is too loud, shut it off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, why is the fan off? turn it on if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i want some quiet, stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, can you help cool the room? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok the fan’s still on? asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "we need illumination right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please yo, light it up asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please navigate to the nearest gas station now",
+    "label": "none"
+  },
+  {
+    "text": "hey, schedule a meeting asap",
+    "label": "none"
+  },
+  {
+    "text": "please i could use some wind thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo shut the lights please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo this room is stuffy, start the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, fan is making noise, shut it down now",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, it's too bright, can you dim it down? right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, how many steps did i walk today? thanks",
+    "label": "none"
+  },
+  {
+    "text": "yo can you help cool the room? right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "the room is too bright",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo what's on my calendar today? now",
+    "label": "none"
+  },
+  {
+    "text": "hey, enable room lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, i need the fan to start up thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok set a reminder for 5pm now",
+    "label": "none"
+  },
+  {
+    "text": "hey, fan needs to be running right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, power on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "can we go dark in here?",
+    "label": "lights_off"
+  },
+  {
+    "text": "please fan is making noise, shut it down thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo cut the illumination right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "it's too dark, get the lights on if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo i need more visibility right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please no more breeze, turn it off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, give me some light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo cut the illumination if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, enough light already",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, power up the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok let there be light",
+    "label": "lights_on"
+  },
+  {
+    "text": "power on the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo it's too dark, get the lights on right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok can we have the fan on? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo it's bedtime, lights off now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn off the overhead lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, can we go dark in here? now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo can we brighten this place? if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo set a timer for 10 minutes asap",
+    "label": "none"
+  },
+  {
+    "text": "enable room lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "call mom",
+    "label": "none"
+  },
+  {
+    "text": "assistant, bring some light in here asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo it's too bright, can you dim it down? asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo can we have the fan on?",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, it's too dark, get the lights on thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please shut the lights please now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please set a reminder for 5pm asap",
+    "label": "none"
+  },
+  {
+    "text": "yo can we have the fan on? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo reduce the light to zero right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, i don’t need the lights now right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo i want some quiet, stop the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "text my friend if you can",
+    "label": "none"
+  },
+  {
+    "text": "hey, shut the lights please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "set a timer for 10 minutes asap",
+    "label": "none"
+  },
+  {
+    "text": "hey, halt the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please set the fan to run now right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please what's the time now? now",
+    "label": "none"
+  },
+  {
+    "text": "yo play the next song asap",
+    "label": "none"
+  },
+  {
+    "text": "yo the fan should stop now thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "we need some airflow in here right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "turn off the overhead lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, activate cooling with the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "this room is stuffy, start the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please disable the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "it's bedtime, lights off",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, help me cool down, run the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, set a timer for 10 minutes if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, i could use some wind right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, stop the air circulation if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please show me the news right away",
+    "label": "none"
+  },
+  {
+    "text": "it's bedtime, lights off right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "can we stop the fan? if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please i’m freezing, stop the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, who's at the door? thanks",
+    "label": "none"
+  },
+  {
+    "text": "activate lighting system right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, yo, blackout the room if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok open youtube now",
+    "label": "none"
+  },
+  {
+    "text": "how’s the stock market? if you can",
+    "label": "none"
+  },
+  {
+    "text": "hey, please deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please can we have the fan on?",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, it's getting hot, turn on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok light up the room",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo no more breeze, turn it off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok schedule a meeting now",
+    "label": "none"
+  },
+  {
+    "text": "please get those lights going if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please turn off that thing spinning",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, this room is stuffy, start the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok why is the fan off? turn it on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "please i could use some wind thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, what’s the weather tomorrow? asap",
+    "label": "none"
+  },
+  {
+    "text": "hey, i need the fan to start up now",
+    "label": "fan_on"
+  },
+  {
+    "text": "please can we stop the fan? asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, order me a pizza asap",
+    "label": "none"
+  },
+  {
+    "text": "yo bring some light in here if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please it's too dark, get the lights on now",
+    "label": "lights_on"
+  },
+  {
+    "text": "start the fan, it’s too warm",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo can we go dark in here? if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo yo, light it up if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "schedule a meeting thanks",
+    "label": "none"
+  },
+  {
+    "text": "please set the fan to run now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok read my notifications if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, it's too bright, can you dim it down? thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, disable the fan now now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, we don’t need the fan anymore now",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, reduce the light to zero if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok navigate to the nearest gas station now",
+    "label": "none"
+  },
+  {
+    "text": "yo, fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo fan needs to be running if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "i’m freezing, stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok fan is making noise, shut it down",
+    "label": "fan_off"
+  },
+  {
+    "text": "please i’m freezing, stop the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i need more visibility asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "we need some airflow in here",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, i need the fan to start up now",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, bring some light in here thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, it's getting hot, turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "set the fan to run now right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "get the fan going please thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please set a reminder for 5pm thanks",
+    "label": "none"
+  },
+  {
+    "text": "assistant, turn off the overhead lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please i don’t need the lights now if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, the fan should stop now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo it's too dark, get the lights on asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok show me the news thanks",
+    "label": "none"
+  },
+  {
+    "text": "navigate to the nearest gas station right away",
+    "label": "none"
+  },
+  {
+    "text": "assistant, it's too dark, get the lights on if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok activate cooling with the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, call mom thanks",
+    "label": "none"
+  },
+  {
+    "text": "yo turn off that thing spinning now",
+    "label": "fan_off"
+  },
+  {
+    "text": "call mom now",
+    "label": "none"
+  },
+  {
+    "text": "assistant, it’s dim here if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, set a timer for 10 minutes if you can",
+    "label": "none"
+  },
+  {
+    "text": "ok enable room lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo i want some quiet, stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i’m freezing, stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, what's the time now? right away",
+    "label": "none"
+  },
+  {
+    "text": "yo no more breeze, turn it off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "reduce the light to zero",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, halt the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "please set a reminder for 5pm",
+    "label": "none"
+  },
+  {
+    "text": "please what's the time now?",
+    "label": "none"
+  },
+  {
+    "text": "please activate lighting system thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "what's the time now? now",
+    "label": "none"
+  },
+  {
+    "text": "i need it darker in here thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, fan is making noise, shut it down right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok set a reminder for 5pm right away",
+    "label": "none"
+  },
+  {
+    "text": "please open youtube if you can",
+    "label": "none"
+  },
+  {
+    "text": "hey, the fan’s still on?",
+    "label": "fan_off"
+  },
+  {
+    "text": "how’s the stock market?",
+    "label": "none"
+  },
+  {
+    "text": "please yo, blackout the room thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok order me a pizza",
+    "label": "none"
+  },
+  {
+    "text": "yo help me cool down, run the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, turn that ceiling fan on",
+    "label": "fan_on"
+  },
+  {
+    "text": "please how many steps did i walk today? now",
+    "label": "none"
+  },
+  {
+    "text": "it’s dim here",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo it's getting hot, turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "it's too bright, can you dim it down? right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, stop the air circulation now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please kill the light system thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok open youtube if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, disable the fan now now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok cooling is not needed anymore asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "i need light to work right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, i need it darker in here right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo turn on the lights for me right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo set a timer for 10 minutes",
+    "label": "none"
+  },
+  {
+    "text": "please how’s the stock market? now",
+    "label": "none"
+  },
+  {
+    "text": "please who's at the door? if you can",
+    "label": "none"
+  },
+  {
+    "text": "ok the fan’s still on? thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please give me some light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please power on the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "text my friend if you can",
+    "label": "none"
+  },
+  {
+    "text": "disable the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo it’s cold, turn off the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please put out the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, shut the lights please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "please i need light to work asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo we need some airflow in here if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok can we brighten this place? asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, shut the lights please now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please play the next song thanks",
+    "label": "none"
+  },
+  {
+    "text": "yo turn off that thing spinning now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo put out the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, read my notifications if you can",
+    "label": "none"
+  },
+  {
+    "text": "ok the lights are hurting my eyes right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, switch on the overhead lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, how many steps did i walk today? if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo i need light to work",
+    "label": "lights_on"
+  },
+  {
+    "text": "please light up the room thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok yo, blackout the room if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please get those lights going asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i need more visibility",
+    "label": "lights_on"
+  },
+  {
+    "text": "please get the fan going please thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "enable room lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please kill the light system thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "i can't see, lights please right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, kill the fan power if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "i’m hungry asap",
+    "label": "none"
+  },
+  {
+    "text": "kill the fan power thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok kill the light system now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please what's on my calendar today? if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo the fan has been on too long",
+    "label": "fan_off"
+  },
+  {
+    "text": "please the lights are hurting my eyes",
+    "label": "lights_off"
+  },
+  {
+    "text": "please enough light already right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "i need more visibility right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please please deactivate the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok make the fan spin asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok set the fan to run now",
+    "label": "fan_on"
+  },
+  {
+    "text": "please get the fan going please right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, it’s dim here now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, activate lighting system asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok open youtube asap",
+    "label": "none"
+  },
+  {
+    "text": "ok the fan is too loud, shut it off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok bring some light in here right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "why is the fan off? turn it on",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, power on the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok yo, blackout the room now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, we need illumination now",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, shut the lights please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok can you make the fan work? thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok let's get some breeze going now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok can we brighten this place? right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, yo, light it up now",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, it's getting hot, turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo turn that ceiling fan on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok this room is stuffy, start the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "set the fan to run now right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo power on the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want darkness now now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please the fan’s still on?",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo enough light already thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please halt the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "please activate cooling with the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok i’m hungry asap",
+    "label": "none"
+  },
+  {
+    "text": "ok this room is stuffy, start the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo it's too bright, can you dim it down? asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok we don’t need the fan anymore if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok disable the fan now now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo set the fan to run now",
+    "label": "fan_on"
+  },
+  {
+    "text": "turn that ceiling fan on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "halt the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo it's getting hot, turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, the fan should stop now right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "please order me a pizza right away",
+    "label": "none"
+  },
+  {
+    "text": "ok give me some light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, the fan has been on too long if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, bring some light in here now",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, the fan’s still on? now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo i need it darker in here now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, call mom asap",
+    "label": "none"
+  },
+  {
+    "text": "ok open youtube if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, it's bedtime, lights off",
+    "label": "lights_off"
+  },
+  {
+    "text": "order me a pizza",
+    "label": "none"
+  },
+  {
+    "text": "cut the illumination now",
+    "label": "lights_off"
+  },
+  {
+    "text": "power on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i’m hungry if you can",
+    "label": "none"
+  },
+  {
+    "text": "switch on the overhead lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, kill the brightness asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, the fan has been on too long right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i want darkness now thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, the fan should stop now right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, it's getting hot, turn on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "please order me a pizza now",
+    "label": "none"
+  },
+  {
+    "text": "hey, yo, light it up now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok hey assistant, brighten the room if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok set a reminder for 5pm if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, set the fan to run now if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, i need more visibility now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please get the fan going please asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, activate lighting system right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok it’s cold, turn off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo yo, blackout the room now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, fan needs to be running",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok light up the room if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please kill the brightness",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo, light it up now",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, give me some light thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please turn that ceiling fan on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo it's getting hot, turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "please the lights are hurting my eyes asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "how’s the stock market? thanks",
+    "label": "none"
+  },
+  {
+    "text": "ok the fan’s still on? right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, set a reminder for 5pm if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, it’s cold, turn off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo turn that ceiling fan on thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok cooling is not needed anymore if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, fan needs to be running now",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, disable the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo kill the fan power thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok turn the lights off, i'm heading to bed now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, set the fan to run now asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo disable the fan now if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo can we go dark in here? thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please no more breeze, turn it off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo tell me a joke asap",
+    "label": "none"
+  },
+  {
+    "text": "assistant, enough light already thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please how’s the stock market? now",
+    "label": "none"
+  },
+  {
+    "text": "assistant, halt the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "please yo, fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok navigate to the nearest gas station asap",
+    "label": "none"
+  },
+  {
+    "text": "please yo, blackout the room if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "shut the lights please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok activate cooling with the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "please what’s the weather tomorrow?",
+    "label": "none"
+  },
+  {
+    "text": "assistant, hey assistant, brighten the room now",
+    "label": "lights_on"
+  },
+  {
+    "text": "can we have the fan on? if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "cut the illumination if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok how’s the stock market? right away",
+    "label": "none"
+  },
+  {
+    "text": "hey, the fan should stop now now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please play the next song now",
+    "label": "none"
+  },
+  {
+    "text": "assistant, reduce the light to zero now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok let there be light",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo the fan is too loud, shut it off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo who's at the door? right away",
+    "label": "none"
+  },
+  {
+    "text": "assistant, lights off please",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, disable the fan now asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok the fan’s still on? asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok the fan is too loud, shut it off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo i need light to work",
+    "label": "lights_on"
+  },
+  {
+    "text": "disable the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "play the next song now",
+    "label": "none"
+  },
+  {
+    "text": "hey, switch the fan to on mode if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok i’m freezing, stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "please hey assistant, brighten the room",
+    "label": "lights_on"
+  },
+  {
+    "text": "please call mom if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo the lights are hurting my eyes now",
+    "label": "lights_off"
+  },
+  {
+    "text": "start the fan, it’s too warm asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo no more breeze, turn it off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, activate lighting system now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok it's too bright, can you dim it down? if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, i need light to work right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, please deactivate the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, switch the fan to on mode now",
+    "label": "fan_on"
+  },
+  {
+    "text": "please power up the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, turn that ceiling fan on thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok bring some light in here if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok i want some quiet, stop the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please call mom if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo cut the illumination",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, turn that ceiling fan on",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, lights off please",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn off that thing spinning thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo it's too bright, can you dim it down? now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please the fan should stop now now",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, i want darkness now",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, get the fan going please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, put out the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please set a timer for 10 minutes thanks",
+    "label": "none"
+  },
+  {
+    "text": "yo make it less gloomy, turn on lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "it's getting hot, turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, who's at the door?",
+    "label": "none"
+  },
+  {
+    "text": "assistant, turn off that thing spinning thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please stop the air circulation if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, what's the time now? right away",
+    "label": "none"
+  },
+  {
+    "text": "assistant, let's get some breeze going right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, tell me a joke now",
+    "label": "none"
+  },
+  {
+    "text": "power on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "it's too bright, can you dim it down? if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo make the fan spin thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "turn that ceiling fan on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok make it less gloomy, turn on lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok yo, fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo yo, fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "turn off that thing spinning asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "switch the fan to on mode right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please help me cool down, run the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, how’s the stock market? if you can",
+    "label": "none"
+  },
+  {
+    "text": "ok activate cooling with the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, turn the lights off, i'm heading to bed if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo hey assistant, brighten the room now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, help me cool down, run the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, activate lighting system asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, i want darkness now thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "bring some light in here asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, make it less gloomy, turn on lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "please can we brighten this place? thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo we need illumination asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo i need the fan to start up if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, can we have the fan on? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "please enable room lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "power on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, what’s the weather tomorrow?",
+    "label": "none"
+  },
+  {
+    "text": "assistant, fan is making noise, shut it down asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please please deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, reduce the light to zero now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, i’m hungry asap",
+    "label": "none"
+  },
+  {
+    "text": "please can we go dark in here?",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, book a cab asap",
+    "label": "none"
+  },
+  {
+    "text": "hey, i need more visibility right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, what's on my calendar today?",
+    "label": "none"
+  },
+  {
+    "text": "hey, we need illumination if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo power on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, power up the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, navigate to the nearest gas station asap",
+    "label": "none"
+  },
+  {
+    "text": "schedule a meeting right away",
+    "label": "none"
+  },
+  {
+    "text": "assistant, cut the illumination right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok make it less gloomy, turn on lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, how many steps did i walk today?",
+    "label": "none"
+  },
+  {
+    "text": "hey, give me some light if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok turn off that thing spinning asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please can you make the fan work? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok i need it darker in here asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, halt the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo yo, fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, cooling is not needed anymore now",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, cut the illumination if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "we need some airflow in here asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i want darkness now if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "this room is stuffy, start the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "enable room lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, can you help cool the room? now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, yo, light it up asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "disable the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "i can't see, lights please thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "turn on the lights for me now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please disable the fan now now",
+    "label": "fan_off"
+  },
+  {
+    "text": "who's at the door? thanks",
+    "label": "none"
+  },
+  {
+    "text": "hey, kill the brightness right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo i could use some wind thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please play the next song right away",
+    "label": "none"
+  },
+  {
+    "text": "assistant, let there be light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok let there be light if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, the fan has been on too long asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok get those lights going",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, yo, fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, start the fan, it’s too warm now",
+    "label": "fan_on"
+  },
+  {
+    "text": "please i need more visibility asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, light up the room",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok disable the fan now thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please no more breeze, turn it off",
+    "label": "fan_off"
+  },
+  {
+    "text": "why is the fan off? turn it on",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, order me a pizza now",
+    "label": "none"
+  },
+  {
+    "text": "hey, the fan is too loud, shut it off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo power on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "can we have the fan on? thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, i’m hungry",
+    "label": "none"
+  },
+  {
+    "text": "yo yo, fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please switch the fan to on mode if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, schedule a meeting thanks",
+    "label": "none"
+  },
+  {
+    "text": "please i need the fan to start up now",
+    "label": "fan_on"
+  },
+  {
+    "text": "get the fan going please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "disable the fan now asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "assistant, switch on the overhead lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, kill the fan power asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok stop the air circulation thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "tell me a joke asap",
+    "label": "none"
+  },
+  {
+    "text": "assistant, can we stop the fan? right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "how many steps did i walk today? if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, enough light already if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please turn the lights off, i'm heading to bed if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo how many steps did i walk today? right away",
+    "label": "none"
+  },
+  {
+    "text": "hey, open youtube thanks",
+    "label": "none"
+  },
+  {
+    "text": "get the fan going please asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "turn that ceiling fan on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok can we stop the fan? right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "open youtube now",
+    "label": "none"
+  },
+  {
+    "text": "please put out the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, stop the air circulation if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please cut the airflow right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "can you make the fan work? now",
+    "label": "fan_on"
+  },
+  {
+    "text": "fan is making noise, shut it down",
+    "label": "fan_off"
+  },
+  {
+    "text": "enough light already right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "set a reminder for 5pm now",
+    "label": "none"
+  },
+  {
+    "text": "ok schedule a meeting thanks",
+    "label": "none"
+  },
+  {
+    "text": "yo i don’t need the lights now asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "please power up the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, activate cooling with the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok the fan is too loud, shut it off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok can we brighten this place? now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, it's too dark, get the lights on now",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, i can't see, lights please right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, turn that ceiling fan on now",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo it's bedtime, lights off now",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, stop the air circulation if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please give me some light now",
+    "label": "lights_on"
+  },
+  {
+    "text": "it’s dim here now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please power up the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i need it darker in here right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, halt the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, i want some quiet, stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i want some quiet, stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok make the fan spin",
+    "label": "fan_on"
+  },
+  {
+    "text": "please this room is stuffy, start the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "fan is making noise, shut it down if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, i don’t need the lights now asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok get the fan going please if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "please hey assistant, brighten the room thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, disable the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please cut the illumination now",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, how’s the stock market? thanks",
+    "label": "none"
+  },
+  {
+    "text": "it's getting hot, turn on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "please can we stop the fan?",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo get the fan going please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, enough light already right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok we need illumination right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok let there be light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "cut the illumination now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, the fan should stop now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please fan is making noise, shut it down now",
+    "label": "fan_off"
+  },
+  {
+    "text": "i want darkness now if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo text my friend now",
+    "label": "none"
+  },
+  {
+    "text": "hey, can we brighten this place? thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, enough light already",
+    "label": "lights_off"
+  },
+  {
+    "text": "turn off the overhead lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo we need some airflow in here if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "please play the next song now",
+    "label": "none"
+  },
+  {
+    "text": "please activate lighting system right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo let there be light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok get those lights going now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, halt the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo i’m freezing, stop the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "please what's the time now? asap",
+    "label": "none"
+  },
+  {
+    "text": "yo navigate to the nearest gas station if you can",
+    "label": "none"
+  },
+  {
+    "text": "assistant, shut the lights please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "it's too bright, can you dim it down?",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo help me cool down, run the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, activate cooling with the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok it’s cold, turn off the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "turn that ceiling fan on",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, brighten the room",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, reduce the light to zero asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "can we go dark in here? thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok text my friend if you can",
+    "label": "none"
+  },
+  {
+    "text": "ok tell me a joke now",
+    "label": "none"
+  },
+  {
+    "text": "assistant, the fan’s still on? if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please it's bedtime, lights off",
+    "label": "lights_off"
+  },
+  {
+    "text": "please the room is too bright",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo what’s the weather tomorrow? if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo it’s dim here asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, switch on the overhead lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok order me a pizza now",
+    "label": "none"
+  },
+  {
+    "text": "please yo, fan off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok call mom now",
+    "label": "none"
+  },
+  {
+    "text": "what's the time now?",
+    "label": "none"
+  },
+  {
+    "text": "please turn that ceiling fan on right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok open youtube thanks",
+    "label": "none"
+  },
+  {
+    "text": "please kill the fan power",
+    "label": "fan_off"
+  },
+  {
+    "text": "please help me cool down, run the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please help me cool down, run the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "assistant, can we have the fan on? thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok set a reminder for 5pm asap",
+    "label": "none"
+  },
+  {
+    "text": "yo tell me a joke thanks",
+    "label": "none"
+  },
+  {
+    "text": "assistant, play the next song now",
+    "label": "none"
+  },
+  {
+    "text": "ok let there be light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, why is the fan off? turn it on",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok what's the time now? now",
+    "label": "none"
+  },
+  {
+    "text": "assistant, make the fan spin thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok disable the fan now right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok kill the light system now",
+    "label": "lights_off"
+  },
+  {
+    "text": "assistant, activate lighting system thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please turn that ceiling fan on thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, set a reminder for 5pm right away",
+    "label": "none"
+  },
+  {
+    "text": "please i’m hungry if you can",
+    "label": "none"
+  },
+  {
+    "text": "yo it’s dim here if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok tell me a joke",
+    "label": "none"
+  },
+  {
+    "text": "book a cab asap",
+    "label": "none"
+  },
+  {
+    "text": "yo can you help cool the room? asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "please light up the room now",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, disable the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo, blackout the room if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please i could use some wind now",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo what’s the weather tomorrow?",
+    "label": "none"
+  },
+  {
+    "text": "ok put out the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok the lights are hurting my eyes asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "what’s the weather tomorrow? if you can",
+    "label": "none"
+  },
+  {
+    "text": "please it’s dim here",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo activate lighting system if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "assistant, i don’t need the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "the fan has been on too long asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please kill the brightness now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok i need light to work if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please let's get some breeze going now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok it's too dark, get the lights on thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo kill the light system now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, text my friend thanks",
+    "label": "none"
+  }
+]

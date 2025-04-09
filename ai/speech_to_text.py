@@ -4,22 +4,8 @@ import torch
 import torch.nn as nn
 import pickle
 from voice import log_audio
-from text.inference import load_model, predict_with_loaded_model
+from text.inference import load_model, predict_with_loaded_model, TextClassifier
 from adafruit import pushing_command
-
-# Neural Network Model
-class TextClassifier(nn.Module):
-    def __init__(self, input_size, hidden_size, num_classes):
-        super(TextClassifier, self).__init__()
-        self.layer1 = nn.Linear(input_size, hidden_size)
-        self.relu = nn.ReLU()
-        self.layer2 = nn.Linear(hidden_size, num_classes)
-    
-    def forward(self, x):
-        x = self.layer1(x)
-        x = self.relu(x)
-        x = self.layer2(x)
-        return x
 
 if __name__ == "__main__":
     # Set up device, if GPU out of memory, manually set device='cpu'
@@ -35,7 +21,7 @@ if __name__ == "__main__":
     # Load the model
     model, vectorizer = load_model(
         TextClassifier,
-        'text/model/TextClassifier.pth',
+        'text/model/TextClassifier_model.pth',
         'text/model/TextClassifier_vectorizer.pkl',
         device
     )
@@ -57,5 +43,5 @@ if __name__ == "__main__":
         }
         value = dct[prediction] if prediction in dct.keys() else ''
     
-    pushing_command(adadevice, value)
+    # pushing_command(adadevice, value)
 

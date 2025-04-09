@@ -2,30 +2,38 @@ import torch
 import pickle
 import torch.nn as nn
 
+# Neural Network Model
 class TextClassifier(nn.Module):
-    def __init__(self, input_size, hidden_size, num_classes):
+    def __init__(self, input_size, hidden_size1, hidden_size2, num_classes, dropout_prob=0.3):
         super(TextClassifier, self).__init__()
-        self.layer1 = nn.Linear(input_size, hidden_size)
-        self.relu = nn.ReLU()
-        self.layer2 = nn.Linear(hidden_size, num_classes)
-    
+
+        self.model = nn.Sequential(
+            nn.Linear(input_size, hidden_size1),
+            nn.BatchNorm1d(hidden_size1),
+            nn.LeakyReLU(),
+            nn.Dropout(dropout_prob),
+            
+            nn.Linear(hidden_size1, hidden_size2),
+            nn.BatchNorm1d(hidden_size2),
+            nn.LeakyReLU(),
+            nn.Dropout(dropout_prob),
+            
+            nn.Linear(hidden_size2, num_classes)
+        )
+
     def forward(self, x):
-        x = self.layer1(x)
-        x = self.relu(x)
-        x = self.layer2(x)
-        return x
+        return self.model(x)
 
-def load_model(model_class, model_path="text/model/TextClassifier.pth", vectorizer_path="text/model/TextClassifier_vectorizer.pkl", run_device='cpu'):
-    # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    device = torch.device("cuda" if run_device=='cuda' and torch.cuda.is_available() else "cpu")
-
-    saved_data = torch.load(model_path, map_location=device, weights_only=True)
+def load_model(model_class, model_path="model/TextClassifier_model.pth", vectorizer_path="model/TextClassifier_vectorizer.pkl", device='cpu'):
+    saved_data = torch.load(model_path, map_location=device)
 
     input_size = saved_data['input_size']
-    hidden_size = saved_data['hidden_size']
+    hidden_size1 = saved_data['hidden_size1']
+    hidden_size2 = saved_data['hidden_size2']
     num_classes = saved_data['num_classes']
+    dropout_prob = saved_data.get('dropout_prob', 0.3)  # Fallback if not saved
 
-    loaded_model = model_class(input_size, hidden_size, num_classes).to(device)
+    loaded_model = model_class(input_size, hidden_size1, hidden_size2, num_classes, dropout_prob).to(device)
     loaded_model.load_state_dict(saved_data['state_dict'])
     loaded_model.eval()
 
@@ -44,6 +52,6 @@ def predict_with_loaded_model(text, model, vectorizer, device):
         output = model(text_tensor)
         _, predicted = torch.max(output, 1)
     
-    reverse_map = {0: "lights_on", 1: "lights_off", 2: "fan_on", 3: "fan_off"}
+    reverse_map = {0: "lights_on", 1: "lights_off", 2: "fan_on", 3: "fan_off", 4: "none"}
     return reverse_map[predicted.item()]
 

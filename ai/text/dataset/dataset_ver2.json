@@ -1,0 +1,4002 @@
+[
+  {
+    "text": "switch on the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok fan off please thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please switch on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, start the fan now thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, please turn the lights off right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please switch off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, activate the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo kill the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "switch off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, start the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please lights on please now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want light if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok activate the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please switch off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, cut the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, i want the fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo light it up now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i want light if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok start the fan now now",
+    "label": "fan_on"
+  },
+  {
+    "text": "switch on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "activate the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, turn off the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok switch off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo lights off please",
+    "label": "lights_off"
+  },
+  {
+    "text": "please start the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "i want it dark asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn off the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok can you turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo lights on please asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i want it dark if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please switch on the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, kill the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, i want the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, switch on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok turn off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "please turn off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "i want the fan on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, fan off please asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok start the fan now now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok turn on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo fan off please",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, start the fan now now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, can you turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "start the fan now right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please fan off please if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "can you shut the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please deactivate the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please switch on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok activate the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i want the fan on if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "please i want the fan on",
+    "label": "fan_on"
+  },
+  {
+    "text": "deactivate the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, switch on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo i want it dark now",
+    "label": "lights_off"
+  },
+  {
+    "text": "i want light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo kill the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok start the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo turn off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok fan on please thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, fan off please asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please please stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo activate the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, i want light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo can you turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo please start the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "please fan on please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, can you shut the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo lights off please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo kill the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, lights off please",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok switch on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, kill the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please light it up now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please please turn the lights on",
+    "label": "lights_on"
+  },
+  {
+    "text": "please deactivate the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "i want light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo lights on please now",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo please turn the lights on now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please kill the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, switch off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, turn off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, switch on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo switch on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please can you turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok please turn the lights on",
+    "label": "lights_on"
+  },
+  {
+    "text": "i want the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, switch on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please activate the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "switch off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok fan on please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, start the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please lights on please asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok i want the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok turn on the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, activate the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want light thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "lights off please thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "turn off the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo activate the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, turn off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, cut the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok i want it dark asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok please start the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please i want it dark thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, can you turn on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, activate the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok deactivate the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok can you shut the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo i want the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "please turn the lights off right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please deactivate the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, please start the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "please lights off please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok fan off please if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please i want the fan on right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok can you shut the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "activate the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please activate the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "i want light thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo please turn the lights off right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, can you turn on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "lights on please thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo turn off the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "fan on please thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok lights off please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please please turn the lights off thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo please turn the lights off asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, i want the fan on if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo turn on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok please start the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok activate the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "can you shut the fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i want it dark",
+    "label": "lights_off"
+  },
+  {
+    "text": "activate the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "light it up now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok activate the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, fan on please if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "deactivate the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, kill the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "fan off please if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo turn on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok please turn the lights off thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, activate the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i want the fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok please stop the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo deactivate the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "light it up now",
+    "label": "lights_on"
+  },
+  {
+    "text": "i want light",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, start the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, switch off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, i want light if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please activate the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "please switch on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i want it dark if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo lights off please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo please stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo kill the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, switch on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, activate the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, switch on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, kill the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "please start the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "start the fan now if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo cut the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please switch off the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "turn off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok lights on please asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please kill the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, please turn the lights off now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo lights on please asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please please stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "please please stop the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, activate the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, please turn the lights on asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please kill the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, start the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok please stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, please stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok switch off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please can you turn on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "turn off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "please start the fan now if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "please start the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please switch off the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "lights on please now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, cut the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok switch on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, turn off the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "i want the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, i want the fan on right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo turn off the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please activate the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, can you shut the fan off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "turn on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok switch off the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, kill the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok please turn the lights off now",
+    "label": "lights_off"
+  },
+  {
+    "text": "activate the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "i want light",
+    "label": "lights_on"
+  },
+  {
+    "text": "please lights off please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, fan on please asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok i want the fan on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, start the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please lights on please right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please stop the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, please stop the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "fan off please thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok please start the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "start the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, i want light if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, start the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want the fan on",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, fan off please if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "please deactivate the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, i want the fan on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, activate the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, lights on please",
+    "label": "lights_on"
+  },
+  {
+    "text": "deactivate the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please turn off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i want it dark right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "deactivate the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok fan off please asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, kill the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, light it up right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok i want the fan on thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, can you shut the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok activate the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "can you shut the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok switch off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo kill the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, activate the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i want the fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, activate the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "please lights on please if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo switch on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please please turn the lights on now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please activate the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want the fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "lights off please thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok i want it dark now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please activate the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "please kill the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, kill the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok please turn the lights on if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "start the fan now thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please can you turn on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, cut the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "turn off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo turn on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, switch on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "lights on please asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "can you turn on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo switch off the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, can you turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok please start the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please kill the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "please i want light if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, i want light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "turn off the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, kill the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, activate the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, deactivate the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo light it up if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please fan off please if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "cut the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok lights off please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, start the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo can you turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok please turn the lights on",
+    "label": "lights_on"
+  },
+  {
+    "text": "can you shut the fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, switch off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please fan off please now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please light it up",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, switch on the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please please start the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i want the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please deactivate the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, lights on please asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, activate the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "turn off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, please turn the lights on if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "i want light now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok turn off the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please switch on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "lights on please asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, i want light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok light it up asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok turn off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "turn on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please turn off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "can you turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, fan on please",
+    "label": "fan_on"
+  },
+  {
+    "text": "please turn the lights on right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, turn on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "i want light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please can you turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo fan on please if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok fan off please right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, fan off please asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok please start the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "light it up right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, can you turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "deactivate the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "lights off please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok kill the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, fan on please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, please turn the lights on right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "start the fan now if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo switch on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please activate the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please light it up right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok turn on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok please start the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i want it dark right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, i want the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo deactivate the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok start the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, switch on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, activate the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, lights off please thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok switch on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, kill the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "please fan off please right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo start the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, turn off the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "please can you turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, kill the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "switch off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i want the fan on if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, i want the fan on now",
+    "label": "fan_on"
+  },
+  {
+    "text": "please please start the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok please turn the lights on right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, lights on please right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, kill the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, switch on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok start the fan now if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, lights off please",
+    "label": "lights_off"
+  },
+  {
+    "text": "please lights off please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo i want the fan off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "please please stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo deactivate the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, turn on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i want the fan on thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please i want the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, i want the fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "i want it dark now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo turn on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "turn on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i want the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please turn the lights on now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok deactivate the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, turn on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok lights off please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "turn on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please start the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, kill the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok lights off please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo deactivate the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "switch on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, activate the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i want the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok start the fan now now",
+    "label": "fan_on"
+  },
+  {
+    "text": "turn on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "i want it dark now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, start the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "i want it dark right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "start the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, turn on the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i want it dark right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo please start the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, can you turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, turn off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, i want it dark now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo fan on please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok fan on please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "switch on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo turn on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo turn off the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo deactivate the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "i want the fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please i want it dark now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please activate the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, please turn the lights on asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok i want it dark",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo activate the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "i want the fan on if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, please start the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, switch on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please fan on please thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, i want it dark right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, start the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i want light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, please stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "kill the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, kill the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please light it up",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo switch on the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo lights on please if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please please start the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok fan off please",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok fan on please if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "fan off please",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok lights off please",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok fan on please if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok fan on please thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, kill the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo please start the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo switch on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok please turn the lights on thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "switch on the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, kill the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, can you shut the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok turn off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, please start the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo turn on the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, deactivate the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please deactivate the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please turn the lights off thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, turn on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "can you turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo fan on please right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, switch on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, turn off the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok cut the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok please start the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, please start the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "please activate the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok activate the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo cut the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "can you turn on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, turn on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, kill the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "switch off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo turn on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, activate the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please deactivate the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo i want the fan on if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "please deactivate the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, please stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo activate the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo activate the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, please turn the lights off now",
+    "label": "lights_off"
+  },
+  {
+    "text": "i want it dark right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please kill the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, fan on please asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "i want the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, switch off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, activate the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i want light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, start the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo start the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please can you turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "can you shut the fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo start the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok turn off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "please activate the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo deactivate the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok kill the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo activate the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo deactivate the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "kill the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo activate the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, cut the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, switch on the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "i want light",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok light it up right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, turn on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, switch on the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, deactivate the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo light it up right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok start the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, cut the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo deactivate the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "switch on the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, start the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo i want the fan off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo please turn the lights off if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, i want light thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok please start the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, switch on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please kill the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "please kill the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "cut the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "can you shut the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo fan on please asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo start the fan now right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "turn off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo i want it dark thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please start the fan now if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo kill the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, switch on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok switch on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, activate the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please deactivate the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please turn off the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok switch off the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo please stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i want light",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, switch off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please turn off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, can you shut the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok activate the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, can you shut the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, turn off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "switch off the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok please turn the lights on asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, lights off please thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "turn on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "please lights off please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, switch off the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo light it up thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, cut the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please please turn the lights on thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo can you turn on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, switch on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please please turn the lights on now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please start the fan now thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please kill the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, i want the fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, switch on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok switch on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok switch off the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, kill the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i want the fan on if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, please turn the lights off thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok turn off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok light it up thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please turn the lights on if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, deactivate the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, kill the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo please turn the lights off right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok lights on please thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "start the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo kill the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo deactivate the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "lights on please right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please kill the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "lights off please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please can you shut the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, turn off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i want light thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "fan off please asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, lights on please if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok can you turn on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo can you turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo turn off the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "i want it dark thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, start the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok i want the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "can you shut the fan off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "can you shut the fan off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo activate the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, i want it dark if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo switch off the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, kill the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, can you turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, can you turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, deactivate the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo light it up right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i want the fan on asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, please turn the lights off thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok i want the fan on",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo activate the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, lights off please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok turn off the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok i want the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok light it up right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please turn the lights on asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo i want the fan on thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, kill the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, please stop the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "switch off the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, i want light now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok kill the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok lights off please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, lights on please",
+    "label": "lights_on"
+  },
+  {
+    "text": "i want the fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok please turn the lights on now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, start the fan now if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo turn off the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, please turn the lights on now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, kill the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, kill the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok start the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want the fan off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, switch off the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo can you turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, kill the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok fan on please asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "please deactivate the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, fan off please now",
+    "label": "fan_off"
+  },
+  {
+    "text": "lights off please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "start the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "please turn on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo fan on please asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo kill the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo please stop the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, turn off the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please start the fan now now",
+    "label": "fan_on"
+  },
+  {
+    "text": "start the fan now thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please fan off please",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok turn off the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "i want it dark right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, switch off the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please can you shut the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, turn off the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, please start the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok turn off the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok kill the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok i want light thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo switch off the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please deactivate the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, switch off the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok fan on please",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "please switch off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, fan on please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, turn off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok turn off the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok start the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "please please turn the lights off now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, please start the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok start the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "please deactivate the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "please lights on please thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo switch off the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "i want the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "light it up right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok switch off the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok switch on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, light it up if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, activate the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok i want the fan on now",
+    "label": "fan_on"
+  },
+  {
+    "text": "activate the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "start the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok please start the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok can you shut the fan off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "please please start the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "kill the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "switch off the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, kill the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok can you shut the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok lights off please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo deactivate the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "turn off the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo switch on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, i want light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo please stop the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, start the fan now now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, kill the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, turn off the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, turn off the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, i want the fan on right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "light it up if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please turn off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo cut the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please kill the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, i want the fan on",
+    "label": "fan_on"
+  },
+  {
+    "text": "please please stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, switch on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "can you turn on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, please turn the lights off now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, activate the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok start the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "can you turn on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok please turn the lights on now",
+    "label": "lights_on"
+  },
+  {
+    "text": "can you shut the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo i want it dark now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, switch on the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo kill the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please switch on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, cut the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo please turn the lights on if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo switch off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok lights off please now",
+    "label": "lights_off"
+  },
+  {
+    "text": "cut the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please switch off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, turn off the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok cut the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "switch off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, switch on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok lights off please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, i want light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo switch off the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok fan off please if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok turn off the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "please i want the fan on now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok switch on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo please turn the lights on right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, cut the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, activate the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo i want it dark right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "switch on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo kill the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok i want light thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please lights off please",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo turn on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "kill the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please light it up asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo turn on the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "please turn off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, cut the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo start the fan now asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "activate the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok activate the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please switch on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, please start the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok i want the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "i want light",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, lights on please if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, start the fan now if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok start the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want light now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok activate the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok deactivate the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please switch on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i want the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please please start the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok lights off please asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, fan off please now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, i want the fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo activate the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok fan off please now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo activate the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, can you shut the fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please activate the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok please stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, start the fan now thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please can you shut the fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok switch on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok fan on please if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok i want light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo deactivate the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "please kill the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, i want light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please i want the fan off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "please i want the fan on if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok kill the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "deactivate the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please fan on please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, turn on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok deactivate the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, please stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok lights off please now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, please turn the lights off thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "cut the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please i want the fan off now",
+    "label": "fan_off"
+  },
+  {
+    "text": "deactivate the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok lights on please right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, please stop the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, i want the fan on thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, lights on please",
+    "label": "lights_on"
+  },
+  {
+    "text": "please deactivate the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok fan on please if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "i want it dark thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo switch on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok please turn the lights on asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo deactivate the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, kill the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, cut the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "lights off please if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, please start the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, switch on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo please start the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, lights on please now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please switch off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok lights off please thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok start the fan now thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "please lights on please right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i want the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, switch on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, deactivate the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, i want the fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo can you turn on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok switch off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, activate the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, turn off the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo start the fan now now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok deactivate the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please fan on please",
+    "label": "fan_on"
+  },
+  {
+    "text": "please please stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, kill the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok fan on please right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please please turn the lights off if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo can you shut the fan off if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "turn off the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please please start the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "deactivate the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "fan off please thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "please kill the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, can you turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, lights on please if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo please turn the lights on right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, please start the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "please turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, turn off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "lights off please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo please turn the lights off thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok start the fan now right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok can you turn on the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "turn off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "please please turn the lights on if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo deactivate the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok fan on please thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo turn on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "can you turn on the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, i want light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, fan off please",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, deactivate the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "please activate the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok activate the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "fan off please",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok activate the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please activate the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "please switch off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo please start the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, lights on please right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, activate the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "deactivate the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please turn off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok can you turn on the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, light it up thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please start the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, fan on please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo turn on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, lights off please",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok cut the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "please light it up thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, switch off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo i want the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok kill the fan thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo start the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo switch on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "i want it dark thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok activate the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok kill the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok please start the fan now",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, turn on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please kill the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "switch on the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "please please stop the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo please start the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, i want the fan on now",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok switch off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, switch off the fan right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "i want it dark asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, deactivate the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "deactivate the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok i want the fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo fan on please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "fan on please",
+    "label": "fan_on"
+  },
+  {
+    "text": "please lights on please thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please fan off please if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, cut the lights asap",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok cut the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please light it up thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "please kill the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please please stop the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo start the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, activate the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo lights off please thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, i want light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, kill the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "cut the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, switch off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, kill the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "please turn on the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok turn on the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "switch on the lights now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok activate the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo kill the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, start the fan now now",
+    "label": "fan_on"
+  },
+  {
+    "text": "i want it dark right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok activate the fan if you can",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, activate the lights if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, fan on please now",
+    "label": "fan_on"
+  },
+  {
+    "text": "i want the fan on thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, switch off the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "please switch off the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, i want the fan on thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok lights off please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok please turn the lights on now",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok please turn the lights on if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok can you shut the fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok turn on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo turn on the fan thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "yo i want it dark now",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok kill the lights right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, activate the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "lights off please right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, cut the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok please turn the lights on asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey assistant, turn off the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "switch off the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok turn on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, turn off the lights thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo cut the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "please activate the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "can you shut the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok i want the fan on right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, i want the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok can you shut the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, deactivate the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, switch off the lights now",
+    "label": "lights_off"
+  },
+  {
+    "text": "switch on the lights asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok please turn the lights off thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "i want the fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo start the fan now right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, kill the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo turn on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok fan off please",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey assistant, switch on the fan right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "please deactivate the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, activate the fan",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, please turn the lights on",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, switch off the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey assistant, lights on please now",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, switch off the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo i want the fan on thanks",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok turn off the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "ok lights on please thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo fan off please thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "start the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok activate the lights thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok activate the lights",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok cut the lights",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo i want the fan off asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, turn on the lights right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "yo i want light if you can",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok turn off the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "please turn off the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "switch on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "ok please turn the lights on thanks",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, light it up asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "hey, i want light right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok please stop the fan",
+    "label": "fan_off"
+  },
+  {
+    "text": "ok deactivate the fan asap",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo light it up",
+    "label": "lights_on"
+  },
+  {
+    "text": "ok please turn the lights on right away",
+    "label": "lights_on"
+  },
+  {
+    "text": "please please turn the lights off right away",
+    "label": "lights_off"
+  },
+  {
+    "text": "yo start the fan now right away",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey assistant, i want the fan on",
+    "label": "fan_on"
+  },
+  {
+    "text": "hey, please stop the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "i want it dark thanks",
+    "label": "lights_off"
+  },
+  {
+    "text": "turn on the fan asap",
+    "label": "fan_on"
+  },
+  {
+    "text": "i want the fan off right away",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, deactivate the lights if you can",
+    "label": "lights_off"
+  },
+  {
+    "text": "hey, i want the fan off",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, can you shut the fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "yo i want the fan off thanks",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, switch off the fan if you can",
+    "label": "fan_off"
+  },
+  {
+    "text": "turn off the fan now",
+    "label": "fan_off"
+  },
+  {
+    "text": "hey, i want light asap",
+    "label": "lights_on"
+  },
+  {
+    "text": "please activate the fan thanks",
+    "label": "fan_on"
+  }
+]
