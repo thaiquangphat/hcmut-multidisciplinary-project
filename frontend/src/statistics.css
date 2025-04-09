@@ -1,0 +1,169 @@
+/* StatisticsPage.css */
+.statistics-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f0e1;
+    font-family: Arial, sans-serif;
+  }
+  
+  .statistics-main-content {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .statistics-header {
+    background-color: #f5e5b3;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .statistics-header-title {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .statistics-header-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+  }
+  
+  .statistics-header-icon {
+    font-size: 24px;
+    color: #8b5a2b;
+  }
+  
+  .statistics-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .statistics-command-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .statistics-command-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .statistics-command-item.statistics-border-bottom {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .statistics-command-time {
+    font-size: 14px;
+    color: #333;
+    flex: 0 0 100px;
+  }
+  
+  .statistics-command-text {
+    font-size: 14px;
+    color: #333;
+    flex: 1;
+  }
+  
+  .statistics-command-info {
+    font-size: 20px;
+    color: #666;
+  }
+  
+  .statistics-audio-player {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .statistics-audio-icon {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .statistics-player-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .statistics-play-button {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .statistics-play-icon {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .statistics-progress-bar-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .statistics-progress-time {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .statistics-progress-bar {
+    flex: 1;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .statistics-progress-filled {
+    width: 10%;
+    height: 100%;
+    background-color: #666;
+    border-radius: 5px;
+  }
+  
+  .statistics-progress-handle {
+    position: absolute;
+    top: -5px;
+    left: 10%;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 2px solid #666;
+    border-radius: 50%;
+  }
+  
+  .statistics-audio-text {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .statistics-audio-status {
+    font-size: 12px;
+    color: #666;
+  }

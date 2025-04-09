@@ -1,0 +1,104 @@
+/* sidebar.css */
+.sidebar {
+  width: 200px;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.logo-link {
+  text-decoration: none; /* Remove the default underline from the Link */
+  color: inherit; /* Inherit the color from the parent */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8b5a2b;
+}
+
+.nav-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.nav-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.nav-link.active {
+  color: #8b5a2b;
+  font-weight: bold;
+}
+
+.nav-icon {
+  margin-right: 10px;
+  color: #333;
+}
+
+.nav-link.active .nav-icon {
+  color: #8b5a2b;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.user-icon {
+  margin-right: 10px;
+  color: #8b5a2b;
+}
+
+.user-profile span {
+  font-size: 16px;
+  color: #333;
+}

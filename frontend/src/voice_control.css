@@ -1,0 +1,148 @@
+/* VoiceControlPage.css */
+.voice-control-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f5f0e1;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .header {
+    background-color: #f5e5b3;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-title {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .header-subtitle {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+  }
+  
+  .header-status {
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-text {
+    font-size: 16px;
+    color: #666;
+    margin-right: 10px;
+  }
+  
+  .status-icon {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .mic-button {
+    width: 80px;
+    height: 80px;
+    background-color: #f5e5b3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .mic-icon {
+    font-size: 40px;
+    color: #8b5a2b;
+  }
+  
+  .pause-button {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #8b5a2b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .pause-icon {
+    font-size: 24px;
+    color: #8b5a2b;
+  }
+  
+  .status-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .status-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .conversation-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+  }
+  
+  .conversation-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .card-icon {
+    font-size: 24px;
+    color: #8b5a2b;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .card-status {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .fan-icon {
+    font-size: 24px;
+    color: #8b5a2b;
+  }
