@@ -7,16 +7,19 @@ from voice import log_audio
 from text.inference import load_model, predict_with_loaded_model, TextClassifier
 from adafruit import pushing_command
 
-if __name__ == "__main__":
-    # Set up device, if GPU out of memory, manually set device='cpu'
-    # device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    device = 'cpu'
+def detect_and_push(prediction):
+    if prediction == 'none':
+        return
+    
+    adadevice, command = prediction.split('_')
+    value = command.upper()
 
+    pushing_command(adadevice, value)
+
+def main(device):
     # Get the speech
     audio_file, date_str, duration = audio.record_audio()
     text = transcribe.transcribe_audio(audio_file, device)
-
-    print(f'You said: {text}')
 
     # Load the model
     model, vectorizer = load_model(
@@ -26,22 +29,22 @@ if __name__ == "__main__":
         device
     )
     
+    # Inference
     prediction = predict_with_loaded_model(text, model, vectorizer, device)
-    print(f'You want to: {prediction}')
 
     # Logging
     log_audio.log_command(text, prediction, audio_file, date_str, duration)
 
     # Pushing to adafruit
-    adadevice = 'fan'
-    value     = ''
+    successful = detect_and_push(prediction)
 
-    if adadevice == 'fan':
-        dct = {
-            'fan_on': 'ON',
-            'fan_off': 'OFF'
-        }
-        value = dct[prediction] if prediction in dct.keys() else ''
-    
-    # pushing_command(adadevice, value)
+    return successful
 
+if __name__ == "__main__":
+    # Set up device, if GPU out of memory, manually set device='cpu'
+    # device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = 'cpu'
+
+    result = main(device)
+    if isinstance(result, Exception):
+        print(f'Some errors detected: {result}.')

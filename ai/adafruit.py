@@ -11,18 +11,20 @@ def pushing_command(adadevice, value):
 
     def connected(client): 
         client.subscribe(AIO_FEED_ID)
-        print('Kết nối thành công.')
+        # print('Kết nối thành công.')
 
     def subscribe(client, userdata, mid, granted_qos):
-        print('Subscribe thành công.')
+        # print('Subscribe thành công.')
+        pass
 
     def disconnected(client):
         sys.exit(1)
-        print('Ngắt kết nối thành công.')
+        # print('Ngắt kết nối thành công.')
 
     def message(client, feed_id, payload):
-        print('Nhận dữ liệu ' + payload)
-
+        # print('Nhận dữ liệu ' + payload)
+        pass
+    
     client = MQTTClient(AIO_USERNAME , AIO_KEY)
     client.on_connect = connected
     client.on_disconnect = disconnected
@@ -31,5 +33,9 @@ def pushing_command(adadevice, value):
     client.connect()
     client.loop_background()
 
-    print("Cập nhật:", value)
-    client.publish(adadevice, value)
+    # print("Cập nhật:", value)
+    try:
+        client.publish(adadevice, value)
+        return True
+    except Exception as e:
+        return e
