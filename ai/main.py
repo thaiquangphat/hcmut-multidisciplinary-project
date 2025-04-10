@@ -14,7 +14,7 @@ def detect_and_push(prediction):
     adadevice, command = prediction.split('_')
     value = command.upper()
 
-    pushing_command(adadevice, value)
+    return pushing_command(adadevice, value)
 
 def main(device):
     # Get the speech
