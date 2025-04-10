@@ -9,7 +9,7 @@ from adafruit import pushing_command
 
 def detect_and_push(prediction):
     if prediction == 'none':
-        return
+        return 'none'
     
     adadevice, command = prediction.split('_')
     value = command.upper()
