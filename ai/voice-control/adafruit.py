@@ -35,7 +35,10 @@ def pushing_command(adadevice, value):
 
     # print("Cập nhật:", value)
     try:
+        time.sleep(5)
         client.publish(adadevice, value)
+        print(f'Cập nhật thành công. {adadevice} = {value}.')
+        time.sleep(5)
         return True
     except Exception as e:
         return e
