@@ -19,7 +19,7 @@
   
   .dashboard-header {
     background-color: #f5e5b3;
-    padding: 15px; /* Reduced padding */
+    padding: 15px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@
     margin-bottom: 20px;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 10;
   }
   
   .dashboard-header-title {
@@ -54,19 +54,30 @@
   }
   
   .dashboard-add-device-button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #8b5a2b;
     color: #fff;
     border: none;
-    border-radius: 20px;
+    border-radius: 12px;
     cursor: pointer;
     font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(139, 90, 43, 0.2);
+  }
+  
+  .dashboard-add-device-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(139, 90, 43, 0.3);
+    background-color: #9b6a3b;
   }
   
   .dashboard-content {
     flex: 1;
     overflow-y: auto;
     padding-bottom: 20px;
+    padding-top: 10px;
+    position: relative;
+    z-index: 1;
   }
   
   .dashboard-grid {
@@ -75,6 +86,8 @@
     gap: 20px;
     min-height: 0;
     overflow: visible;
+    position: relative;
+    z-index: 5;
   }
   
   .dashboard-frame {
@@ -90,12 +103,44 @@
     min-height: 280px;
     max-height: 320px;
     overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(139, 90, 43, 0.1);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .dashboard-frame:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(139, 90, 43, 0.15);
+    z-index: 2;
+  }
+  
+  .dashboard-frame::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #8b5a2b, #f5e5b3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .dashboard-frame:hover::before {
+    opacity: 1;
   }
   
   .dashboard-frame-title {
     font-size: 18px;
     color: #333;
     margin-bottom: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .dashboard-frame:hover .dashboard-frame-title {
+    color: #8b5a2b;
   }
   
   /* Temperature Frame */
@@ -104,12 +149,17 @@
   }
   
   .dashboard-progress-bar {
-    width: 90%; /* Increased width */
-    height: 12px; /* Reduced height */
+    width: 90%;
+    height: 12px;
     background-color: #ddd;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .dashboard-frame:hover .dashboard-progress-bar {
+    transform: scaleX(1.05);
   }
   
   .dashboard-progress-filled {
@@ -117,6 +167,11 @@
     height: 100%;
     background-color: #f5e5b3;
     border-radius: 10px 0 0 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-frame:hover .dashboard-progress-filled {
+    background-color: #8b5a2b;
   }
   
   .dashboard-frame-value {
@@ -147,6 +202,11 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .dashboard-frame:hover .dashboard-circle-container {
+    transform: scale(1.1);
   }
   
   .dashboard-circle-value {

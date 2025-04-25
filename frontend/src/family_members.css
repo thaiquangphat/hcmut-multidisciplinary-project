@@ -28,13 +28,21 @@
 }
 
 .add-member-button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: #8b5a2b;
   color: #fff;
   border: none;
-  border-radius: 20px;
+  border-radius: 12px;
   cursor: pointer;
   font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(139, 90, 43, 0.2);
+}
+
+.add-member-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(139, 90, 43, 0.3);
+  background-color: #9b6a3b;
 }
 
 .family-grid {
