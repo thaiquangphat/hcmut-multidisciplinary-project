@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import Sidebar from './sidebar'; // Import the Sidebar component
 
 // Import the CSS file
@@ -6,10 +7,53 @@ import './voice_control.css';
 
 const VoiceControlPage = () => {
   const [isRecording, setIsRecording] = useState(false);
+  const [text, setText] = useState('');
+  const [prediction, setPrediction] = useState('');
+  const [recordingData, setRecordingData] = useState(null);
 
-  const handleToggleRecording = () => {
-    setIsRecording(!isRecording);
-    // TODO: Implement actual recording logic here
+  const handleRecording = async () => {
+    if (!isRecording) {
+        // Start recording
+        setIsRecording(true); // Immediately set the recording state
+        try {
+            console.log('Sending start recording request...');
+            await axios.post('http://127.0.0.1:5000/api/start_recording');
+            console.log('Start recording request sent successfully.');
+        } catch (error) {
+            console.error('Error starting recording:', error);
+            setIsRecording(false); // Revert state if an error occurs
+        }
+    } else {
+        // Stop recording
+        setIsRecording(false); // Immediately toggle the recording state
+        try {
+            console.log('Sending stop recording request...');
+            await axios.post('http://127.0.0.1:5000/api/stop_recording');
+            console.log('Stop recording request sent successfully.');
+
+            // Show transcribing status
+            setText('Transcribing...');
+            setPrediction('');
+
+            // Wait for the backend to process the stop signal
+            const response = await axios.post('http://127.0.0.1:5000/api/recording');
+            const { audio_file, date_str, duration } = response.data;
+
+            // Transcribe the audio
+            const transcribeResponse = await axios.post('http://127.0.0.1:5000/api/transcribing', {
+                audio_file,
+                date_str,
+                duration
+            });
+
+            setText(transcribeResponse.data.text);
+            setPrediction(transcribeResponse.data.prediction);
+        } catch (error) {
+            console.error('Error stopping recording or transcribing:', error);
+            setText(''); // Clear transcribing status on error
+            setPrediction('');
+        }
+    }
   };
 
   return (
@@ -28,9 +72,9 @@ const VoiceControlPage = () => {
 
         <div className="content-container">
           <div className="recording-container">
-            <button 
+            <button
               className={`record-button ${isRecording ? 'recording' : ''}`}
-              onClick={handleToggleRecording}
+              onClick={handleRecording}
             >
               <span className="material-icons">
                 {isRecording ? 'mic' : 'mic_none'}
@@ -41,6 +85,18 @@ const VoiceControlPage = () => {
             </div>
           </div>
 
+          {/* Transcription and Prediction Section */}
+          {text && (
+            <div className="transcription-container">
+              <p>
+                <strong>Transcribed Text:</strong> {text}
+              </p>
+              <p>
+                <strong>Prediction:</strong> {prediction}
+              </p>
+            </div>
+          )}
+
           {/* Conversation Section */}
           <div className="conversation-container">
             {/* User Command */}
@@ -48,8 +104,8 @@ const VoiceControlPage = () => {
               <div className="card-icon">
                 <span className="material-icons">record_voice_over</span>
               </div>
-              <p className="card-text">Turn the fan on!</p>
-              <span className="card-status">record_voice...</span>
+              <p className="card-text">{text || ''}</p>
+              <span className="card-status">{text ? 'record_voice...' : ''}</span>
             </div>
 
             {/* System Response */}
@@ -57,8 +113,8 @@ const VoiceControlPage = () => {
               <div className="card-icon">
                 <span className="material-icons">chat</span>
               </div>
-              <p className="card-text">OK! Fan is on.</p>
-              <span className="card-status">toys</span>
+              <p className="card-text">{prediction || ''}</p>
+              <span className="card-status">{prediction ? 'toys' : ''}</span>
               <div className="card-icon">
                 <span className="material-icons">air</span>
               </div>

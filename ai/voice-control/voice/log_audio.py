@@ -18,6 +18,13 @@ def log_command(transcribed_text, label, filepath, date_str, duration):
     else:
         log_data = []
 
+    # Load existing log frontend if present in logs directory
+    if os.path.exists(frontend_json_path):
+        with open(frontend_json_path, "r") as json_file:
+            log_frontend_data = json.load(json_file)
+    else:
+        log_frontend_data = []
+
     # Create new entry
     log_entry = {
         "transcribed_text": transcribed_text,
@@ -28,6 +35,7 @@ def log_command(transcribed_text, label, filepath, date_str, duration):
         "date": date_str
     }
     log_data.append(log_entry)
+    log_frontend_data.append(log_entry)
 
     # Save updated log to logs directory
     with open(logs_json_path, "w") as json_file:
@@ -35,4 +43,4 @@ def log_command(transcribed_text, label, filepath, date_str, duration):
 
     # Save updated log to frontend directory
     with open(frontend_json_path, "w") as json_file:
-        json.dump(log_data, json_file, indent=4)
+        json.dump(log_frontend_data, json_file, indent=4)
