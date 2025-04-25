@@ -2,6 +2,7 @@ import pyaudio
 import wave
 import threading
 import os
+import shutil
 from datetime import datetime
 
 def get_wav_duration(filepath):
@@ -47,20 +48,30 @@ def record_audio(rate=44100, channels=1, chunk=1024):
     date_str = now.strftime("%Y-%m-%d")
     time_str = now.strftime("%H-%M-%S")
     
-    folder_path = os.path.join("logs", date_str)
-    os.makedirs(folder_path, exist_ok=True)
+    # Create logs directory
+    logs_folder_path = os.path.join("logs", date_str)
+    os.makedirs(logs_folder_path, exist_ok=True)
+    
+    # Create frontend audio directory
+    frontend_audio_path = os.path.join("..", "..", "frontend", "public", "audio")
+    os.makedirs(frontend_audio_path, exist_ok=True)
     
     filename = f"{date_str}_{time_str}.wav"
-    filepath = os.path.join(folder_path, filename)
     
-    with wave.open(filepath, 'wb') as wf:
+    # Save to logs directory
+    logs_filepath = os.path.join(logs_folder_path, filename)
+    with wave.open(logs_filepath, 'wb') as wf:
         wf.setnchannels(channels)
         wf.setsampwidth(p.get_sample_size(pyaudio.paInt16))
         wf.setframerate(rate)
         wf.writeframes(b''.join(frames))
     
-    # Get the duration
-    duration = get_wav_duration(filepath)
+    # Copy to frontend directory
+    frontend_filepath = os.path.join(frontend_audio_path, filename)
+    shutil.copy2(logs_filepath, frontend_filepath)
     
-    print(f"Audio saved as {filepath} (Duration: {duration} sec)")
-    return filepath, date_str, duration
+    # Get the duration
+    duration = get_wav_duration(logs_filepath)
+    
+    print(f"Audio saved as {logs_filepath} and {frontend_filepath} (Duration: {duration} sec)")
+    return logs_filepath, date_str, duration

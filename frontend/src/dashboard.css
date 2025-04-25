@@ -4,22 +4,30 @@
     min-height: 100vh;
     background-color: #f5f0e1;
     font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent page overflow */
   }
   
   .dashboard-main-content {
     flex: 1;
-    padding: 40px;
+    padding: 20px;
     box-sizing: border-box;
+    overflow-y: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
   
   .dashboard-header {
     background-color: #f5e5b3;
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
   
   .dashboard-header-title {
@@ -55,12 +63,18 @@
     font-size: 14px;
   }
   
+  .dashboard-content {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 20px;
+  }
+  
   .dashboard-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    height: calc(100vh - 140px); /* Adjust based on header height (80px) + padding/margins */
-    overflow-y: auto; /* Allow scrolling if content exceeds the height */
+    min-height: 0;
+    overflow: visible;
   }
   
   .dashboard-frame {
@@ -73,23 +87,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px; /* Set a consistent height for all frames */
+    min-height: 280px;
+    max-height: 320px;
+    overflow: hidden;
   }
   
   .dashboard-frame-title {
-    font-size: 16px;
+    font-size: 18px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
   /* Temperature Frame */
   .dashboard-temperature-frame {
-    padding: 15px;
+    padding: 10px; /* Reduced padding */
   }
   
   .dashboard-progress-bar {
-    width: 80%;
-    height: 15px;
+    width: 90%; /* Increased width */
+    height: 12px; /* Reduced height */
     background-color: #ddd;
     border-radius: 10px;
     overflow: hidden;
@@ -115,7 +131,9 @@
   }
   
   .dashboard-chart-container {
-    height: 250px; /* Ensure the chart fits within the frame */
+    height: 220px;
+    width: 100%;
+    position: relative;
   }
   
   /* Humidity, Motion, and Light Frames */
@@ -123,7 +141,7 @@
     width: 80px;
     height: 80px;
     margin: 0 auto;
-    border: 8px solid #ddd;
+    border: 6px solid #ddd;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -132,7 +150,7 @@
   }
   
   .dashboard-circle-value {
-    font-size: 20px;
+    font-size: 24px;
     color: #333;
   }
   
@@ -142,11 +160,11 @@
   
   .dashboard-circle-overlay {
     position: absolute;
-    top: -8px;
-    left: -8px;
+    top: -6px;
+    left: -6px;
     width: 81px;
     height: 81px;
-    border: 8px solid transparent;
+    border: 6px solid transparent;
     border-top-color: #8b5a2b;
     border-radius: 50%;
     transform: rotate(194deg);
@@ -170,13 +188,39 @@
   }
   
   .dashboard-circle-label {
-    font-size: 12px;
+    font-size: 14px;
     color: #666;
-    margin-top: 5px;
+    margin-top: 8px;
   }
   
   .dashboard-light-overlay {
     border-top-color: transparent;
     border-right-color: #f5c518;
     transform: rotate(72deg);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-main-content {
+      padding: 15px;
+    }
+    
+    .dashboard-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .dashboard-header-right {
+      width: 100%;
+      justify-content: space-between;
+    }
+    
+    .dashboard-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .dashboard-frame {
+      min-height: 200px;
+    }
   }

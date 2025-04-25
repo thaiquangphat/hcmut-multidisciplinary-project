@@ -113,50 +113,52 @@ const DashboardPage = () => {
           </div>
         </header>
 
-        <div className="dashboard-grid">
-          {/* Temperature Frame Section */}
-          <div className="dashboard-frame dashboard-temperature-frame">
-            <h3 className="dashboard-frame-title">Temperature Frame</h3>
-            <div className="dashboard-progress-bar">
-              <div className="dashboard-progress-filled" />
-            </div>
-            <p className="dashboard-frame-value">25.8°C</p>
-          </div>
-
-          {/* Temperature Chart */}
-          <div className="dashboard-frame dashboard-temperature-chart">
-            <h3 className="dashboard-frame-title">Temperature</h3>
-            <div className="dashboard-chart-container">
-              <Line ref={chartRef} data={chartData} options={chartOptions} />
-            </div>
-          </div>
-
-          {/* Humidity */}
-          <div className="dashboard-frame dashboard-humidity-frame">
-            <h3 className="dashboard-frame-title">Humidity</h3>
-            <div className="dashboard-circle-container">
-              <span className="dashboard-circle-value">53.9%</span>
-              <div className="dashboard-circle-overlay" />
-            </div>
-          </div>
-
-          {/* Motion */}
-          <div className="dashboard-frame dashboard-motion-frame">
-            <h3 className="dashboard-frame-title">Motion</h3>
-            <div className="dashboard-circle-container dashboard-motion-circle">
-              <span className="dashboard-circle-value">-</span>
-            </div>
-          </div>
-
-          {/* Light Frame */}
-          <div className="dashboard-frame dashboard-light-frame">
-            <h3 className="dashboard-frame-title">Light Frame</h3>
-            <div className="dashboard-circle-container dashboard-light-circle">
-              <div className="dashboard-light-value-container">
-                <span className="dashboard-circle-value">20%</span>
-                <span className="dashboard-circle-label">Value</span>
+        <div className="dashboard-content">
+          <div className="dashboard-grid">
+            {/* Temperature Frame Section */}
+            <div className="dashboard-frame dashboard-temperature-frame">
+              <h3 className="dashboard-frame-title">Temperature Frame</h3>
+              <div className="dashboard-progress-bar">
+                <div className="dashboard-progress-filled" />
               </div>
-              <div className="dashboard-circle-overlay dashboard-light-overlay" />
+              <p className="dashboard-frame-value">25.8°C</p>
+            </div>
+
+            {/* Temperature Chart */}
+            <div className="dashboard-frame dashboard-temperature-chart">
+              <h3 className="dashboard-frame-title">Temperature</h3>
+              <div className="dashboard-chart-container">
+                <Line ref={chartRef} data={chartData} options={chartOptions} />
+              </div>
+            </div>
+
+            {/* Humidity */}
+            <div className="dashboard-frame dashboard-humidity-frame">
+              <h3 className="dashboard-frame-title">Humidity</h3>
+              <div className="dashboard-circle-container">
+                <span className="dashboard-circle-value">53.9%</span>
+                <div className="dashboard-circle-overlay" />
+              </div>
+            </div>
+
+            {/* Motion */}
+            <div className="dashboard-frame">
+              <h3 className="dashboard-frame-title">Motion</h3>
+              <div className="dashboard-circle-container dashboard-motion-circle">
+                <span className="dashboard-circle-value">-</span>
+              </div>
+            </div>
+
+            {/* Light Frame */}
+            <div className="dashboard-frame dashboard-light-frame">
+              <h3 className="dashboard-frame-title">Light Frame</h3>
+              <div className="dashboard-circle-container dashboard-light-circle">
+                <div className="dashboard-light-value-container">
+                  <span className="dashboard-circle-value">20%</span>
+                  <span className="dashboard-circle-label">Value</span>
+                </div>
+                <div className="dashboard-circle-overlay dashboard-light-overlay" />
+              </div>
             </div>
           </div>
         </div>
