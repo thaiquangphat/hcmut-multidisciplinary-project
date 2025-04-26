@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from main import recording, transcribing_audio
 import torch
-from voice.audio import start_recording, stop_recording
+from voice.audio import start_recording, stop_recording, toggle_recording
 import logging
 from flask_cors import CORS
 
@@ -62,6 +62,17 @@ def api_stop_recording():
         return jsonify({'message': 'Recording stopped'}), 200
     except Exception as e:
         logging.error(f"Error stopping recording: {e}")
+        return jsonify({'error': str(e)}), 500
+
+# Add a new route to handle toggle recording
+@app.route('/api/toggle_recording', methods=['POST'])
+def api_toggle_recording():
+    try:
+        logging.info("Toggle recording request received.")
+        toggle_recording()
+        return jsonify({'message': 'Recording toggled'}), 200
+    except Exception as e:
+        logging.error(f"Error toggling recording: {e}")
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':

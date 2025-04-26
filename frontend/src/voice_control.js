@@ -10,49 +10,40 @@ const VoiceControlPage = () => {
   const [text, setText] = useState('');
   const [prediction, setPrediction] = useState('');
   const [recordingData, setRecordingData] = useState(null);
+  const [globalState, setGlobalState] = useState(0);
+
+  const toggleGlobalState = () => {
+    setGlobalState((prevState) => (prevState === 0 ? 1 : 0));
+    console.log(`Global state changed to: ${globalState}`);
+  };
 
   const handleRecording = async () => {
-    if (!isRecording) {
-        // Start recording
-        setIsRecording(true); // Immediately set the recording state
-        try {
-            console.log('Sending start recording request...');
-            await axios.post('http://127.0.0.1:5000/api/start_recording');
-            console.log('Start recording request sent successfully.');
-        } catch (error) {
-            console.error('Error starting recording:', error);
-            setIsRecording(false); // Revert state if an error occurs
-        }
-    } else {
-        // Stop recording
-        setIsRecording(false); // Immediately toggle the recording state
-        try {
-            console.log('Sending stop recording request...');
-            await axios.post('http://127.0.0.1:5000/api/stop_recording');
-            console.log('Stop recording request sent successfully.');
+    try {
+      console.log('Toggling recording state...');
+      await axios.post('http://127.0.0.1:5000/api/toggle_recording');
+      setIsRecording(isRecording); // Toggle the recording state
 
-            // Show transcribing status
-            setText('Transcribing...');
-            setPrediction('');
+      if (!isRecording) {
+        // If stopping recording, handle transcription
+        setText('Transcribing...');
+        setPrediction('');
 
-            // Wait for the backend to process the stop signal
-            const response = await axios.post('http://127.0.0.1:5000/api/recording');
-            const { audio_file, date_str, duration } = response.data;
+        const response = await axios.post('http://127.0.0.1:5000/api/recording');
+        const { audio_file, date_str, duration } = response.data;
 
-            // Transcribe the audio
-            const transcribeResponse = await axios.post('http://127.0.0.1:5000/api/transcribing', {
-                audio_file,
-                date_str,
-                duration
-            });
+        const transcribeResponse = await axios.post('http://127.0.0.1:5000/api/transcribing', {
+          audio_file,
+          date_str,
+          duration
+        });
 
-            setText(transcribeResponse.data.text);
-            setPrediction(transcribeResponse.data.prediction);
-        } catch (error) {
-            console.error('Error stopping recording or transcribing:', error);
-            setText(''); // Clear transcribing status on error
-            setPrediction('');
-        }
+        setText(transcribeResponse.data.text);
+        setPrediction(transcribeResponse.data.prediction);
+      }
+    } catch (error) {
+      console.error('Error toggling recording or processing:', error);
+      setText('');
+      setPrediction('');
     }
   };
 
@@ -73,30 +64,20 @@ const VoiceControlPage = () => {
         <div className="content-container">
           <div className="recording-container">
             <button
-              className={`record-button ${isRecording ? 'recording' : ''}`}
-              onClick={handleRecording}
+              className={`record-button ${globalState === 1 ? 'recording' : ''}`}
+              onClick={() => {
+                toggleGlobalState();
+                handleRecording();
+              }}
             >
               <span className="material-icons">
-                {isRecording ? 'mic' : 'mic_none'}
+                {globalState === 1 ? 'mic' : 'mic_none'}
               </span>
             </button>
             <div className="recording-status">
-              {isRecording ? 'Recording...' : 'Click to start recording'}
+              {globalState === 1 ? 'Recording...' : 'Click to start recording'}
             </div>
           </div>
-
-          {/* Transcription and Prediction Section */}
-          {text && (
-            <div className="transcription-container">
-              <p>
-                <strong>Transcribed Text:</strong> {text}
-              </p>
-              <p>
-                <strong>Prediction:</strong> {prediction}
-              </p>
-            </div>
-          )}
-
           {/* Conversation Section */}
           <div className="conversation-container">
             {/* User Command */}

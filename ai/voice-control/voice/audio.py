@@ -5,6 +5,20 @@ import os
 import shutil
 from datetime import datetime
 
+# Add a global variable to track the recording state
+global is_recording
+is_recording = False
+
+def toggle_recording():
+    """Toggle the recording state and start/stop recording accordingly."""
+    global is_recording
+    if not is_recording:
+        start_recording()
+        is_recording = True
+    else:
+        stop_recording()
+        is_recording = False
+
 def get_wav_duration(filepath):
     """Get the duration of a WAV file in seconds."""
     with wave.open(filepath, "r") as wf:
