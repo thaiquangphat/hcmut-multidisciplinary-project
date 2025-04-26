@@ -38,25 +38,91 @@
 // export default App;
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './homepage'; // Assuming lowercase as per previous fix
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import HomePage from './homepage';
 import LoginPage from './login';
-import DashboardPage from './dashboard'; // Import the new DashboardPage
+import DashboardPage from './dashboard';
 import VoiceControlPage from './voice_control';
 import StatisticsPage from './statistics';
+import DevicesPage from './devices';
+import FamilyMembersPage from './family_members';
+import SettingPage from './setting';
+import { AuthProvider, useAuth } from './AuthContext';
+
+// Protected Route component
+const ProtectedRoute = ({ children }) => {
+  const { user, loading } = useAuth();
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (!user) {
+    return <Navigate to="/login" />;
+  }
+
+  return children;
+};
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/dashboard" element={<DashboardPage />} />
-        <Route path="/voice_control" element={<VoiceControlPage />} />
-        <Route path="/statistics" element={<StatisticsPage />} />
-        <Route path="/about" element={<div>About Page (Placeholder)</div>} />
-      </Routes>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <DashboardPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/devices"
+            element={
+              <ProtectedRoute>
+                <DevicesPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/family_members"
+            element={
+              <ProtectedRoute>
+                <FamilyMembersPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/voice_control"
+            element={
+              <ProtectedRoute>
+                <VoiceControlPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/statistics"
+            element={
+              <ProtectedRoute>
+                <StatisticsPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/setting"
+            element={
+              <ProtectedRoute>
+                <SettingPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/about" element={<div>About Page (Placeholder)</div>} />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 }
 

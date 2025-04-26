@@ -1,11 +1,23 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import logoImg from './yolohome.png';
-import { FaHome, FaMicrochip, FaChartLine, FaUsers, FaMicrophone, FaCog, FaUser } from 'react-icons/fa';
+import { FaHome, FaMicrochip, FaChartLine, FaUsers, FaMicrophone, FaCog, FaUser, FaSignOutAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { useAuth } from './AuthContext';
 import './sidebar.css';
 
 const Sidebar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+  const { user, logout } = useAuth();
+  const [isExpanded, setIsExpanded] = useState(() => {
+    const saved = localStorage.getItem('sidebarExpanded');
+    return saved !== null ? JSON.parse(saved) : true;
+  });
+
+  // Save to localStorage whenever isExpanded changes
+  useEffect(() => {
+    localStorage.setItem('sidebarExpanded', JSON.stringify(isExpanded));
+  }, [isExpanded]);
 
   const pathToLabel = {
     '/dashboard': 'DASHBOARD',
@@ -27,15 +39,29 @@ const Sidebar = () => {
     { to: '/setting', label: 'SETTING', icon: <FaCog /> },
   ];
 
+  const handleLogout = async () => {
+    await logout();
+    navigate('/login');
+  };
+
+  const toggleSidebar = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${isExpanded ? 'expanded' : 'collapsed'}`}>
       <div className="sidebar-top">
-        <Link to="/" className="logo-link">
-          <div className="logo-container">
-            <img src={logoImg} alt="Smart Home Logo" className="logo" />
-            <span className="logo-title">SMART HOME</span>
-          </div>
-        </Link>
+        <div className="sidebar-header">
+          <Link to="/" className="logo-link">
+            <div className="logo-container">
+              <img src={logoImg} alt="Smart Home Logo" className="logo" />
+              {isExpanded && <span className="logo-title">SMART HOME</span>}
+            </div>
+          </Link>
+          <button className="toggle-button" onClick={toggleSidebar}>
+            {isExpanded ? <FaChevronLeft /> : <FaChevronRight />}
+          </button>
+        </div>
 
         <nav className="nav-container">
           <ul className="nav-list">
@@ -44,9 +70,10 @@ const Sidebar = () => {
                 <Link
                   to={item.to}
                   className={`nav-link ${item.label === activePage ? 'active' : ''}`}
+                  title={!isExpanded ? item.label : ''}
                 >
                   <span className="nav-icon">{item.icon}</span>
-                  {item.label}
+                  {isExpanded && item.label}
                 </Link>
               </li>
             ))}
@@ -55,8 +82,14 @@ const Sidebar = () => {
       </div>
 
       <div className="user-profile">
-        <FaUser className="user-icon" />
-        <span>Thao Le</span>
+        <div className="user-info">
+          <FaUser className="user-icon" />
+          {isExpanded && <span>{user?.username || 'User'}</span>}
+        </div>
+        <button onClick={handleLogout} className="logout-button" title={!isExpanded ? "Logout" : ""}>
+          <FaSignOutAlt className="logout-icon" />
+          {isExpanded && "Logout"}
+        </button>
       </div>
     </aside>
   );

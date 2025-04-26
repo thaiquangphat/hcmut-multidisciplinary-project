@@ -1,20 +1,26 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { Link, useNavigate } from 'react-router-dom';
 import logoImg from './yolohome.png';
 import illustrationImg from './yolohome.png';
 import chair from './chair.png'
+import { useAuth } from './AuthContext';
 
 const LoginPage = () => {
-  const [username, setUsername] = useState(''); // State for username
-  const [password, setPassword] = useState(''); // State for password (optional)
-  const navigate = useNavigate(); // Hook for navigation
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+  const { login } = useAuth();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (username.trim()) { // Check if username is not empty
-      navigate('/dashboard', { state: { username } }); // Navigate to dashboard with username
-    } else {
-      alert('Please enter a username'); // Basic validation
+    setError('');
+
+    try {
+      await login(email, password);
+      navigate('/dashboard');
+    } catch (err) {
+      setError(err.response?.data?.detail || 'Login failed. Please try again.');
     }
   };
 
@@ -112,8 +118,13 @@ const LoginPage = () => {
           >
             LOGIN ACCOUNT
           </h2>
+          {error && (
+            <div style={{ color: 'red', marginBottom: '15px', textAlign: 'center' }}>
+              {error}
+            </div>
+          )}
           <form
-            onSubmit={handleSubmit} // Add form submission handler
+            onSubmit={handleSubmit}
             style={{
               display: 'flex',
               flexDirection: 'column',
@@ -127,13 +138,13 @@ const LoginPage = () => {
                 marginBottom: '5px',
               }}
             >
-              Username
+              Email
             </label>
             <input
-              type="text"
-              placeholder="Username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)} // Update username state
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               style={{
                 padding: '15px',
                 fontSize: '16px',
@@ -156,7 +167,7 @@ const LoginPage = () => {
               type="password"
               placeholder="Password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)} // Update password state
+              onChange={(e) => setPassword(e.target.value)}
               style={{
                 padding: '15px',
                 fontSize: '16px',

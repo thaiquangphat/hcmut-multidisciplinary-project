@@ -1,0 +1,53 @@
+[
+    {
+        "transcribed_text": " Hold on, that's it.",
+        "time_recorded": "2025-04-12 14:03:38",
+        "audio_file": "2025-04-12_14-02-57.wav",
+        "duration_seconds": 2.41,
+        "label": "fan_on"
+    },
+    {
+        "transcribed_text": " Turn on the lights.",
+        "time_recorded": "2025-04-12 14:04:36",
+        "audio_file": "2025-04-12_14-03-56.wav",
+        "duration_seconds": 2.58,
+        "label": "lights_on"
+    },
+    {
+        "transcribed_text": " To non-defin.",
+        "time_recorded": "2025-04-25 15:28:41",
+        "audio_file": "2025-04-25_15-27-52.wav",
+        "duration_seconds": 2.04,
+        "label": "fan_on"
+    },
+    {
+        "transcribed_text": " That's enough of the lights.",
+        "time_recorded": "2025-04-25 18:27:54",
+        "audio_file": "2025-04-25_18-27-13.wav",
+        "duration_seconds": 2.95,
+        "label": "lights_off"
+    },
+    {
+        "transcribed_text": " Turn on the lights.",
+        "time_recorded": "2025-04-25 19:07:05",
+        "audio_file": "2025-04-25_19-06-26.wav",
+        "duration_seconds": 2.74,
+        "label": "lights_on"
+    },
+    {
+        "transcribed_text": " Turn on the fan.",
+        "time_recorded": "2025-04-25 19:10:35",
+        "audio_file": "2025-04-25_19-10-01.wav",
+        "duration_seconds": 2.11,
+        "label": "fan_on",
+        "date": "2025-04-25"
+    },
+    {
+        "transcribed_text": " Tonando fan",
+        "time_recorded": "2025-04-26 08:48:50",
+        "audio_file": "2025-04-26_08-48-11.wav",
+        "duration_seconds": 1.46,
+        "label": "fan_off",
+        "date": "2025-04-26"
+    }
+]

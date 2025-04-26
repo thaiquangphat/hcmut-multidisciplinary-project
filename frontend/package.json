@@ -7,7 +7,12 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "chart.js": "^4.4.9",
+=======
+    "axios": "^1.9.0",
+    "chart.js": "^4.4.8",
+>>>>>>> 3d818aae725c12d6236ff682057d0ff803552d93
     "chartjs-adapter-date-fns": "^3.0.0",
     "date-fns": "^2.30.0",
     "react": "^19.1.0",
