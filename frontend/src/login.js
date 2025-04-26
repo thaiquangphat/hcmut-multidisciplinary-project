@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import logoImg from './yolohome.png';
 import illustrationImg from './yolohome.png';
+import chair from './chair.png'
 
 const LoginPage = () => {
   const [username, setUsername] = useState(''); // State for username
@@ -93,7 +94,7 @@ const LoginPage = () => {
         {/* Illustration Section */}
         <div style={{ flex: 1, paddingRight: '20px' }}>
           <img
-            src={illustrationImg}
+            src={chair}
             alt="Illustration of chairs and table"
             style={{ maxWidth: '100%', height: 'auto' }}
           />
