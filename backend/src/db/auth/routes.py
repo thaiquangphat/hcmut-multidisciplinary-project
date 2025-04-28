@@ -27,6 +27,21 @@ async def login_user(user:UserLoginModel,session:AsyncSession = Depends(get_sess
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
+@auth_router.post('/loginface')
+async def loginface(user:UserLoginModel,session:AsyncSession = Depends(get_session)):
+    """
+    Example user data:
+    username: string
+    password: string
+    """
+    try: 
+        login = await login_helper.loginface(user, session)
+        return login
+    except HTTPException as e:
+        raise e
+    except Exception as e:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
+
     
 @auth_router.get('/logout')
 async def logout(token_details: dict = Depends(AccessTokenBearer())):
@@ -55,3 +70,16 @@ async def signup(user:UserSignupModel,session:AsyncSession = Depends(get_session
     
      
 
+@auth_router.post('/signupface')
+async def signupface(user:UserSignupModel,session:AsyncSession = Depends(get_session),status_code=status.HTTP_201_CREATED):
+     try:
+          status_message = await login_helper.create_faceID(user,session)
+          return status_message
+     except HTTPException as e:
+        raise e
+     except Exception as e:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
+
+
+    
+     

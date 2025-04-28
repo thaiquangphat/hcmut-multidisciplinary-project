@@ -54,7 +54,50 @@ class LoginService:
             raise e
         except Exception as e: 
             raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
-    
+    async def loginface(self, userdata: UserLoginModel, db) -> JSONResponse:
+        try: 
+            # Find user by email in the "USERS" collection
+            user = await db["USERS"].find_one({"email": userdata.email})
+            
+            if not user: 
+                raise HTTPException(
+                    status_code=status.HTTP_403_FORBIDDEN,
+                    detail="Wrong email"
+                )
+            
+            if not pwd_context.verify(userdata.password, user["faceID"]):
+                raise HTTPException(
+                    status_code=status.HTTP_403_FORBIDDEN,
+                    detail="Wrong faceID"
+                )
+            
+            # Use MongoDB's _id as user_id
+            user_id = str(user["_id"])
+            access_token = create_access_token(
+                user_data={'user_id': user_id}
+            )
+            refresh_token = create_access_token(
+                user_data={'user_id': user_id},
+                refresh=True,
+                expiry=timedelta(days=REFRESH_TOKEN_EXPIRY)
+            )
+            
+            return JSONResponse(
+                status_code=status.HTTP_200_OK,
+                content={
+                    "message": "Log in successful",
+                    "access_token": access_token,
+                    "refresh_token": refresh_token,
+                    "user": {
+                        'user_id': user_id,
+                        'username': user.get("name", "")
+                    }
+                }
+            )
+        except HTTPException as e:
+            raise e
+        except Exception as e: 
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
     async def create_new_user(self, user_data: UserSignupModel, db):
         existing_user = await db["USERS"].find_one({"email": user_data.email})
         if existing_user: 
@@ -72,3 +115,19 @@ class LoginService:
             raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="User creation failed")
         
         return await self.login(UserLoginModel(email=user_data.email, password=user_data.password), db)
+
+    async def create_faceID(self, userdata: UserLoginModel, faceID: str, db):
+        try:
+            user = await db["USERS"].find_one({"email": userdata.email})
+            if not user:
+                raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Wrong email")
+            user_id = str(user["_id"])
+            result = await db["USERS"].update_one(
+                {"_id": user_id},
+                {"$set": {"faceID": faceID}}
+            )
+            if result.modified_count == 0:
+                raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+            return JSONResponse(status_code=status.HTTP_200_OK, content={"message": "Face ID created successfully"})
+        except Exception as e:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
