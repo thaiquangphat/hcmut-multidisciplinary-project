@@ -12,7 +12,10 @@ import {
   Legend,
 } from 'chart.js';
 import 'chartjs-adapter-date-fns';
-import Sidebar from './sidebar'; // Import the Sidebar component
+import Sidebar from './sidebar';
+import GridLayout from 'react-grid-layout';
+import 'react-grid-layout/css/styles.css';
+import 'react-resizable/css/styles.css';
 
 // Import the CSS file
 import './dashboard.css';
@@ -30,6 +33,13 @@ const DashboardPage = () => {
   });
   const [showWarning, setShowWarning] = useState(false);
   const [warningMessage, setWarningMessage] = useState('');
+  const [layout, setLayout] = useState([
+    { i: 'temperature', x: 0, y: 0, w: 1, h: 1 },
+    { i: 'tempChart', x: 1, y: 0, w: 2, h: 1 },
+    { i: 'humidity', x: 0, y: 1, w: 1, h: 1 },
+    { i: 'motion', x: 1, y: 1, w: 1, h: 1 },
+    { i: 'light', x: 2, y: 1, w: 1, h: 1 }
+  ]);
 
   // Track current values for warning checks
   const currentValues = useRef({ temp: 0, hum: 0 });
@@ -54,9 +64,6 @@ const DashboardPage = () => {
     if (temp !== 0 && (temp < 20 || temp > 40)) {
       warnings.push(`Temperature is ${temp < 20 ? 'too low' : 'too high'} (${temp.toFixed(1)}°C)`);
     }
-    // if (hum < 20 || hum > 35) {
-    //   warnings.push(`Humidity is ${hum < 20 ? 'too low' : 'too high'} (${hum.toFixed(1)}%)`);
-    // }
     
     if (warnings.length > 0) {
       setWarningMessage(warnings.join('\n'));
@@ -65,29 +72,6 @@ const DashboardPage = () => {
       setShowWarning(false);
     }
   };
-
-  // Poll for latest data every 1 second and check warnings
-  useEffect(() => {
-    // Initial fetch
-    fetchTemperatureData();
-    fetchHumidityData();
-    
-    // Set up interval for updates
-    const fetchInterval = setInterval(() => {
-      fetchTemperatureData();
-      fetchHumidityData();
-    }, 1000);
-
-    // Set up separate interval for warning checks with 1.2s delay
-    const warningInterval = setInterval(() => {
-      checkWarnings(currentValues.current.temp, currentValues.current.hum);
-    }, 1200);
-    
-    return () => {
-      clearInterval(fetchInterval);
-      clearInterval(warningInterval);
-    };
-  }, []);
 
   // Function to fetch temperature data from the server
   const fetchTemperatureData = async () => {
@@ -98,7 +82,7 @@ const DashboardPage = () => {
       }
       const newTemp = Math.min(100, Math.max(-100, response.data.value));
       setTemperature(newTemp);
-      currentValues.current.temp = newTemp; // Update the current temperature value
+      currentValues.current.temp = newTemp;
       
       // Update chart data
       const currentTime = new Date();
@@ -130,11 +114,42 @@ const DashboardPage = () => {
       }
       const newHum = Math.min(100, Math.max(0, response.data.value));
       setHumidity(newHum);
-      currentValues.current.hum = newHum; // Update the current humidity value
+      currentValues.current.hum = newHum;
     } catch (error) {
       console.error('Error fetching humidity data:', error);
     }
   };
+
+  // Load saved layout on mount
+  useEffect(() => {
+    const savedLayout = localStorage.getItem('dashboardLayout');
+    if (savedLayout) {
+      setLayout(JSON.parse(savedLayout));
+    }
+  }, []);
+
+  // Poll for latest data every 1 second and check warnings
+  useEffect(() => {
+    // Initial fetch
+    fetchTemperatureData();
+    fetchHumidityData();
+    
+    // Set up interval for updates
+    const fetchInterval = setInterval(() => {
+      fetchTemperatureData();
+      fetchHumidityData();
+    }, 1000);
+
+    // Set up separate interval for warning checks with 1.2s delay
+    const warningInterval = setInterval(() => {
+      checkWarnings(currentValues.current.temp, currentValues.current.hum);
+    }, 1200);
+    
+    return () => {
+      clearInterval(fetchInterval);
+      clearInterval(warningInterval);
+    };
+  }, []);
 
   // Chart data
   const chartData = {
@@ -162,7 +177,7 @@ const DashboardPage = () => {
           displayFormats: { minute: 'HH:mm' },
         },
         ticks: {
-          maxTicksLimit: 10,
+          maxTicksLimit: 8,
           source: 'data',
         },
       },
@@ -193,15 +208,6 @@ const DashboardPage = () => {
       },
     },
   };
-
-  // Cleanup chart instance on unmount
-  useEffect(() => {
-    return () => {
-      if (chartRef.current) {
-        chartRef.current.destroy();
-      }
-    };
-  }, []);
 
   return (
     <div className="dashboard-page">
@@ -240,9 +246,22 @@ const DashboardPage = () => {
         </header>
 
         <div className="dashboard-content">
-          <div className="dashboard-grid">
+          <GridLayout
+            className="dashboard-grid"
+            layout={layout}
+            cols={3}
+            rowHeight={270}
+            width={1100}
+            onLayoutChange={(newLayout) => {
+              setLayout(newLayout);
+              localStorage.setItem('dashboardLayout', JSON.stringify(newLayout));
+            }}
+            margin={[10, 20]}
+            isDraggable={true}
+            isResizable={false}
+          >
             {/* Temperature Frame Section */}
-            <div className="dashboard-frame dashboard-temperature-frame">
+            <div key="temperature" className="dashboard-frame dashboard-temperature-frame">
               <h3 className="dashboard-frame-title">Temperature Frame</h3>
               <div className="dashboard-progress-bar">
                 <div 
@@ -259,7 +278,7 @@ const DashboardPage = () => {
             </div>
 
             {/* Temperature Chart */}
-            <div className="dashboard-frame dashboard-temperature-chart">
+            <div key="tempChart" className="dashboard-frame dashboard-temperature-chart">
               <h3 className="dashboard-frame-title">Temperature</h3>
               <div className="dashboard-chart-container">
                 <Line ref={chartRef} data={chartData} options={chartOptions} />
@@ -267,7 +286,7 @@ const DashboardPage = () => {
             </div>
 
             {/* Humidity */}
-            <div className="dashboard-frame dashboard-humidity-frame">
+            <div key="humidity" className="dashboard-frame dashboard-humidity-frame">
               <h3 className="dashboard-frame-title">Humidity</h3>
               <div className="dashboard-circle-container">
                 <svg className="dashboard-circle-progress" viewBox="0 0 36 36">
@@ -298,7 +317,7 @@ const DashboardPage = () => {
             </div>
 
             {/* Motion */}
-            <div className="dashboard-frame dashboard-motion-frame">
+            <div key="motion" className="dashboard-frame dashboard-motion-frame">
               <h3 className="dashboard-frame-title">Motion</h3>
               <div className="dashboard-circle-container dashboard-motion-circle">
                 <svg className="dashboard-circle-progress" viewBox="0 0 36 36">
@@ -317,7 +336,7 @@ const DashboardPage = () => {
             </div>
 
             {/* Light Frame */}
-            <div className="dashboard-frame dashboard-light-frame">
+            <div key="light" className="dashboard-frame dashboard-light-frame">
               <h3 className="dashboard-frame-title">Light Frame</h3>
               <div className="dashboard-circle-container dashboard-light-circle">
                 <svg className="dashboard-circle-progress" viewBox="0 0 36 36">
@@ -337,7 +356,7 @@ const DashboardPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </GridLayout>
         </div>
       </main>
     </div>

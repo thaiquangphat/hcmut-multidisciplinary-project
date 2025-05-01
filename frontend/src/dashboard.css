@@ -10,6 +10,7 @@
   .dashboard-main-content {
     flex: 1;
     padding: 20px;
+    margin-left: 0; /* Remove the left margin */
     box-sizing: border-box;
     overflow-y: auto;
     height: 100vh;
@@ -45,12 +46,12 @@
   .dashboard-header-right {
     display: flex;
     align-items: center;
+    gap: 20px;
   }
   
   .dashboard-temperature {
     font-size: 24px;
     color: #333;
-    margin-right: 20px;
   }
   
   .dashboard-add-device-button {
@@ -81,18 +82,15 @@
   }
   
   .dashboard-grid {
+    min-height: 0%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    min-height: 0;
-    overflow: visible;
-    position: relative;
-    z-index: 5;
+    gap: 10px;
+    width:100%;
   }
   
   .dashboard-frame {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     text-align: center;
     box-sizing: border-box;
@@ -143,11 +141,6 @@
     color: #8b5a2b;
   }
   
-  /* Temperature Frame */
-  .dashboard-temperature-frame {
-    padding: 10px; /* Reduced padding */
-  }
-  
   .dashboard-progress-bar {
     width: 90%;
     height: 12px;
@@ -163,7 +156,6 @@
   }
   
   .dashboard-progress-filled {
-    width: 64.5%;
     height: 100%;
     background-color: #f5e5b3;
     border-radius: 10px 0 0 10px;
@@ -180,18 +172,13 @@
     margin: 0;
   }
   
-  /* Temperature Chart */
-  .dashboard-temperature-chart {
-    min-height: unset; /* Override min-height if needed */
-  }
-  
   .dashboard-chart-container {
-    height: 220px;
+    height: 200px;
     width: 100%;
     position: relative;
+    padding-bottom: 20px;
   }
   
-  /* Humidity, Motion, and Light Frames */
   .dashboard-circle-container {
     position: relative;
     width: 120px;
@@ -213,7 +200,9 @@
   }
   
   .dashboard-circle-bg {
+    fill: none;
     stroke: #f0f0f0;
+    stroke-width: 3;
   }
   
   .dashboard-circle-fill {
@@ -245,12 +234,10 @@
     transform: rotate(194deg);
   }
   
-  /* Motion */
   .dashboard-motion-circle {
     border-color: #ddd;
   }
   
-  /* Light Frame */
   .dashboard-light-circle {
     flex-direction: column;
   }
@@ -272,6 +259,118 @@
     border-top-color: transparent;
     border-right-color: #f5c518;
     transform: rotate(72deg);
+  }
+  
+  .dashboard-warning-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .dashboard-warning-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dashboard-warning-content h3 {
+    color: #ff0000;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .dashboard-warning-content p {
+    margin-bottom: 20px;
+    white-space: pre-line;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .dashboard-warning-content button {
+    padding: 10px 20px;
+    background-color: #8b5a2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .dashboard-warning-content button:hover {
+    background-color: #9b6a3b;
+  }
+  
+  /* Grid Layout Styles */
+  .react-grid-layout {
+    position: relative;
+    transition: height 200ms ease;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .react-grid-item {
+    transition: all 200ms ease;
+    transition-property: left, top;
+  }
+  
+  .react-grid-item.cssTransforms {
+    transition-property: transform;
+  }
+  
+  .react-grid-item.resizing {
+    z-index: 1;
+    will-change: width, height;
+  }
+  
+  .react-grid-item.react-draggable-dragging {
+    transition: none;
+    z-index: 3;
+    will-change: transform;
+  }
+  
+  .react-grid-item.react-grid-placeholder {
+    background: #e8e8e8;
+    opacity: 0.2;
+    transition-duration: 100ms;
+    z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  .react-grid-item > .react-resizable-handle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    right: 0;
+    cursor: se-resize;
+  }
+  
+  .react-grid-item > .react-resizable-handle::after {
+    content: "";
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    width: 5px;
+    height: 5px;
+    border-right: 2px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
   }
   
   /* Responsive adjustments */
@@ -298,84 +397,4 @@
     .dashboard-frame {
       min-height: 200px;
     }
-  }
-
-  /* Warning Modal */
-  .dashboard-warning-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-
-  .dashboard-warning-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    width: 90%;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .dashboard-warning-content h3 {
-    color: #ff0000;
-    margin-bottom: 10px;
-    font-size: 24px;
-  }
-
-  .dashboard-warning-content p {
-    margin-bottom: 20px;
-    white-space: pre-line;
-    font-size: 16px;
-    color: #333;
-  }
-
-  .dashboard-warning-content button {
-    padding: 10px 20px;
-    background-color: #8b5a2b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 16px;
-  }
-
-  .dashboard-warning-content button:hover {
-    background-color: #9b6a3b;
-  }
-
-  /* Motion Frame */
-  .dashboard-motion-frame .dashboard-circle-container {
-    border: none;
-  }
-
-  .dashboard-motion-frame .dashboard-circle-value {
-    color: #333;
-    font-size: 24px;
-  }
-
-  /* Light Frame */
-  .dashboard-light-frame .dashboard-circle-container {
-    border: none;
-  }
-
-  .dashboard-light-value-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .dashboard-circle-label {
-    font-size: 14px;
-    color: #666;
-    margin-top: 8px;
   }
