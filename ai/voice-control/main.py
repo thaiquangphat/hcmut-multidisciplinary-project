@@ -17,7 +17,9 @@ def detect_and_push(prediction):
     return pushing_command(adadevice, value)
 
 def recording():
+    print("\033[95mInside recording function. Starting audio recording...\033[0m")
     audio_file, date_str, duration = audio.record_audio()
+    print("\033[95mInside recording function. Audio recording finished...\033[0m")
     return audio_file, date_str, duration
 
 def transcribing_audio(audio_file, date_str, duration, device):
