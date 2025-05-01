@@ -3,6 +3,7 @@ from Adafruit_IO import MQTTClient
 import random
 import time
 import serial.tools.list_ports
+from Adafruit_IO import Client
 
 def pushing_command(adadevice, value):
     AIO_FEED_ID = adadevice
@@ -42,3 +43,14 @@ def pushing_command(adadevice, value):
         return True
     except Exception as e:
         return e
+    
+def receive_from_feed(feed: str): 
+    AIO_USERNAME = 'Phat_Adafruit'
+    AIO_KEY = 'aio_FpCw83QuD1wktNbwmwyGBBajuNEU'
+
+    aio = Client(username=AIO_USERNAME, key=AIO_KEY)
+
+    receive_value = aio.receive(feed).value
+    # print(f"Nhận dữ liệu từ {feed}: {receive_value}")
+
+    return float(receive_value)
