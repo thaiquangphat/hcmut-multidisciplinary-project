@@ -5,7 +5,6 @@ from voice.audio import toggle_recording
 import logging
 from flask_cors import CORS
 import json
-from adafruit import receive_from_feed
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
@@ -56,42 +55,6 @@ def api_transcribe():
     except Exception as e:
         logging.error(f"Error in transcription: {e}")
         return jsonify({'error': str(e)}), 500
-    
-@app.route('/api/receive_humidity', methods=['GET'])
-def api_receive_humidity():
-    try:
-        logging.info("Retrieving humidity data")
-        data = receive_from_feed('humidity')
-        logging.info(f"Humidity data retrieved: {data}")
-
-        return jsonify({"ok": True, "value": float(data)}), 200 
-    except Exception as e:
-        logging.error(f"Error retrieving humidity data: {e}")
-        return jsonify({"ok": False, 'error': str(e)}), 500
-    
-@app.route('/api/receive_motion', methods=['GET'])
-def api_receive_motion():
-    try:
-        logging.info("Retrieving motion data")
-        data = receive_from_feed('motion')
-        logging.info(f"Motion data retrieved: {data}")
-
-        return jsonify({"ok": True, "value": float(data)}), 200
-    except Exception as e:
-        logging.error(f"Error retrieving motion data: {e}")
-        return jsonify({"ok": False, 'error': str(e)}), 500
-    
-@app.route('/api/receive_temperature', methods=['GET'])
-def api_receive_temperature():
-    try:
-        logging.info("Retrieving temperature data")
-        data = receive_from_feed('temperature')
-        logging.info(f"Temperature data retrieved: {data}")
-
-        return jsonify({"ok": True, "value": float(data)}), 200
-    except Exception as e:
-        logging.error(f"Error retrieving temperature data: {e}")
-        return jsonify({"ok": False, 'error': str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)
