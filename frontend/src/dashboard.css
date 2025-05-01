@@ -10,7 +10,6 @@
   .dashboard-main-content {
     flex: 1;
     padding: 20px;
-    margin-left: 0; /* Remove the left margin */
     box-sizing: border-box;
     overflow-y: auto;
     height: 100vh;
@@ -46,12 +45,12 @@
   .dashboard-header-right {
     display: flex;
     align-items: center;
-    gap: 20px;
   }
   
   .dashboard-temperature {
     font-size: 24px;
     color: #333;
+    margin-right: 20px;
   }
   
   .dashboard-add-device-button {
@@ -82,15 +81,50 @@
   }
   
   .dashboard-grid {
-    min-height: 0%;
     display: grid;
-    gap: 10px;
-    width:100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    min-height: 0;
+    overflow: visible;
+    position: relative;
+    z-index: 5;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .dashboard-temperature-frame {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 250px;
+  }
+  
+  .dashboard-temperature-chart {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+    min-height: 250px;
+  }
+  
+  .dashboard-humidity-frame {
+    grid-column: 1;
+    grid-row: 2;
+    min-width: 250px;
+  }
+  
+  .dashboard-light-frame {
+    grid-column: 2;
+    grid-row: 2;
+    min-width: 250px;
+  }
+  
+  .dashboard-motion-frame {
+    grid-column: 3;
+    grid-row: 2;
+    min-width: 250px;
   }
   
   .dashboard-frame {
     background-color: #fff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-sizing: border-box;
@@ -141,6 +175,11 @@
     color: #8b5a2b;
   }
   
+  /* Temperature Frame */
+  .dashboard-temperature-frame {
+    padding: 10px; /* Reduced padding */
+  }
+  
   .dashboard-progress-bar {
     width: 90%;
     height: 12px;
@@ -156,6 +195,7 @@
   }
   
   .dashboard-progress-filled {
+    width: 64.5%;
     height: 100%;
     background-color: #f5e5b3;
     border-radius: 10px 0 0 10px;
@@ -172,24 +212,21 @@
     margin: 0;
   }
   
+  /* Temperature Chart */
   .dashboard-chart-container {
     height: 200px;
     width: 100%;
     position: relative;
-    padding-bottom: 20px;
   }
   
+  /* Humidity, Motion, and Light Frames */
   .dashboard-circle-container {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    border: 6px solid #ddd;
-    border-radius: 50%;
+    position: relative;
+    width: 120px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    transition: all 0.3s ease;
   }
   
   .dashboard-frame:hover .dashboard-circle-container {
@@ -213,8 +250,11 @@
   }
   
   .dashboard-circle-value {
+    position: relative;
     font-size: 24px;
+    font-weight: bold;
     color: #333;
+    z-index: 1;
   }
   
   .dashboard-humidity-frame .dashboard-circle-container {
@@ -233,10 +273,12 @@
     transform: rotate(194deg);
   }
   
+  /* Motion */
   .dashboard-motion-circle {
     border-color: #ddd;
   }
   
+  /* Light Frame */
   .dashboard-light-circle {
     flex-direction: column;
   }

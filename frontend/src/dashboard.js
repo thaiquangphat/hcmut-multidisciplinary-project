@@ -1,5 +1,6 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState} from 'react';
 import { Line } from 'react-chartjs-2';
+import axios from 'axios';
 import {
   Chart as ChartJS,
   LineElement,
@@ -11,10 +12,7 @@ import {
   Legend,
 } from 'chart.js';
 import 'chartjs-adapter-date-fns';
-import Sidebar from './sidebar';
-import GridLayout from 'react-grid-layout';
-import 'react-grid-layout/css/styles.css';
-import 'react-resizable/css/styles.css';
+import Sidebar from './sidebar'; // Import the Sidebar component
 
 // Import the CSS file
 import './dashboard.css';
@@ -140,21 +138,11 @@ const DashboardPage = () => {
 
   // Chart data
   const chartData = {
-    labels: [
-      new Date('2025-04-09T00:00:00'),
-      new Date('2025-04-09T03:00:00'),
-      new Date('2025-04-09T06:00:00'),
-      new Date('2025-04-09T09:00:00'),
-      new Date('2025-04-09T12:00:00'),
-      new Date('2025-04-09T15:00:00'),
-      new Date('2025-04-09T18:00:00'),
-      new Date('2025-04-09T21:00:00'),
-      new Date('2025-04-10T00:00:00'),
-    ],
+    labels: temperatureData.labels,
     datasets: [
       {
         label: 'Temperature (°C)',
-        data: [26.5, 26.0, 25.5, 25.8, 25.7, 25.9, 26.1, 25.8, 25.6],
+        data: temperatureData.values,
         borderColor: '#f5e5b3',
         backgroundColor: 'rgba(245, 229, 179, 0.2)',
         fill: true,
@@ -170,18 +158,18 @@ const DashboardPage = () => {
       x: {
         type: 'time',
         time: {
-          unit: 'hour',
-          displayFormats: { hour: 'HH:mm' },
+          unit: 'minute',
+          displayFormats: { minute: 'HH:mm' },
         },
         ticks: {
-          maxTicksLimit: 8,
+          maxTicksLimit: 10,
           source: 'data',
         },
       },
       y: {
         beginAtZero: false,
-        min: 20,
-        max: 30,
+        min: -100,
+        max: 100,
         title: {
           display: true,
           text: 'Temperature (°C)',
@@ -196,12 +184,38 @@ const DashboardPage = () => {
       tooltip: {
         mode: 'index',
         intersect: false,
+        callbacks: {
+          title: (context) => {
+            const date = new Date(context[0].label);
+            return date.toLocaleTimeString();
+          }
+        }
       },
     },
   };
 
+  // Cleanup chart instance on unmount
+  useEffect(() => {
+    return () => {
+      if (chartRef.current) {
+        chartRef.current.destroy();
+      }
+    };
+  }, []);
+
   return (
     <div className="dashboard-page">
+      {/* Warning Modal */}
+      {showWarning && (
+        <div className="dashboard-warning-modal">
+          <div className="dashboard-warning-content">
+            <h3>Warning!</h3>
+            <p>{warningMessage}</p>
+            <button onClick={() => setShowWarning(false)}>Close</button>
+          </div>
+        </div>
+      )}
+
       {/* Sidebar */}
       <Sidebar activePage="DASHBOARD" />
 
@@ -215,37 +229,37 @@ const DashboardPage = () => {
             </p>
           </div>
           <div className="dashboard-header-right">
-            <span className="dashboard-temperature">25.8°C</span>
+            <span 
+              className="dashboard-temperature"
+              style={{temperature}}
+            >
+              {temperature.toFixed(1)}°C
+            </span>
             <button className="dashboard-add-device-button">+ NEW DEVICE</button>
           </div>
         </header>
 
         <div className="dashboard-content">
-          <GridLayout
-            className="dashboard-grid"
-            layout={layout}
-            cols={3}
-            rowHeight={270}
-            width={1100}
-            onLayoutChange={(newLayout) => {
-              setLayout(newLayout);
-              localStorage.setItem('dashboardLayout', JSON.stringify(newLayout));
-            }}
-            margin={[10, 20]}
-            isDraggable={true}
-            isResizable={false}
-          >
+          <div className="dashboard-grid">
             {/* Temperature Frame Section */}
-            <div key="temperature" className="dashboard-frame dashboard-temperature-frame">
+            <div className="dashboard-frame dashboard-temperature-frame">
               <h3 className="dashboard-frame-title">Temperature Frame</h3>
               <div className="dashboard-progress-bar">
-                <div className="dashboard-progress-filled" />
+                <div 
+                  className="dashboard-progress-filled"
+                  style={{ 
+                    width: `${((temperature + 100) / 200) * 100}%`,
+                    backgroundColor: getColor(temperature, 'temperature')
+                  }}
+                />
               </div>
-              <p className="dashboard-frame-value">25.8°C</p>
+              <p className="dashboard-frame-value">
+                {temperature.toFixed(1)}°C
+              </p>
             </div>
 
             {/* Temperature Chart */}
-            <div key="tempChart" className="dashboard-frame dashboard-temperature-chart">
+            <div className="dashboard-frame dashboard-temperature-chart">
               <h3 className="dashboard-frame-title">Temperature</h3>
               <div className="dashboard-chart-container">
                 <Line ref={chartRef} data={chartData} options={chartOptions} />
@@ -253,11 +267,33 @@ const DashboardPage = () => {
             </div>
 
             {/* Humidity */}
-            <div key="humidity" className="dashboard-frame dashboard-humidity-frame">
+            <div className="dashboard-frame dashboard-humidity-frame">
               <h3 className="dashboard-frame-title">Humidity</h3>
               <div className="dashboard-circle-container">
-                <span className="dashboard-circle-value">53.9%</span>
-                <div className="dashboard-circle-overlay" />
+                <svg className="dashboard-circle-progress" viewBox="0 0 36 36">
+                  <path
+                    className="dashboard-circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                    fill="none"
+                    stroke="#f0f0f0"
+                    strokeWidth="3"
+                  />
+                  <path
+                    className="dashboard-circle-fill"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                    fill="none"
+                    stroke={getColor(humidity, 'humidity')}
+                    strokeWidth="3"
+                    strokeDasharray={`${humidity}, 100`}
+                  />
+                </svg>
+                <span className="dashboard-circle-value">
+                  {humidity.toFixed(1)}%
+                </span>
               </div>
             </div>
 
@@ -265,22 +301,43 @@ const DashboardPage = () => {
             <div className="dashboard-frame dashboard-motion-frame">
               <h3 className="dashboard-frame-title">Motion</h3>
               <div className="dashboard-circle-container dashboard-motion-circle">
+                <svg className="dashboard-circle-progress" viewBox="0 0 36 36">
+                  <path
+                    className="dashboard-circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                    fill="none"
+                    stroke="#f0f0f0"
+                    strokeWidth="3"
+                  />
+                </svg>
                 <span className="dashboard-circle-value">-</span>
               </div>
             </div>
 
             {/* Light Frame */}
-            <div key="light" className="dashboard-frame dashboard-light-frame">
+            <div className="dashboard-frame dashboard-light-frame">
               <h3 className="dashboard-frame-title">Light Frame</h3>
               <div className="dashboard-circle-container dashboard-light-circle">
+                <svg className="dashboard-circle-progress" viewBox="0 0 36 36">
+                  <path
+                    className="dashboard-circle-bg"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                    fill="none"
+                    stroke="#f0f0f0"
+                    strokeWidth="3"
+                  />
+                </svg>
                 <div className="dashboard-light-value-container">
                   <span className="dashboard-circle-value">20%</span>
                   <span className="dashboard-circle-label">Value</span>
                 </div>
-                <div className="dashboard-circle-overlay dashboard-light-overlay" />
               </div>
             </div>
-          </GridLayout>
+          </div>
         </div>
       </main>
     </div>
