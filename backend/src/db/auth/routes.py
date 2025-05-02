@@ -82,4 +82,20 @@ async def signupface(user:UserSignupFaceModel,session:AsyncSession = Depends(get
 
 
     
-     
+from src.db.auth.dependencies import RefreshTokenBearer
+
+@auth_router.post("/refresh-token")
+async def refresh_access_token(
+    token_details: dict = Depends(RefreshTokenBearer())
+):
+    try:
+        # Validate token and fetch user_id
+        user_id = token_details["user"]["user_id"]
+        new_access_token = create_access_token(
+            user_data={"user_id": user_id},
+            expiry=timedelta(minutes=30)
+        )
+        print("New Access Token:", new_access_token)
+        return {"access_token": new_access_token}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

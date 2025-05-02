@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from './sidebar';
 import './setting.css';
-
+import FaceIDSettings from './faceidcontrol'; 
 const SettingPage = () => {
   return (
     <div className="setting-page">
@@ -20,11 +20,11 @@ const SettingPage = () => {
           </section>
           
           <section className="setting-section">
-            <h2>System Settings</h2>
-            <div className="setting-placeholder">
-              <p>System configuration options will appear here</p>
-            </div>
-          </section>
+          <h2>System Settings</h2>
+          <div className="setting-placeholder">
+            <FaceIDSettings />
+          </div>
+        </section>
           
           <section className="setting-section">
             <h2>Notifications</h2>
