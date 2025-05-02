@@ -90,5 +90,23 @@
         "label": "fan_off",
         "date": "2025-05-01",
         "chatbot_response": "No more breeze \u2013 the fan is off."
+    },
+    {
+        "transcribed_text": " Turn on the fan.",
+        "time_recorded": "2025-05-02 09:07:56",
+        "audio_file": "2025-05-02_09-07-26.wav",
+        "duration_seconds": 1.76,
+        "label": "fan_on",
+        "date": "2025-05-02",
+        "chatbot_response": "Fan is now on. Enjoy the breeze!"
+    },
+    {
+        "transcribed_text": " Turn off the lights",
+        "time_recorded": "2025-05-02 09:08:38",
+        "audio_file": "2025-05-02_09-08-10.wav",
+        "duration_seconds": 1.97,
+        "label": "lights_off",
+        "date": "2025-05-02",
+        "chatbot_response": "Lights are now off. Saving energy!"
     }
 ]

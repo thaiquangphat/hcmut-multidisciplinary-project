@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from main import transcribing_audio
 import torch
 from voice.audio import toggle_recording
+from adafruit import get_value_from_feed
 import logging
 from flask_cors import CORS
 import json
@@ -54,6 +55,39 @@ def api_transcribe():
         })
     except Exception as e:
         logging.error(f"Error in transcription: {e}")
+        return jsonify({'error': str(e)}), 500
+    
+@app.route('/api/receive_humidity', methods=['GET'])
+def api_receive_humidity():
+    try:
+        logging.info("Humidity request received")
+        receive_value = get_value_from_feed('humidity')
+        logging.info(f"Humidity value received: {receive_value}")
+        return jsonify({"ok": True, "value": receive_value}), 200
+    except Exception as e:
+        logging.error(f"Error receiving humidity data: {e}")
+        return jsonify({"ok": False, 'error': str(e)}), 500
+    
+@app.route('/api/receive_temperature', methods=['GET'])
+def api_receive_temperature():
+    try:
+        logging.info("Temperature request received")
+        receive_value = get_value_from_feed('temperature')
+        logging.info(f"Temperature value received: {receive_value}")
+        return jsonify({"ok": True, "value": receive_value}), 200
+    except Exception as e:
+        logging.error(f"Error receiving temperature data: {e}")
+        return jsonify({'error': str(e)}), 500
+    
+@app.route('/api/receive_light_frame', methods=['GET'])
+def api_receive_light_frame():
+    try:
+        logging.info("Light frame request received")
+        receive_value = get_value_from_feed('light')
+        logging.info(f"Light frame value received: {receive_value}")
+        return jsonify({"ok": True, "value": receive_value}), 200
+    except Exception as e:
+        logging.error(f"Error receiving light frame data: {e}")
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
