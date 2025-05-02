@@ -23,6 +23,7 @@ ChartJS.register(LineElement, PointElement, LinearScale, TimeScale, Title, Toolt
 const DashboardPage = () => {
   const chartRef = useRef(null);
   const [humidity, setHumidity] = useState(0);
+  const [lightframe, setLightFrame] = useState(0);
   const [temperature, setTemperature] = useState(0);
   const [temperatureData, setTemperatureData] = useState({
     labels: [],
@@ -32,7 +33,7 @@ const DashboardPage = () => {
   const [warningMessage, setWarningMessage] = useState('');
 
   // Track current values for warning checks
-  const currentValues = useRef({ temp: 0, hum: 0 });
+  const currentValues = useRef({ temp: 0, hum: 0, lightframe: 0 });
 
   // Get color based on value and type
   const getColor = (value, type) => {
@@ -76,6 +77,7 @@ const DashboardPage = () => {
     const fetchInterval = setInterval(() => {
       fetchTemperatureData();
       fetchHumidityData();
+      fetchLightFrameValue();
     }, 1000);
 
     // Set up separate interval for warning checks with 1.2s delay
@@ -133,6 +135,21 @@ const DashboardPage = () => {
       currentValues.current.hum = newHum; // Update the current humidity value
     } catch (error) {
       console.error('Error fetching humidity data:', error);
+    }
+  };
+
+  // Function to fetch light frame value from the server
+  const fetchLightFrameValue = async () => {
+    try {
+      const response = await axios.get('http://127.0.0.1:5000/api/receive_light_frame');
+      if (!response.data.ok) {
+        throw new Error('Failed to fetch light frame data');
+      }
+      const newLightFrame = Math.min(100, Math.max(0, response.data.value));
+      setLightFrame(newLightFrame);
+      currentValues.current.lightframe = newLightFrame; // Update the current light frame value
+      } catch (error) {
+      console.error('Error fetching light frame data:', error);
     }
   };
 
@@ -330,11 +347,20 @@ const DashboardPage = () => {
                     stroke="#f0f0f0"
                     strokeWidth="3"
                   />
+                  <path
+                    className="dashboard-circle-fill"
+                    d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831"
+                    fill="none"
+                    stroke={'#f5e5b3'}
+                    strokeWidth="3"
+                    strokeDasharray={`${lightframe}, 100`}
+                  />
                 </svg>
-                <div className="dashboard-light-value-container">
-                  <span className="dashboard-circle-value">20%</span>
-                  <span className="dashboard-circle-label">Value</span>
-                </div>
+                <span className="dashboard-circle-value">
+                  {lightframe.toFixed(1)}
+                </span>
               </div>
             </div>
           </div>
