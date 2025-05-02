@@ -1,12 +1,18 @@
-from src.db.auth.schemas import UserLoginModel, UserSignupModel
+from src.db.auth.schemas import UserLoginModel, UserSignupModel, UserLoginFaceModel, UserSignupFaceModel
 from .utils import create_access_token
 from passlib.context import CryptContext
 from datetime import timedelta
 from fastapi.responses import JSONResponse
 from fastapi.exceptions import HTTPException
 from fastapi import status
+from typing import List
+from bson import ObjectId
+# FACEID
+from scipy.spatial.distance import cosine
+import numpy as np
 
 REFRESH_TOKEN_EXPIRY = 2
+FACEID_THRESHOLD = 0.5
 pwd_context = CryptContext(schemes=["bcrypt"])
 
 class LoginService: 
@@ -54,38 +60,59 @@ class LoginService:
             raise e
         except Exception as e: 
             raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
-    async def loginface(self, userdata: UserLoginModel, db) -> JSONResponse:
-        try: 
-            # Find user by email in the "USERS" collection
+    async def loginface(self, userdata: UserLoginFaceModel, db) -> JSONResponse:
+        try:
             user = await db["USERS"].find_one({"email": userdata.email})
             
-            if not user: 
+            if not user:
                 raise HTTPException(
                     status_code=status.HTTP_403_FORBIDDEN,
-                    detail="Wrong email"
+                    detail="Invalid email"
                 )
             
-            if not pwd_context.verify(userdata.password, user["faceID"]):
+            stored_faceid = user.get("faceID")
+            if not stored_faceid:
                 raise HTTPException(
                     status_code=status.HTTP_403_FORBIDDEN,
-                    detail="Wrong faceID"
+                    detail="FaceID not registered for this user"
                 )
             
-            # Use MongoDB's _id as user_id
+            try:
+                stored_faceid_array = np.array(stored_faceid)
+            except Exception as e:
+                raise HTTPException(
+                    status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                    detail="Invalid FaceID format in database"
+                )
+            
+            try:
+                input_faceid_array = np.array(userdata.faceID) 
+            except Exception as e:
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail="Invalid FaceID format in request"
+                )
+            
+            similarity = 1 - cosine(input_faceid_array, stored_faceid_array)
+            
+            if similarity < FACEID_THRESHOLD:
+                raise HTTPException(
+                    status_code=status.HTTP_403_FORBIDDEN,
+                    detail="FaceID does not match"
+                )
+            
             user_id = str(user["_id"])
-            access_token = create_access_token(
-                user_data={'user_id': user_id}
-            )
+            access_token = create_access_token({'user_id': user_id})
             refresh_token = create_access_token(
-                user_data={'user_id': user_id},
-                refresh=True,
+                {'user_id': user_id}, 
+                refresh=True, 
                 expiry=timedelta(days=REFRESH_TOKEN_EXPIRY)
             )
             
             return JSONResponse(
                 status_code=status.HTTP_200_OK,
                 content={
-                    "message": "Log in successful",
+                    "message": "Login successful",
                     "access_token": access_token,
                     "refresh_token": refresh_token,
                     "user": {
@@ -96,8 +123,11 @@ class LoginService:
             )
         except HTTPException as e:
             raise e
-        except Exception as e: 
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
+        except Exception as e:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=f"Internal server error: {str(e)}"
+            )
     async def create_new_user(self, user_data: UserSignupModel, db):
         existing_user = await db["USERS"].find_one({"email": user_data.email})
         if existing_user: 
@@ -116,18 +146,42 @@ class LoginService:
         
         return await self.login(UserLoginModel(email=user_data.email, password=user_data.password), db)
 
-    async def create_faceID(self, userdata: UserLoginModel, faceID: str, db):
+ 
+    async def create_faceID(self, userData: UserSignupFaceModel, db):
         try:
-            user = await db["USERS"].find_one({"email": userdata.email})
+            user = await db["USERS"].find_one({"email": userData.email})
             if not user:
-                raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Wrong email")
+                raise HTTPException(
+                    status_code=status.HTTP_403_FORBIDDEN,
+                    detail="User not found"
+                )
+
             user_id = str(user["_id"])
+
+            faceID_array = userData.faceID
+            # print("faceID_array", faceID_array)
+            # print("user_id", user_id)
+            # print('database', db["USERS"])
             result = await db["USERS"].update_one(
-                {"_id": user_id},
-                {"$set": {"faceID": faceID}}
+                {"_id": ObjectId(user_id)}, 
+                {"$set": {"faceID": faceID_array}}
             )
+            # print("result", result)
             if result.modified_count == 0:
-                raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
-            return JSONResponse(status_code=status.HTTP_200_OK, content={"message": "Face ID created successfully"})
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail="Failed to update user"
+                )
+
+            return {
+                "status_code": status.HTTP_200_OK,
+                "message": "Face ID created successfully"
+            }
+
+        except HTTPException as e:
+            raise e
         except Exception as e:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=f"Internal server error: {str(e)}"
+            )

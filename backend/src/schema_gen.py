@@ -70,8 +70,9 @@ def create_schema():
                     "description": "must be a string and is required"
                 },
                 "faceID": {
-                    "bsonType": "string",
-                    "description": "must be a string (hash or encoded) and is required"
+                    "type": "array",
+                    "items": { "type": "number" },
+                    "description": "Numerical vector representing FaceID (e.g., [0.12, -0.45, 0.78, ...])"
                 },
                 "password": {
                     "bsonType": "string",
@@ -89,7 +90,10 @@ def create_schema():
             }
         }
     }
-
+    if "user" in db.list_collection_names():
+        db.drop_collection("user")
+    if "record_device" in db.list_collection_names():
+        db.drop_collection("record_device")
     db.create_collection(
         'user', 
         validator=user_schema

@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, status, HTTPException
-from src.db.auth.schemas import UserLoginModel, UserSignupModel
+from src.db.auth.schemas import UserLoginModel, UserSignupModel,UserLoginFaceModel, UserSignupFaceModel
 from sqlmodel.ext.asyncio.session import AsyncSession
 from src.db.main import get_db as get_session
 from .service import LoginService
@@ -28,11 +28,11 @@ async def login_user(user:UserLoginModel,session:AsyncSession = Depends(get_sess
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
 
 @auth_router.post('/loginface')
-async def loginface(user:UserLoginModel,session:AsyncSession = Depends(get_session)):
+async def loginface(user:UserLoginFaceModel,session:AsyncSession = Depends(get_session)):
     """
     Example user data:
     username: string
-    password: string
+    faceID: string
     """
     try: 
         login = await login_helper.loginface(user, session)
@@ -71,7 +71,7 @@ async def signup(user:UserSignupModel,session:AsyncSession = Depends(get_session
      
 
 @auth_router.post('/signupface')
-async def signupface(user:UserSignupModel,session:AsyncSession = Depends(get_session),status_code=status.HTTP_201_CREATED):
+async def signupface(user:UserSignupFaceModel,session:AsyncSession = Depends(get_session),status_code=status.HTTP_201_CREATED):
      try:
           status_message = await login_helper.create_faceID(user,session)
           return status_message
