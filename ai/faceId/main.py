@@ -9,7 +9,13 @@ import torch
 import time
 from fastapi import FastAPI, HTTPException
 import threading
-
+from threading import Thread, Event
+import queue
+from fastapi.responses import JSONResponse
+# Global state for camera control
+is_running = False
+camera_thread = None
+camera_result_queue = queue.Queue()  # Shared queue to store results
 
 mtcnn = MTCNN(keep_all=True, device='cuda' if torch.cuda.is_available() else 'cpu') 
 app_insightface = FaceAnalysis()
@@ -64,14 +70,20 @@ def send_to_api(embedding,isSignUp,email=None,password=None):
                 print("Error:", response.text)
         except Exception as e:
             print("API Error:", str(e))
+    return response.json()
 
-def camera_loop(isSignUp=False,email=None,password=None):
+def camera_loop(start_time,isSignUp=False,email=None,password=None):
     """Capture video from camera and process frames"""
     global is_running
     if not is_running:
         return
-    cap = cv2.VideoCapture(0)
-    start_time = time.time()
+    try:
+        cap = cv2.VideoCapture(0)
+        if not cap.isOpened():
+            raise Exception("Could not open video device")
+    except Exception as e:
+        print("Error opening camera:", str(e))
+        return
     while True:
         ret, frame = cap.read()
         if not ret:
@@ -90,9 +102,9 @@ def camera_loop(isSignUp=False,email=None,password=None):
                 embedding = get_face_embedding(rgb_frame_np)
                 
                 if embedding is not None:
-                    send_to_api(embedding,isSignUp,email,password)
-                    # print("Face embedding:", embedding)
-                    return
+                    response = send_to_api(embedding, isSignUp, email, password)
+                    camera_result_queue.put(response)  # Store result in queue
+                    return 
         elapsed_time = time.time() - start_time
         if elapsed_time < frame_interval:
             time.sleep(frame_interval - elapsed_time)
@@ -102,53 +114,67 @@ def camera_loop(isSignUp=False,email=None,password=None):
     
     cap.release()
     cv2.destroyAllWindows()
+    stop_camera()
+    """Stop the camera and cleanup"""
 @app.post("/start-camera-login")
-async def start_camera(email: str):
+async def start_camera(data: dict):
     """Start camera for face login"""
     global is_running, camera_thread
-    isSignUp = False
-    if is_running:
-        raise HTTPException(status_code=400, detail="Camera already running")
+    try:
+        isSignUp = False
+        if is_running:
+            raise HTTPException(status_code=400, detail="Camera already running")
 
-
-    is_running = True
-    camera_thread = threading.Thread(target=camera_loop, args=(isSignUp,email))
-    camera_thread.start()
-    return {"message": "Camera started"}
+        start_time = time.time()
+        is_running = True
+        camera_thread = threading.Thread(target=camera_loop, args=(start_time,isSignUp,data['email']))
+        camera_thread.start()
+        return {"message": "Camera started"}
+    except Exception as e:
+        is_running = False
+        # print("Error starting camera:", str(e))
+        raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        stop_camera()
 @app.post("/start-camera-signup")
-async def start_camera(email: str,password: str):
+async def start_camera(data: dict):
     """Start camera for face login"""
     global is_running, camera_thread
-    isSignUp = True
-    if is_running:
-        raise HTTPException(status_code=400, detail="Camera already running")
+    try:
+        isSignUp = True
+        if is_running:
+            raise HTTPException(status_code=400, detail="Camera already running")
+        start_time = time.time()
 
-
-    is_running = True
-    camera_thread = threading.Thread(target=camera_loop, args=(isSignUp,email,password))
-    camera_thread.start()
-    return {"message": "Camera started"}
+        is_running = True
+        camera_thread = threading.Thread(target=camera_loop, args=(start_time,isSignUp,data['email'],data['password']))
+        camera_thread.start()
+        return {"message": "Camera started"}
+    except Exception as e:
+        is_running = False
+        raise HTTPException(status_code=500, detail=str(e))
+    finally:
+        stop_camera()
 
 
 @app.post("/stop-camera")
 async def stop_camera():
     global is_running, camera_thread
-
     try:
         if camera_thread and camera_thread.is_alive():
             is_running = False
-            camera_thread.join(timeout=5)  
+            camera_thread.join(timeout=5)  # Wait for thread to finish
 
             if camera_thread.is_alive():
                 print("Camera thread is unresponsive. Terminating forcefully.")
 
-        is_running = False
-        camera_thread = None
+        # Get result from queue (if any)
+        try:
+            response = camera_result_queue.get_nowait()
+        except queue.Empty:
+            response = {"error": "No result from camera thread"}
 
-        cv2.destroyAllWindows()
+        return JSONResponse(content=response, status_code=200)
 
-        return {"message": "Camera stopped successfully"}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error stopping camera: {str(e)}")
-if __name__ == "__main__":
-    app.run(host='localhost', port=5001, debug=True)
+        raise HTTPException(status_code=500, detail=str(e))

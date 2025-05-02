@@ -1,26 +1,40 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import logoImg from './yolohome.png';
-import illustrationImg from './yolohome.png';
-import chair from './chair.png'
+import chair from './chair.png';
 import { useAuth } from './AuthContext';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [loginMethod, setLoginMethod] = useState('email'); // Track login method
   const navigate = useNavigate();
-  const { login } = useAuth();
+  const { login, loginWithFaceID } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
 
-    try {
-      await login(email, password);
-      navigate('/dashboard');
-    } catch (err) {
-      setError(err.response?.data?.detail || 'Login failed. Please try again.');
+    if (loginMethod === 'email') {
+      try {
+        await login(email, password);
+        navigate('/dashboard');
+      } catch (err) {
+        if (err.response?.status === 403) {
+          setError("Invalid email or password.");
+        } else {
+          setError("Login failed. Please try again.");
+        }
+      }
+    } else {
+      // FaceID login (only email needed)
+      try {
+        await loginWithFaceID(email);
+        navigate('/dashboard');
+      } catch (err) {
+        setError(err.response?.data?.detail || 'FaceID login failed. No face detected or mismatch.');
+      }
     }
   };
 
@@ -123,6 +137,40 @@ const LoginPage = () => {
               {error}
             </div>
           )}
+
+          {/* Login Method Toggle */}
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '10px', marginBottom: '20px' }}>
+            <button
+              onClick={() => setLoginMethod('email')}
+              style={{
+                padding: '8px 16px',
+                backgroundColor: loginMethod === 'email' ? '#8b5a2b' : '#f5e5b3',
+                color: loginMethod === 'email' ? '#fff' : '#333',
+                border: 'none',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontSize: '14px',
+              }}
+            >
+              Email & Password
+            </button>
+            <button
+              onClick={() => setLoginMethod('faceid')}
+              style={{
+                padding: '8px 16px',
+                backgroundColor: loginMethod === 'faceid' ? '#8b5a2b' : '#f5e5b3',
+                color: loginMethod === 'faceid' ? '#fff' : '#333',
+                border: 'none',
+                borderRadius: '10px',
+                cursor: 'pointer',
+                fontSize: '14px',
+              }}
+            >
+              FaceID
+            </button>
+          </div>
+
+          {/* Form Fields */}
           <form
             onSubmit={handleSubmit}
             style={{
@@ -145,6 +193,7 @@ const LoginPage = () => {
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
               style={{
                 padding: '15px',
                 fontSize: '16px',
@@ -154,52 +203,37 @@ const LoginPage = () => {
                 color: '#999',
               }}
             />
-            <label
-              style={{
-                fontSize: '18px',
-                color: '#333',
-                marginBottom: '5px',
-              }}
-            >
-              Password
-            </label>
-            <input
-              type="password"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              style={{
-                padding: '15px',
-                fontSize: '16px',
-                border: 'none',
-                borderRadius: '10px',
-                backgroundColor: '#f5e5b3',
-                color: '#999',
-              }}
-            />
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                marginTop: '10px',
-              }}
-            >
-              <label style={{ display: 'flex', alignItems: 'center', fontSize: '14px', color: '#333' }}>
-                <input type="checkbox" style={{ marginRight: '5px' }} />
-                Remember your account
-              </label>
-              <Link
-                to="/forget-password"
-                style={{
-                  textDecoration: 'none',
-                  color: '#333',
-                  fontSize: '14px',
-                }}
-              >
-                Forget your password?
-              </Link>
-            </div>
+
+            {/* Show password field only for regular login */}
+            {loginMethod === 'email' && (
+              <>
+                <label
+                  style={{
+                    fontSize: '18px',
+                    color: '#333',
+                    marginBottom: '5px',
+                  }}
+                >
+                  Password
+                </label>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                  style={{
+                    padding: '15px',
+                    fontSize: '16px',
+                    border: 'none',
+                    borderRadius: '10px',
+                    backgroundColor: '#f5e5b3',
+                    color: '#999',
+                  }}
+                />
+              </>
+            )}
+
             <button
               type="submit"
               style={{
@@ -213,9 +247,27 @@ const LoginPage = () => {
                 marginTop: '20px',
               }}
             >
-              LOG IN
+              {loginMethod === 'email' ? 'LOG IN' : 'Login with FaceID'}
             </button>
           </form>
+
+          {/* Signup Prompt */}
+          <div style={{ marginTop: '20px', textAlign: 'center' }}>
+            <p>
+              Don't have an account?{' '}
+              <Link
+                to="/signup"
+                style={{
+                  textDecoration: 'none',
+                  color: '#8b5a2b',
+                  fontWeight: 'bold',
+                  cursor: 'pointer',
+                }}
+              >
+                Sign Up
+              </Link>
+            </p>
+          </div>
         </div>
       </main>
     </div>

@@ -36,7 +36,7 @@ class LoginService:
             # Use MongoDB's _id as user_id
             user_id = str(user["_id"])
             access_token = create_access_token(
-                user_data={'user_id': user_id}
+                user_data={'user_id': user_id,'username': user.get("name", "")}
             )
             refresh_token = create_access_token(
                 user_data={'user_id': user_id},
@@ -92,19 +92,22 @@ class LoginService:
                     status_code=status.HTTP_400_BAD_REQUEST,
                     detail="Invalid FaceID format in request"
                 )
-            
-            similarity = 1 - cosine(input_faceid_array, stored_faceid_array)
+
+            # print("input_faceid_array", userdata)
+            # print("stored_faceid_array", stored_faceid_array)
+            similarity = 1 - cosine(input_faceid_array.flatten(), stored_faceid_array.flatten())
             
             if similarity < FACEID_THRESHOLD:
                 raise HTTPException(
                     status_code=status.HTTP_403_FORBIDDEN,
                     detail="FaceID does not match"
                 )
-            
             user_id = str(user["_id"])
-            access_token = create_access_token({'user_id': user_id})
+            access_token = create_access_token(
+                user_data={'user_id': user_id,'username': user.get("name", "")}
+            )
             refresh_token = create_access_token(
-                {'user_id': user_id}, 
+                {'user_id': user_id,}, 
                 refresh=True, 
                 expiry=timedelta(days=REFRESH_TOKEN_EXPIRY)
             )

@@ -48,7 +48,7 @@ import DevicesPage from './devices';
 import FamilyMembersPage from './family_members';
 import SettingPage from './setting';
 import { AuthProvider, useAuth } from './AuthContext';
-
+import SignupPage from './signup';
 // Protected Route component
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -71,6 +71,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
           <Route
             path="/dashboard"
             element={

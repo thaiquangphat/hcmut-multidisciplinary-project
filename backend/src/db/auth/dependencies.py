@@ -46,7 +46,7 @@ class AccessTokenBearer(TokenBearer):
             )
         
         user_id = token_data['user']['user_id']
-        print(f"Extracted user_id: {user_id}") 
+        print(f"Extracted user_id: {token_data['user']}") 
         return user_id
 
 class RefreshTokenBearer(TokenBearer):
