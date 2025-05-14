@@ -1,73 +1,80 @@
-import requests
-from fastapi import HTTPException, status
-from ...config import Config 
+import anyio
+from datetime import datetime
+from typing import Dict, List
+
+from fastapi import HTTPException
+from Adafruit_IO import Client, RequestError
+
 ADAFRUIT_IO_USERNAME = "Phat_Adafruit"
-ADAFRUIT_IO_KEY = "aio_FpCw83QuD1wktNbwmwyGBBajuNEU" 
+ADAFRUIT_IO_KEY = "aio_FpCw83QuD1wktNbwmwyGBBajuNEU"
+
 
 class DeviceService:
+    def __init__(self) -> None:
+        self._aio = Client(
+            username=ADAFRUIT_IO_USERNAME,
+            key=ADAFRUIT_IO_KEY,
+        )
 
-    def _fetch_feed_data(self, feed_key: str):
+    async def _receive_latest(self, feed_key: str):
+        """Return the newest Data object for a feed (runs in a thread)."""
+        try:
+            return await anyio.to_thread.run_sync(self._aio.receive, feed_key)
+        except RequestError as exc:
+            raise HTTPException(status_code=502, detail=f"Adafruit IO error: {str(exc)}")
+
+    async def _fetch_all_feeds(self):
+        try:
+            return await anyio.to_thread.run_sync(self._aio.feeds)
+        except RequestError as exc:
+            raise HTTPException(status_code=502, detail=f"Adafruit IO error: {str(exc)}")
+
+    # ---------- public API methods ---------------------------------------------
+
+    async def get_single_feed(self, feed_key: str, db) -> Dict:
         """
-        Returns the entire list of data records for a given Adafruit IO feed.
-        Typically the newest record is index 0.
+        » Grab the newest value from one feed.
+        » Return: {"ok": True, "value": <str>}
         """
-        url = f"https://io.adafruit.com/api/v2/{ADAFRUIT_IO_USERNAME}/feeds/{feed_key}/data"
-        headers = {
-            "X-AIO-Key": ADAFRUIT_IO_KEY,
-            "Content-Type": "application/json"
-        }
-        resp = requests.get(url, headers=headers)
-        if resp.status_code != 200:
-            raise HTTPException(
-                status_code=resp.status_code,
-                detail=f"Error fetching feed '{feed_key}': {resp.text}"
+        newest = await self._receive_latest(feed_key)
+
+        await db[feed_key].insert_one( 
+            {
+                "feed_name": feed_key,
+                "value": newest.value,
+                "created_at": newest.created_at
+                or datetime.utcnow().isoformat(timespec="seconds"),
+            }
+        )
+
+        return {"ok": True, "value": newest.value}
+
+    async def get_all_feeds(self, db) -> Dict[str, List]:
+        """
+        » List *all* feeds with Adafruit-IO.
+        » Store each `last_value` in its own collection.
+        » Return all feeds' metadata.
+        """
+        feeds = await self._fetch_all_feeds()
+        feeds_json = [
+            {
+                "id": f.id,
+                "name": f.name,
+                "key": f.key,
+                "last_value": f.last_value,
+                "last_value_at": f.last_value_at,
+            }
+            for f in feeds
+        ]
+
+        for f in feeds:
+            await db[f.key].insert_one(  
+                {
+                    "feed_name": f.key,
+                    "value": f.last_value,
+                    "created_at": f.last_value_at
+                    or datetime.utcnow().isoformat(timespec="seconds"),
+                }
             )
-        return resp.json()
 
-    async def get_single_feed(self, feed_key: str, db):
-        """
-        Fetch data from one feed, record the newest data in 'record_device' collection, 
-        and return the full feed data.
-        """
-        feed_data = self._fetch_feed_data(feed_key)
-        if not feed_data:
-            raise HTTPException(
-                status_code=404,
-                detail=f"No data returned for feed '{feed_key}'."
-            )
-
-        newest_entry = feed_data[0]
-        await db["record_device"].insert_one({
-            "feed_name": feed_key,
-            "value": newest_entry.get("value"),
-            "created_at": newest_entry.get("created_at")
-        })
-
-        return {f"{feed_key}_data": feed_data}
-
-    async def get_all_feeds(self, db):
-        """
-        Fetch info on ALL Adafruit IO feeds, store the 'last_value' for each feed in 'record_device', 
-        and return the feed list.
-        """
-        url = f"https://io.adafruit.com/api/v2/{ADAFRUIT_IO_USERNAME}/feeds"
-        headers = {
-            "X-AIO-Key": ADAFRUIT_IO_KEY,
-            "Content-Type": "application/json"
-        }
-        resp = requests.get(url, headers=headers)
-        if resp.status_code != 200:
-            raise HTTPException(
-                status_code=resp.status_code,
-                detail=f"Error fetching all feeds: {resp.text}"
-            )
-        feeds_list = resp.json()
-
-        for feed in feeds_list:
-            await db["record_device"].insert_one({
-                "feed_name": feed.get("key"),
-                "value": feed.get("last_value"),
-                "created_at": feed.get("last_value_at")
-            })
-
-        return {"all_feeds": feeds_list}
+        return {"all_feeds": feeds_json}

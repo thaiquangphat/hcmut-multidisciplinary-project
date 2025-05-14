@@ -1,6 +1,6 @@
-import React, { useRef, useEffect, useState} from 'react';
-import { Line } from 'react-chartjs-2';
-import axios from 'axios';
+import React, { useRef, useEffect, useState } from "react";
+import { Line } from "react-chartjs-2";
+import axios from "axios";
 import {
   Chart as ChartJS,
   LineElement,
@@ -10,15 +10,23 @@ import {
   Title,
   Tooltip,
   Legend,
-} from 'chart.js';
-import 'chartjs-adapter-date-fns';
-import Sidebar from './sidebar'; // Import the Sidebar component
-
+} from "chart.js";
+import "chartjs-adapter-date-fns";
+import Sidebar from "./sidebar"; // Import the Sidebar component
+import apiClient from "./api";
 // Import the CSS file
-import './dashboard.css';
+import "./dashboard.css";
 
 // Register Chart.js components
-ChartJS.register(LineElement, PointElement, LinearScale, TimeScale, Title, Tooltip, Legend);
+ChartJS.register(
+  LineElement,
+  PointElement,
+  LinearScale,
+  TimeScale,
+  Title,
+  Tooltip,
+  Legend
+);
 
 const DashboardPage = () => {
   const chartRef = useRef(null);
@@ -27,40 +35,44 @@ const DashboardPage = () => {
   const [temperature, setTemperature] = useState(0);
   const [temperatureData, setTemperatureData] = useState({
     labels: [],
-    values: []
+    values: [],
   });
   const [showWarning, setShowWarning] = useState(false);
-  const [warningMessage, setWarningMessage] = useState('');
+  const [warningMessage, setWarningMessage] = useState("");
 
   // Track current values for warning checks
   const currentValues = useRef({ temp: 0, hum: 0, lightframe: 0 });
 
   // Get color based on value and type
   const getColor = (value, type) => {
-    if (type === 'temperature') {
-      if (value < 20) return '#add8e6'; // light blue
-      if (value > 40) return '#ff0000'; // red
-      return '#f5e5b3'; // default color
-    } else if (type === 'humidity') {
-      if (value < 20) return '#add8e6'; // light blue
-      if (value > 35) return '#ff0000'; // red
-      return '#f5e5b3'; // default color
+    if (type === "temperature") {
+      if (value < 20) return "#add8e6"; // light blue
+      if (value > 40) return "#ff0000"; // red
+      return "#f5e5b3"; // default color
+    } else if (type === "humidity") {
+      if (value < 20) return "#add8e6"; // light blue
+      if (value > 35) return "#ff0000"; // red
+      return "#f5e5b3"; // default color
     }
-    return '#f5e5b3';
+    return "#f5e5b3";
   };
 
   // Check for warnings
   const checkWarnings = (temp, hum) => {
     const warnings = [];
     if (temp !== 0 && (temp < 20 || temp > 40)) {
-      warnings.push(`Temperature is ${temp < 20 ? 'too low' : 'too high'} (${temp.toFixed(1)}°C)`);
+      warnings.push(
+        `Temperature is ${temp < 20 ? "too low" : "too high"} (${temp.toFixed(
+          1
+        )}°C)`
+      );
     }
     // if (hum < 20 || hum > 35) {
     //   warnings.push(`Humidity is ${hum < 20 ? 'too low' : 'too high'} (${hum.toFixed(1)}%)`);
     // }
-    
+
     if (warnings.length > 0) {
-      setWarningMessage(warnings.join('\n'));
+      setWarningMessage(warnings.join("\n"));
       setShowWarning(true);
     } else {
       setShowWarning(false);
@@ -72,7 +84,7 @@ const DashboardPage = () => {
     // Initial fetch
     fetchTemperatureData();
     fetchHumidityData();
-    
+
     // Set up interval for updates
     const fetchInterval = setInterval(() => {
       fetchTemperatureData();
@@ -84,7 +96,7 @@ const DashboardPage = () => {
     const warningInterval = setInterval(() => {
       checkWarnings(currentValues.current.temp, currentValues.current.hum);
     }, 1200);
-    
+
     return () => {
       clearInterval(fetchInterval);
       clearInterval(warningInterval);
@@ -94,62 +106,61 @@ const DashboardPage = () => {
   // Function to fetch temperature data from the server
   const fetchTemperatureData = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:5000/api/receive_temperature');
-      if (!response.data.ok) {
-        throw new Error('Failed to fetch temperature data');
-      }
-      const newTemp = Math.min(100, Math.max(-100, response.data.value));
+      const response = await apiClient.get("/device/feeds/temperature");
+      const newTemp = Math.min(
+        100,
+        Math.max(-100, parseFloat(response.data.value))
+      ); // [CHANGED]
       setTemperature(newTemp);
-      currentValues.current.temp = newTemp; // Update the current temperature value
-      
-      // Update chart data
+      currentValues.current.temp = newTemp;
+
       const currentTime = new Date();
-      setTemperatureData(prevData => {
+      setTemperatureData((prevData) => {
         const newLabels = [...prevData.labels, currentTime];
         const newValues = [...prevData.values, newTemp];
-        
+
         if (newLabels.length > 10) {
           newLabels.shift();
           newValues.shift();
         }
-        
+
         return {
           labels: newLabels,
-          values: newValues
+          values: newValues,
         };
       });
     } catch (error) {
-      console.error('Error fetching temperature data:', error);
+      console.error("Error fetching temperature data:", error);
     }
   };
 
   // Function to fetch humidity data from the server
   const fetchHumidityData = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:5000/api/receive_humidity');
+      const response = await apiClient.get("/device/feeds/humidity");
       if (!response.data.ok) {
-        throw new Error('Failed to fetch humidity data');
+        throw new Error("Failed to fetch humidity data");
       }
       const newHum = Math.min(100, Math.max(0, response.data.value));
       setHumidity(newHum);
       currentValues.current.hum = newHum; // Update the current humidity value
     } catch (error) {
-      console.error('Error fetching humidity data:', error);
+      console.error("Error fetching humidity data:", error);
     }
   };
 
   // Function to fetch light frame value from the server
   const fetchLightFrameValue = async () => {
     try {
-      const response = await axios.get('http://127.0.0.1:5000/api/receive_light_frame');
+      const response = await apiClient.get("/device/feeds/light");
       if (!response.data.ok) {
-        throw new Error('Failed to fetch light frame data');
+        throw new Error("Failed to fetch light frame data");
       }
       const newLightFrame = Math.min(100, Math.max(0, response.data.value));
       setLightFrame(newLightFrame);
       currentValues.current.lightframe = newLightFrame; // Update the current light frame value
-      } catch (error) {
-      console.error('Error fetching light frame data:', error);
+    } catch (error) {
+      console.error("Error fetching light frame data:", error);
     }
   };
 
@@ -158,10 +169,10 @@ const DashboardPage = () => {
     labels: temperatureData.labels,
     datasets: [
       {
-        label: 'Temperature (°C)',
+        label: "Temperature (°C)",
         data: temperatureData.values,
-        borderColor: '#f5e5b3',
-        backgroundColor: 'rgba(245, 229, 179, 0.2)',
+        borderColor: "#f5e5b3",
+        backgroundColor: "rgba(245, 229, 179, 0.2)",
         fill: true,
         tension: 0.3,
       },
@@ -173,14 +184,14 @@ const DashboardPage = () => {
     maintainAspectRatio: false,
     scales: {
       x: {
-        type: 'time',
+        type: "time",
         time: {
-          unit: 'minute',
-          displayFormats: { minute: 'HH:mm' },
+          unit: "minute",
+          displayFormats: { minute: "HH:mm" },
         },
         ticks: {
           maxTicksLimit: 10,
-          source: 'data',
+          source: "data",
         },
       },
       y: {
@@ -189,24 +200,24 @@ const DashboardPage = () => {
         max: 100,
         title: {
           display: true,
-          text: 'Temperature (°C)',
+          text: "Temperature (°C)",
         },
       },
     },
     plugins: {
       legend: {
         display: true,
-        position: 'top',
+        position: "top",
       },
       tooltip: {
-        mode: 'index',
+        mode: "index",
         intersect: false,
         callbacks: {
           title: (context) => {
             const date = new Date(context[0].label);
             return date.toLocaleTimeString();
-          }
-        }
+          },
+        },
       },
     },
   };
@@ -246,13 +257,12 @@ const DashboardPage = () => {
             </p>
           </div>
           <div className="dashboard-header-right">
-            <span 
-              className="dashboard-temperature"
-              style={{temperature}}
-            >
+            <span className="dashboard-temperature" style={{ temperature }}>
               {temperature.toFixed(1)}°C
             </span>
-            <button className="dashboard-add-device-button">+ NEW DEVICE</button>
+            <button className="dashboard-add-device-button">
+              + NEW DEVICE
+            </button>
           </div>
         </header>
 
@@ -262,11 +272,11 @@ const DashboardPage = () => {
             <div className="dashboard-frame dashboard-temperature-frame">
               <h3 className="dashboard-frame-title">Temperature Frame</h3>
               <div className="dashboard-progress-bar">
-                <div 
+                <div
                   className="dashboard-progress-filled"
-                  style={{ 
+                  style={{
                     width: `${((temperature + 100) / 200) * 100}%`,
-                    backgroundColor: getColor(temperature, 'temperature')
+                    backgroundColor: getColor(temperature, "temperature"),
                   }}
                 />
               </div>
@@ -303,7 +313,7 @@ const DashboardPage = () => {
                       a 15.9155 15.9155 0 0 1 0 31.831
                       a 15.9155 15.9155 0 0 1 0 -31.831"
                     fill="none"
-                    stroke={getColor(humidity, 'humidity')}
+                    stroke={getColor(humidity, "humidity")}
                     strokeWidth="3"
                     strokeDasharray={`${humidity}, 100`}
                   />
@@ -353,7 +363,7 @@ const DashboardPage = () => {
                       a 15.9155 15.9155 0 0 1 0 31.831
                       a 15.9155 15.9155 0 0 1 0 -31.831"
                     fill="none"
-                    stroke={'#f5e5b3'}
+                    stroke={"#f5e5b3"}
                     strokeWidth="3"
                     strokeDasharray={`${lightframe}, 100`}
                   />
