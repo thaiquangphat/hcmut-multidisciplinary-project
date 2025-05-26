@@ -53,6 +53,29 @@ npm start
   - [Linux Installation Guide](https://www.mongodb.com/docs/manual/administration/install-on-linux/)
   - [MacOS Installation Guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/)
 
+#### Environment Setup
+Create a `.env` file in the `backend` directory with the following configuration:
+
+```env
+# Database Configuration
+DATABASE_URL=mongodb://localhost:27017
+
+# JWT Configuration
+JWT_SECRET=your_jwt_secret_here
+JWT_ALGORITHM=HS256
+
+# Redis Configuration
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_URL=redis://localhost:6379/0
+
+# Adafruit IO Configuration
+ADAFRUIT_IO_USERNAME=your_adafruit_username
+ADAFRUIT_IO_KEY=your_adafruit_key
+```
+
+> **Note**: Replace the placeholder values with your actual credentials. Do not commit the `.env` file to version control.
+
 #### Running the Backend
 From the parent workspace:
 ```bash
@@ -86,7 +109,6 @@ uvicorn main:app --reload port 5000
 │   └── src/         # Source code
 └── README.md        # Project documentation
 ```
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -101,3 +123,4 @@ For support, please open an issue in the GitHub repository.
 
 ---
 Made by HCMUT Students
+
