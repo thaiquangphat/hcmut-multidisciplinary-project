@@ -5,8 +5,8 @@ from typing import Dict, List
 from fastapi import HTTPException
 from Adafruit_IO import Client, RequestError
 
-ADAFRUIT_IO_USERNAME = "Phat_Adafruit"
-ADAFRUIT_IO_KEY = "aio_FpCw83QuD1wktNbwmwyGBBajuNEU"
+ADAFRUIT_IO_USERNAME = "YOUR_USERNAME"
+ADAFRUIT_IO_KEY = "YOUR_API_KEY"
 
 
 class DeviceService:

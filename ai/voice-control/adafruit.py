@@ -7,8 +7,8 @@ import serial.tools.list_ports
 
 def pushing_command(adadevice, value):
     AIO_FEED_ID = adadevice
-    AIO_USERNAME = 'Phat_Adafruit'
-    AIO_KEY = 'aio_FpCw83QuD1wktNbwmwyGBBajuNEU'
+    AIO_USERNAME = '<YOUR_USERNAME>'
+    AIO_KEY = '<YOUR_API_KEY>'
 
     def connected(client): 
         client.subscribe(AIO_FEED_ID)
@@ -45,8 +45,8 @@ def pushing_command(adadevice, value):
         return e
     
 def get_value_from_feed(feed: str): 
-    AIO_USERNAME = 'Phat_Adafruit'
-    AIO_KEY = 'aio_FpCw83QuD1wktNbwmwyGBBajuNEU'
+    AIO_USERNAME = 'YOUR_USERNAME'
+    AIO_KEY = 'YOUR_API_KEY'
 
     aio = Client(username=AIO_USERNAME, key=AIO_KEY)
 
